@@ -1,0 +1,67 @@
+hero:
+  title: THE SOLIMANS
+  subtitle: Fuel For Champions
+  paragraph: A health and fitness meal plan business that believes healthy eating doesn’t have to be boring. Dietitian-designed and chef-crafted so you can stay consistent with meals that are delicious, nutritious, and built for your goals.
+  cta_url: "https://wa.me/628123456789?text=Hi%20Solimans"
+  cta_text: "LET’S TALK"
+  secondary_url: "/meal-plan/"
+  secondary_text: "Start your plan"
+  image: "/images/temp-img.png"
+  image_alt: "Hero meal"
+
+features:
+  kicker: "Not Just Another"
+  title: "MEAL PLANNER"
+  items:
+    - title: Passion & Expertise
+      paragraph: At The Solimans, we are passionate about helping our customers achieve  their health and fitness goals through delicious, nutritionally balanced meals. Our team of dietitians and chefs work collaboratively to create a menu that is both flavorful and nourishing, ensuring that you don't  have to sacrifice taste for nutrition.
+    - title: 100% natural ingredients
+      paragraph: One of the things that sets The Solimans apart from other meal planners  is our commitment to using natural ingredients. We believe in the  benefits of using whole, unprocessed foods, and do our best to source  our ingredients from local, sustainable sources whenever possible.
+    - title: customer satisfaction
+      paragraph: We are also dedicated to ensuring customer satisfaction. Whether you are following a specific dietary plan or simply looking to improve your  overall health and wellness, we are here to support you every step of  the way. We offer a variety of payment options and are flexible with our delivery and pickup options, making it easy for you to get the meals  you need.
+  images:
+    - image: "/images/temp-img.png"
+    - image: "/images/temp-img.png"
+    - image: "/images/temp-img.png"
+
+testimonials:
+  subtitle: "What They Say About"
+  title: "The Solimans"
+  testimonials_list:
+    - highlight: "Amazing and healthy place!"
+      paragraph: "Amazing and healthy place! You can check macros and kcal on the menu and order your individual meal plan, delivered straight to you. Highly recommended."
+      name: "Sonia Szuba"
+    - highlight: "Tasty and love the flavors!"
+      paragraph: "I find your meals tasty and love the flavors. It's nice!"
+      name: "Gracia Olivier"
+    - highlight: "It's fantastic!"
+      paragraph: "I've just had my third meal, and I think it's fantastic. I'm really enjoying the taste. Keep up the great work—so far, you've got a very happy customer."
+      name: "Misja Alblas"
+
+banner:
+  title: "HEALTHY FOOD"
+  subtitle: "Should Be Inclusive and Accessible to Everyone"
+  image: "/images/temp-img.png"   # ganti ke banner final kalau sudah ada
+  button_url: "/meal-plan/"
+  button_text: "START YOUR JOURNEY"
+
+partners:
+  kicker: "We Believe in Cooperation"
+  title: "OUR PARTNERS"
+  paragraph: "We’re partnering with local businesses to bring you perks and add-on services that complement your plan."
+  items:
+    - logo: "/images/soma-fight-club-partner-of-the-solimans.png"
+      name: "SOMA Fight Club"
+      discount: "xx% off"
+    - logo: "/images/alma-partner-of-the-solimans.png"
+      name: "Alma"
+      discount: "xx% off"
+    - logo: "/images/logo3.png"
+      name: "Business 3"
+      discount: "25% off"
+    - logo: "/images/logo4.png"
+      name: "Business 4"
+      discount: "10% off"
+
+contact:
+  map_src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d!2d115.169!3d-8.65"

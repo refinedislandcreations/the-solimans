@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@source "../../**/*.{html,liquid,md,markdown}";
+@source "../../_layouts/**/*.{html,liquid}";
+@source "../../_includes/**/*.{html,liquid}";
+@source "../../_posts/**/*.{md,markdown}";
+@source "../../_data/**/*.{yml,yaml,json}";
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold
+           bg-blue-600 text-white hover:bg-blue-700;
+  }
+}
+
+@source inline("{hover:,focus:,}bg-{slate,gray,zinc,neutral,stone,red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,{100..900..100},950}");
+@source inline("{hover:,focus:,}text-{slate,gray,zinc,neutral,stone,red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,{100..900..100},950}");
+@source inline("border-{slate,gray,zinc,neutral,stone,red,orange,amber,yellow,lime,green,emerald,teal,cyan,sky,blue,indigo,violet,purple,fuchsia,pink,rose}-{50,{100..900..100},950}");
+
+/* @plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
+@plugin "@tailwindcss/container-queries"; */
+
+@layer base {
+  :root { color-scheme: light dark; }
+  .font-display {
+    font-family: "Bebas Neue", system-ui, sans-serif;
+    letter-spacing: .01em;
+  }
+  .font-sans {
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
+}
+@theme {
+  /* brand olive */
+  --color-brand-400: #a0ac53;
+  --color-brand-500: #919b4a; 
+  --color-brand-600: #7f8840;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xs px-5 py-3 font-semibold
+    text-white bg-brand-500 hover:bg-brand-600
+    dark:bg-brand-400 dark:hover:bg-brand-500;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold
+           border border-slate-300/60 text-slate-700 hover:bg-slate-50
+           dark:border-white/15 dark:text-slate-200 dark:hover:bg-white/5;
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200/60 bg-white/70 backdrop-blur p-6 shadow-sm
+           dark:bg-white/5 dark:border-white/10;
+  }
+  .section { @apply max-w-6xl mx-auto px-6 md:px-10; }
+}

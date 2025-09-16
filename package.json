@@ -1,0 +1,29 @@
+{
+  "name": "the-solimans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch --content './**/*.{html,liquid,md,markdown}' --content './_data/**/*.{yml,yaml,json}'",
+    "serve": "bundle exec jekyll serve",
+    "start": "npm run dev:css & npm run serve",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify --content './**/*.{html,liquid,md,markdown}' --content './_data/**/*.{yml,yaml,json}'",
+    "build": "bundle exec jekyll build && npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyhtg26/the-solimans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garyhtg26/the-solimans/issues"
+  },
+  "homepage": "https://github.com/garyhtg26/the-solimans#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}

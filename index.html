@@ -1,0 +1,52 @@
+---
+layout: default
+title: Home
+---
+
+{% assign home = site.data.home %}
+
+{% include hero.html
+  title=home.hero.title
+  subtitle=home.hero.subtitle
+  paragraph=home.hero.paragraph
+  cta_url=home.hero.cta_url
+  cta_text=home.hero.cta_text
+  secondary_url=home.hero.secondary_url
+  secondary_text=home.hero.secondary_text
+  image=home.hero.image
+  image_alt=home.hero.image_alt
+%}
+
+
+{% include features.html
+  kicker=home.features.kicker
+  title=home.features.title
+  items=home.features.items
+  images=home.features.images
+%}
+
+{% assign t = home.testimonials %}
+{% include testimonials.html
+  kicker=t.subtitle
+  title=t.title
+  items=t.testimonials_list
+%}
+
+{% include image-banner.html
+  title=home.banner.title
+  subtitle=home.banner.subtitle
+  image=home.banner.image
+  button_url=home.banner.button_url
+  button_text=home.banner.button_text
+%}
+
+{% include partners.html
+  kicker=home.partners.kicker
+  title=home.partners.title
+  paragraph=home.partners.paragraph
+  items=home.partners.items
+%}
+
+{% include contact-with-map.html
+  map_src=home.contact.map_src
+%}

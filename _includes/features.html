@@ -1,60 +1,58 @@
 {%- assign slider_id = include.id | default: 'features-slider' -%}
 {%- assign imgs = include.images | default: site.data.home.features.images -%}
-{%- assign items = include.items  | default: site.data.home.features.items -%}
+{%- assign items = include.items | default: site.data.home.features.items -%}
+{%- assign kicker = include.kicker | default: site.data.home.features.kicker | default: 'Not Just Another' -%}
+{%- assign title  = include.title  | default: site.data.home.features.title  | default: 'MEAL PLANNER' -%}
 
 <section class="max-w-6xl mx-auto px-6 md:px-10 py-16" id="features">
-  <div class="grid md:grid-cols-2 gap-10">
-
+  <div class="grid md:grid-cols-2 gap-10 md:items-stretch">
     <!-- LEFT: heading + slider -->
-    <div>
+    <div class="flex flex-col">
       <h2 class="text-xl">{{ include.kicker | default: "Not Just Another" }}</h2>
       <p class="font-display text-5xl md:text-6xl leading-[0.95] mt-1">
         {{ include.title | default: "MEAL PLANNER" }}
       </p>
-
-      <!-- Slider -->
       <div id="{{ slider_id }}"
-           class="relative mt-6 rounded-md overflow-hidden border border-gray-800/40 dark:border-white/10">
-        <!-- Slides -->
-        <div class="relative aspect-[4/3] bg-black">
+           class="relative mt-6 h-full rounded-md overflow-hidden border border-gray-800/40 dark:border-white/10"
+           data-autoplay="{{ include.autoplay | default: '' }}">
+        <!-- slides container -->
+        <div class="relative aspect-[4/3] md:aspect-auto md:h-full bg-black">
           {%- if imgs and imgs.size > 0 -%}
             {%- for im in imgs -%}
-              <img
-                data-slide
-                src="{{ im.image | default: im | relative_url }}"
-                alt="{{ im.image_alt | default: 'Slide ' | append: forloop.index }}"
-                class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500
-                       opacity-0 pointer-events-none {{ forloop.first | ternary: 'opacity-100 pointer-events-auto', '' }}">
+              <img data-slide
+                   src="{{ im.image | default: im | relative_url }}"
+                   alt="{{ im.image_alt | default: 'Slide ' | append: forloop.index }}"
+                   class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500
+                          opacity-0 pointer-events-none {{ forloop.first | ternary: 'opacity-100 pointer-events-auto', '' }}">
             {%- endfor -%}
           {%- else -%}
-            <!-- fallback -->
             <img data-slide src="{{ '/images/temp-img.png' | relative_url }}" alt="Slide"
                  class="absolute inset-0 h-full w-full object-cover opacity-100">
           {%- endif -%}
         </div>
 
         {%- if imgs and imgs.size > 1 -%}
-        <!-- Arrows -->
+        <!-- full-height arrows -->
         <button type="button" data-prev
-          class="group absolute left-3 top-1/2 -translate-y-1/2 grid place-items-center
-                 h-10 w-10 rounded-full border border-white/20 bg-black/30 backdrop-blur
-                 hover:bg-black/50 transition"
+          class="absolute inset-y-0 left-0 w-14 grid place-items-center
+                 bg-gradient-to-r from-black/35 to-transparent hover:from-black/55 transition"
           aria-label="Previous slide">
-          <svg class="h-5 w-5 text-[#919b4a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.78 4.22a.75.75 0 010 1.06L9.06 12l6.72 6.72a.75.75 0 11-1.06 1.06l-7.25-7.25a.75.75 0 010-1.06l7.25-7.25a.75.75 0 011.06 0z"/>
           </svg>
         </button>
         <button type="button" data-next
-          class="group absolute right-3 top-1/2 -translate-y-1/2 grid place-items-center
-                 h-10 w-10 rounded-full border border-white/20 bg-black/30 backdrop-blur
-                 hover:bg-black/50 transition"
+          class="absolute inset-y-0 right-0 w-14 grid place-items-center
+                 bg-gradient-to-l from-black/35 to-transparent hover:from-black/55 transition"
           aria-label="Next slide">
-          <svg class="h-5 w-5 text-[#919b4a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+          <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.22 19.78a.75.75 0 010-1.06L14.94 12 8.22 5.28a.75.75 0 111.06-1.06l7.25 7.25a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0z"/>
           </svg>
         </button>
 
-        <!-- Dots -->
+        <!-- dots -->
         <div class="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
           {%- for _ in imgs -%}
             <span data-dot class="h-1.5 w-1.5 rounded-full border border-[#919b4a]/80 bg-white/10"></span>
@@ -64,46 +62,53 @@
       </div>
     </div>
 
-    <!-- RIGHT: feature blocks with vertical divider -->
+    <!-- RIGHT: text sections with divider -->
     <div class="md:border-l-2 md:border-[#919b4a]">
       {%- for it in items limit:3 -%}
         <article class="px-8 py-8 border-b-2 border-[#919b4a] last:border-b-0">
-          <h3 class="uppercase font-extrabold text-lg tracking-wide">{{ it.title | default: "Feature" }}</h3>
-          <p class="mt-3">{{ it.paragraph | default: "Description." }}</p>
+          <h3 class="uppercase text-lg font-extrabold tracking-wide">{{ it.title }}</h3>
+          <p class="mt-3 text-gray-300">{{ it.paragraph }}</p>
         </article>
       {%- endfor -%}
     </div>
   </div>
 </section>
 
-{%- comment -%}
-  Minimal slider JS – no deps
-{%- endcomment -%}
 <script>
-(function() {
+(function(){
   const root = document.getElementById('{{ slider_id }}');
   if (!root) return;
   const slides = Array.from(root.querySelectorAll('[data-slide]'));
   if (!slides.length) return;
 
-  let i = 0;
+  let i = 0, itv = null;
   const dots = Array.from(root.querySelectorAll('[data-dot]'));
-  const show = (idx) => {
-    i = (idx + slides.length) % slides.length;
-    slides.forEach((el, n) => {
-      el.classList.toggle('opacity-100', n === i);
-      el.classList.toggle('pointer-events-auto', n === i);
-      el.classList.toggle('opacity-0', n !== i);
-      el.classList.toggle('pointer-events-none', n !== i);
+  const prev = root.querySelector('[data-prev]');
+  const next = root.querySelector('[data-next]');
+  const autoplayMs = parseInt(root.dataset.autoplay || '', 10);
+
+  const show = (n) => {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((el, idx) => {
+      el.classList.toggle('opacity-100', idx === i);
+      el.classList.toggle('pointer-events-auto', idx === i);
+      el.classList.toggle('opacity-0', idx !== i);
+      el.classList.toggle('pointer-events-none', idx !== i);
     });
-    dots.forEach((d, n) => {
-      d.style.backgroundColor = n === i ? '#919b4a' : 'transparent';
-    });
+    dots.forEach((d, idx) => d.style.backgroundColor = idx === i ? '#919b4a' : 'transparent');
   };
 
-  root.querySelector('[data-prev]')?.addEventListener('click', () => show(i - 1));
-  root.querySelector('[data-next]')?.addEventListener('click', () => show(i + 1));
-  dots.forEach((d, n) => d.addEventListener('click', () => show(n)));
+  prev?.addEventListener('click', () => show(i - 1));
+  next?.addEventListener('click', () => show(i + 1));
+  dots.forEach((d, idx) => d.addEventListener('click', () => show(idx)));
+
+  if (!isNaN(autoplayMs) && autoplayMs > 0) {
+    const start = () => itv = setInterval(() => show(i + 1), autoplayMs);
+    const stop  = () => { if (itv) clearInterval(itv); itv = null; };
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    start();
+  }
 
   show(0);
 })();

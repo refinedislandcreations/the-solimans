@@ -6,7 +6,7 @@ hero:
   cta_text: "LET’S TALK"
   secondary_url: "/meal-plan/"
   secondary_text: "Start your plan"
-  image: "/images/temp-img.png"
+  image: "/images/2.jpg"
   image_alt: "Hero meal"
 
 features:
@@ -20,9 +20,9 @@ features:
     - title: customer satisfaction
       paragraph: We are also dedicated to ensuring customer satisfaction. Whether you are following a specific dietary plan or simply looking to improve your  overall health and wellness, we are here to support you every step of  the way. We offer a variety of payment options and are flexible with our delivery and pickup options, making it easy for you to get the meals  you need.
   images:
-    - image: "/images/temp-img.png"
-    - image: "/images/temp-img.png"
-    - image: "/images/temp-img.png"
+    - image: "/images/1.jpg"
+    - image: "/images/4.jpg"
+    - image: "/images/3.jpg"
 
 testimonials:
   subtitle: "What They Say About"
@@ -41,7 +41,7 @@ testimonials:
 banner:
   title: "HEALTHY FOOD"
   subtitle: "Should Be Inclusive and Accessible to Everyone"
-  image: "/images/temp-img.png"   # ganti ke banner final kalau sudah ada
+  image: "/images/5.png"
   button_url: "/meal-plan/"
   button_text: "START YOUR JOURNEY"
 
@@ -52,10 +52,10 @@ partners:
   items:
     - logo: "/images/soma-fight-club-partner-of-the-solimans.png"
       name: "SOMA Fight Club"
-      discount: "xx% off"
+      discount: "25% off"
     - logo: "/images/alma-partner-of-the-solimans.png"
       name: "Alma"
-      discount: "xx% off"
+      discount: "20% off"
     - logo: "/images/logo3.png"
       name: "Business 3"
       discount: "25% off"

@@ -1,25 +1,42 @@
 <section class="max-w-6xl mx-auto px-6 md:px-10 py-14 md:py-20">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div class="order-2 md:order-1">
-        <h1 class="font-display text-5xl md:text-7xl leading-[0.95]">{{ include.title | default: "THE SOLIMANS" }}</h1>
-        <p class="font-display text-3xl md:text-4xl mt-1 dark:text-white/90">{{ include.subtitle | default: "Fuel For Champions" }}</p>
-        <p class="mt-5 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-xl">
-          {{ include.paragraph | default: "Dietitian-designed, chef-crafted meals that make healthy eating simple and flavorful." }}
-        </p>
-        <div class="mt-8 flex gap-3">
-          {% if include.cta_url %}
-            <a href="{{ include.cta_url }}" class="btn-primary">{{ include.cta_text | default: "LET’S TALK" }}</a>
-          {% endif %}
-          <!-- {% if include.secondary_url %}
-            <a href="{{ include.secondary_url }}" class="btn-ghost">{{ include.secondary_text | default: "Start your plan" }}</a>
-          {% endif %} -->
-        </div>
-      </div>
-      <div class="order-1 md:order-2">
-        <div class="aspect-[4/3] overflow-hidden rounded-md border border-slate-200/50 dark:border-white/10 shadow-md">
-          <img src="{{ include.image | default: '/images/temp-img.png' | relative_url }}" alt="{{ include.image_alt | default: 'Hero' }}" class="w-full h-full object-cover">
-        </div>
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="order-2 md:order-1">
+      <h1 class="font-display text-5xl md:text-7xl leading-[0.95]">
+        {{ page.hero.title | default: "THE SOLIMANS" }}
+      </h1>
+      <p class="font-display text-3xl md:text-4xl mt-1 dark:text-white/90">
+        {{ page.hero.subtitle | default: "Fuel For Champions" }}
+      </p>
+      <p class="mt-5 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-xl">
+        {{ page.hero.paragraph | default: "Dietitian-designed, chef-crafted meals that make healthy eating simple and flavorful." }}
+      </p>
+
+      <div class="mt-8 flex gap-3">
+        {%- assign base = page.hero.cta_url -%}
+        {%- assign msg  = page.hero.whatsapp_message | uri_escape -%}
+        {%- if base and msg -%}
+          {%- if base contains 'text=' -%}
+            {%- assign href = base | append: msg -%}
+          {%- elsif base contains '?' -%}
+            {%- assign href = base | append: '&text=' | append: msg -%}
+          {%- else -%}
+            {%- assign href = base | append: '?text=' | append: msg -%}
+          {%- endif -%}
+          <a href="{{ href }}" class="btn-primary">
+            {{ page.hero.cta_text | default: "LET’S TALK" }}
+          </a>
+        {%- endif -%}
+
       </div>
     </div>
-  </section>
-  
+
+    <div class="order-1 md:order-2">
+      <div class="aspect-[4/3] overflow-hidden rounded-md border border-slate-200/50 dark:border-white/10 shadow-md">
+        <img
+          src="{{ page.hero.image | default: '/images/temp-img.png' | relative_url }}"
+          alt="{{ page.hero.image_alt | default: 'Hero' }}"
+          class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>

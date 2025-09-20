@@ -1,0 +1,42 @@
+---
+layout: default
+no_footer: true
+title: Thank You
+---
+
+
+
+<section class="h-lvh max-w-screen-2xl mx-auto relative bg-black bg-opacity-50 sm:bg-transparent text-white">
+  <div class="absolute inset-0 flex flex-col items-center justify-center space-y-5">
+      <!-- Logo -->
+      <div class="w-32 sm:w-36 mx-auto">
+          <a href="/index.html" aria-label="Go to the homepage">
+          </a>
+      </div>
+
+      <!-- Thank You Message -->
+      <div class="px-5 text-center">
+          <p class="text-center uppercase text-2xl font-semibold pb-6 sm:pb-4 editable text-[#919b4a]">
+              Thank you for reaching out to us through our contact form.
+          </p>
+          <p class="text-center px-10 editable pb-8 text-white">
+              We'll be in touch with you as soon as possible.
+          </p>
+          <!-- Contact Links -->
+          <nav class="flex justify-center items-center space-x-8">
+              <a href="tel:+6285939549442" target="_blank" aria-label="Call us at +62 859 3954 9442" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
+                  <i class="fa-solid fa-phone"></i>
+              </a>
+              <a href="mailto:info@dejamaresort.com" target="_blank" aria-label="Email us at info@dejamaresort.com" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
+                  <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/6285939549442?text={{whatsapp-message | replace: ' ', '%20'}}" aria-label="Contact us through WhatsApp" target="_blank" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
+                  <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/dejamaresort/" target="_blank" aria-label="Visit us on Instagram" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+          </nav>
+      </div>
+  </div>
+</section>

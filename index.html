@@ -1,52 +1,93 @@
 ---
 layout: default
 title: Home
+
+hero:
+  title: THE SOLIMANS
+  subtitle: Fuel For Champions
+  paragraph: A health and fitness meal plan business that believes healthy eating doesn’t have to be boring. Dietitian-designed and chef-crafted so you can stay consistent with meals that are delicious, nutritious, and built for your goals.
+  cta_url: "https://wa.me/6282145390784?text="
+  cta_text: "LET’S TALK"
+  whatsapp_message: Hi! I’m interested in learning more about your meal plans. Can you provide more information?
+  secondary_url: "/meal-plan/"
+  secondary_text: "Start your plan"
+  image: "/images/2.jpg"
+  image_alt: "Hero meal"
+
+features:
+  kicker: "Not Just Another"
+  title: "MEAL PLANNER"
+  items:
+    - title: Passion & Expertise
+      paragraph: At The Solimans, we are passionate about helping our customers achieve  their health and fitness goals through delicious, nutritionally balanced meals. Our team of dietitians and chefs work collaboratively to create a menu that is both flavorful and nourishing, ensuring that you don't  have to sacrifice taste for nutrition.
+    - title: 100% natural ingredients
+      paragraph: One of the things that sets The Solimans apart from other meal planners  is our commitment to using natural ingredients. We believe in the  benefits of using whole, unprocessed foods, and do our best to source  our ingredients from local, sustainable sources whenever possible.
+    - title: customer satisfaction
+      paragraph: We are also dedicated to ensuring customer satisfaction. Whether you are following a specific dietary plan or simply looking to improve your  overall health and wellness, we are here to support you every step of  the way. We offer a variety of payment options and are flexible with our delivery and pickup options, making it easy for you to get the meals  you need.
+  images:
+    - image: "/images/1.jpg"
+    - image: "/images/4.jpg"
+    - image: "/images/3.jpg"
+
+testimonials:
+  subtitle: "What They Say About"
+  title: "The Solimans"
+  testimonials_list:
+    - highlight: "Amazing and healthy place!"
+      paragraph: "Amazing and healthy place! You can check macros and kcal on the menu and order your individual meal plan, delivered straight to you. Highly recommended."
+      name: "Sonia Szuba"
+    - highlight: "Tasty and love the flavors!"
+      paragraph: "I find your meals tasty and love the flavors. It's nice!"
+      name: "Gracia Olivier"
+    - highlight: "It's fantastic!"
+      paragraph: "I've just had my third meal, and I think it's fantastic. I'm really enjoying the taste. Keep up the great work—so far, you've got a very happy customer."
+      name: "Misja Alblas"
+
+banner:
+  title: "HEALTHY FOOD"
+  subtitle: "Should Be Inclusive and Accessible to Everyone"
+  image: "/images/banner.jpg"
+  button_url: "/meal-plan/"
+  button_text: "START YOUR JOURNEY"
+
+partners:
+  kicker: "We Believe in Cooperation"
+  title: "OUR PARTNERS"
+  paragraph: "We’re partnering with local businesses to bring you perks and add-on services that complement your plan."
+  items:
+    - logo: "/images/soma-fight-club-partner-of-the-solimans.png"
+      name: "SOMA Fight Club"
+      discount: "25% off"
+    - logo: "/images/alma-partner-of-the-solimans.png"
+      name: "Alma"
+      discount: "20% off"
+    - logo: "/images/logo3.png"
+      name: "Business 3"
+      discount: "25% off"
+    - logo: "/images/logo4.png"
+      name: "Business 4"
+      discount: "10% off"
+
+contact:
+  to_email: garyhtg26@gmail.com
+  subject: "New inquiry from website"
+  next: "/thank-you/"           
+  captcha: false
+  fields:
+    name: Name
+    email: Email
+    whatsapp: WhatsApp number
+    message: Message
+  submit_text: SUBMIT
+  initial_country: id         
+  map_src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.6113006406413!2d115.1144192!3d-8.633262199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23959ab39cdb3%3A0x25e30b8410bb85e5!2sThe%20Solimans!5e0!3m2!1sen!2sid!4v1746164418841!5m2!1sen!2sid"
+  map_height: 400
+
 ---
 
-{% assign home = site.data.home %}
-
-{% include hero.html
-  title=home.hero.title
-  subtitle=home.hero.subtitle
-  paragraph=home.hero.paragraph
-  cta_url=home.hero.cta_url
-  cta_text=home.hero.cta_text
-  secondary_url=home.hero.secondary_url
-  secondary_text=home.hero.secondary_text
-  image=home.hero.image
-  image_alt=home.hero.image_alt
-%}
-
-
-{% include features.html
-  kicker=home.features.kicker
-  title=home.features.title
-  items=home.features.items
-  images=home.features.images
-%}
-
-{% assign t = home.testimonials %}
-{% include testimonials.html
-  kicker=t.subtitle
-  title=t.title
-  items=t.testimonials_list
-%}
-
-{% include image-banner.html
-  title=home.banner.title
-  subtitle=home.banner.subtitle
-  image=home.banner.image
-  button_url=home.banner.button_url
-  button_text=home.banner.button_text
-%}
-
-{% include partners.html
-  kicker=home.partners.kicker
-  title=home.partners.title
-  paragraph=home.partners.paragraph
-  items=home.partners.items
-%}
-
-{% include contact-with-map.html
-  map_src=home.contact.map_src
-%}
+{% include hero.html %}
+{% include features.html %}
+{% include testimonials.html %}
+{% include image-banner.html %}
+{% include partners.html %}
+{% include contact-with-map.html %}

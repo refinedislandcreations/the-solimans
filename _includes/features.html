@@ -8,8 +8,7 @@
       </p>
 
       <div id="{{ page.features.id | default: 'features-slider' }}"
-           class="relative mt-6 h-full rounded-md overflow-hidden border border-gray-800/40 dark:border-white/10"
-           data-autoplay="{{ page.features.autoplay | default: '' }}">
+           class="relative mt-6 h-full rounded-md overflow-hidden border border-gray-800/40 dark:border-white/10">
         <!-- slides container -->
         <div class="relative aspect-[4/3] md:aspect-auto md:h-full bg-black">
           {% if page.features.images and page.features.images.size > 0 %}
@@ -17,19 +16,18 @@
               <img data-slide
                    src="{{ im.image | default: im | relative_url }}"
                    alt="{{ im.image_alt | default: 'Slide ' | append: forloop.index }}"
-                   class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500
-                          opacity-0 pointer-events-none {% if forloop.first %}opacity-100 pointer-events-auto{% endif %}">
+                   class="absolute inset-0 h-full w-full object-cover">
             {% endfor %}
           {% else %}
             <img data-slide src="{{ '/images/temp-img.png' | relative_url }}" alt="Slide"
-                 class="absolute inset-0 h-full w-full object-cover opacity-100">
+                 class="absolute inset-0 h-full w-full object-cover">
           {% endif %}
         </div>
 
         {% if page.features.images and page.features.images.size > 1 %}
-          <!-- full-height arrows -->
+          <!-- arrows -->
           <button type="button" data-prev
-            class="absolute inset-y-0 left-0 w-14 grid place-items-center
+            class="cursor-pointer absolute inset-y-0 left-0 w-14 z-30 grid place-items-center
                    bg-gradient-to-r from-black/35 to-transparent hover:from-black/55 transition"
             aria-label="Previous slide">
             <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -38,7 +36,7 @@
             </svg>
           </button>
           <button type="button" data-next
-            class="absolute inset-y-0 right-0 w-14 grid place-items-center
+            class="cursor-pointer absolute inset-y-0 right-0 w-14 z-30 grid place-items-center
                    bg-gradient-to-l from-black/35 to-transparent hover:from-black/55 transition"
             aria-label="Next slide">
             <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -48,9 +46,9 @@
           </button>
 
           <!-- dots -->
-          <div class="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-30 flex gap-2">
             {% for _ in page.features.images %}
-              <span data-dot class="h-1.5 w-1.5 rounded-full border border-[#919b4a] bg-white/10"></span>
+              <span data-dot class="h-1.5 w-1.5 rounded-full border border-[#919b4a] bg-white/10 cursor-pointer"></span>
             {% endfor %}
           </div>
         {% endif %}
@@ -69,42 +67,95 @@
   </div>
 </section>
 
+<style>
+  /* section reveal */
+  #features{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease}
+  @media (prefers-reduced-motion:no-preference){
+    #features.is-hidden{opacity:0;transform:translateY(16px)}
+  }
+
+  /* slide animations & layering */
+  #features [data-slide]{opacity:0;transform:translateX(0) scale(1.02);transition:transform .7s ease,opacity .7s ease;will-change:transform,opacity;z-index:1;pointer-events:none}
+  #features [data-slide].slide-active{opacity:1;transform:translateX(0) scale(1);z-index:10;pointer-events:auto}
+  #features [data-slide].from-right{transform:translateX(12%) scale(1.04)}
+  #features [data-slide].from-left {transform:translateX(-12%) scale(1.04)}
+  #features [data-slide].to-left   {transform:translateX(-12%) scale(1.04);opacity:0}
+  #features [data-slide].to-right  {transform:translateX(12%)  scale(1.04);opacity:0}
+</style>
+
 <script>
 (function(){
+  const sec  = document.getElementById('features');
   const root = document.getElementById("{{ page.features.id | default: 'features-slider' }}");
   if (!root) return;
+
+  // section reveal
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && sec){
+    sec.classList.add('is-hidden');
+    const ioSec = new IntersectionObserver((ents, obs)=>{
+      ents.forEach(e=>{
+        if(e.isIntersecting){ sec.classList.remove('is-hidden'); obs.unobserve(sec); }
+      });
+    }, {threshold:.15});
+    ioSec.observe(sec);
+  }
+
+  // slider
   const slides = Array.from(root.querySelectorAll('[data-slide]'));
   if (!slides.length) return;
 
-  let i = 0, itv = null;
+  // init slides
+  slides.forEach((el, idx) => {
+    if (idx === 0) el.classList.add('slide-active');
+    else el.classList.add('from-right');
+  });
+
+  let i = 0, timer = null;
   const dots = Array.from(root.querySelectorAll('[data-dot]'));
   const prev = root.querySelector('[data-prev]');
   const next = root.querySelector('[data-next]');
-  const autoplayMs = parseInt(root.dataset.autoplay || '', 10);
+  const AUTOPLAY = 3000;
 
-  const show = (n) => {
-    i = (n + slides.length) % slides.length;
-    slides.forEach((el, idx) => {
-      el.classList.toggle('opacity-100', idx === i);
-      el.classList.toggle('pointer-events-auto', idx === i);
-      el.classList.toggle('opacity-0', idx !== i);
-      el.classList.toggle('pointer-events-none', idx !== i);
-    });
+  function paintDots(){
     dots.forEach((d, idx) => d.style.backgroundColor = idx === i ? '#919b4a' : 'transparent');
-  };
-
-  prev?.addEventListener('click', () => show(i - 1));
-  next?.addEventListener('click', () => show(i + 1));
-  dots.forEach((d, idx) => d.addEventListener('click', () => show(idx)));
-
-  if (!isNaN(autoplayMs) && autoplayMs > 0) {
-    const start = () => itv = setInterval(() => show(i + 1), autoplayMs);
-    const stop  = () => { if (itv) clearInterval(itv); itv = null; };
-    root.addEventListener('mouseenter', stop);
-    root.addEventListener('mouseleave', start);
-    start();
   }
 
-  show(0);
+  function goTo(target){
+    const n = (target + slides.length) % slides.length;
+    if (n === i) return;
+
+    const dir = n > i || (i === slides.length-1 && n === 0) ? 1 : -1;
+    const cur = slides[i];
+    const nxt = slides[n];
+
+    nxt.classList.remove('to-left','to-right','from-left','from-right','slide-active');
+    nxt.classList.add(dir>0 ? 'from-right' : 'from-left');
+    void nxt.offsetWidth; // reflow
+
+    cur.classList.remove('from-left','from-right');
+    cur.classList.add(dir>0 ? 'to-left' : 'to-right');
+    nxt.classList.remove('from-right','from-left');
+    nxt.classList.add('slide-active');
+
+    i = n;
+    paintDots();
+  }
+
+  const goNext = () => goTo(i + 1);
+  const goPrev = () => goTo(i - 1);
+
+  prev && prev.addEventListener('click', () => { goPrev(); restart(); });
+  next && next.addEventListener('click', () => { goNext(); restart(); });
+  dots.forEach((d, idx) => d.addEventListener('click', () => { goTo(idx); restart(); }));
+
+  function start(){ stop(); timer = setInterval(goNext, AUTOPLAY); }
+  function stop(){ if (timer) clearInterval(timer); timer = null; }
+
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  paintDots();
+  start();
 })();
 </script>

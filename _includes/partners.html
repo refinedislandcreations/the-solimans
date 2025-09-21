@@ -1,4 +1,4 @@
-<section class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+<section class="max-w-6xl mx-auto px-6 md:px-10 py-16" id="partners">
   <h2 class="text-xl">{{ page.partners.kicker | default: "We Believe in Cooperation" }}</h2>
   <p class="font-display text-4xl md:text-5xl leading-tight">
     {{ page.partners.title | default: "OUR PARTNERS" }}
@@ -14,15 +14,32 @@
   <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-6">
     {% if partners and partners.size > 0 %}
       {% for p in partners limit:4 %}
-        <div class="rounded-2xl border border-slate-200/60 bg-white/70 backdrop-blur p-6 text-center shadow-sm dark:bg-white/5 dark:border-white/10">
+        <div
+          data-reveal
+          tabindex="0"
+          class="group cursor-pointer border-2 border-slate-200/60 bg-white/70 backdrop-blur p-6 text-center shadow-sm
+                 dark:bg-white/5 dark:border-[#919b4a]
+                 transition-all duration-500 ease-out
+                 opacity-0 translate-y-4
+                 hover:-translate-y-1 hover:shadow-xl hover:border-[#919b4a] focus:-translate-y-1 focus:shadow-xl focus:border-[#919b4a]
+                 focus:outline-none focus:ring-2 focus:ring-[#919b4a]/50">
           {% if p.logo %}
-            <img src="{{ p.logo | relative_url }}" class="mx-auto h-12 object-contain" alt="{{ p.name | escape }}">
+            <img src="{{ p.logo | relative_url }}"
+                 class="mx-auto h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+                 alt="{{ p.name | escape }}">
           {% else %}
             <div class="mx-auto h-12 w-12 rounded bg-slate-200/60 dark:bg-white/10"></div>
           {% endif %}
-          <h4 class="mt-3 font-semibold">{{ p.name | default: "Partner" }}</h4>
+
+          <h4 class="mt-3 font-bold transition-colors duration-300 group-hover:text-[#919b4a]">
+            {{ p.name | default: "Partner" }}
+          </h4>
+
+          <!-- underline animates on hover/focus -->
+          <span class="mx-auto mt-1 block h-0.5 w-0 bg-[#919b4a] transition-[width] duration-300 group-hover:w-10"></span>
+
           {% if p.discount %}
-            <p class="text-sm text-[#919b4a] font-extrabold mt-1">{{ p.discount }}</p>
+            <p class="text-sm text-[#919b4a] font-black mt-2">{{ p.discount }}</p>
           {% endif %}
         </div>
       {% endfor %}
@@ -31,3 +48,32 @@
     {% endif %}
   </div>
 </section>
+
+<script>
+(function(){
+  const cards = document.querySelectorAll('#partners [data-reveal]');
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!cards.length) return;
+
+  if (reduce) {
+    cards.forEach(el => el.classList.remove('opacity-0','translate-y-4'));
+    return;
+  }
+
+  // scroll reveal: fade + slide-up with small stagger
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.remove('opacity-0','translate-y-4');
+        e.target.classList.add('opacity-100','translate-y-0');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+  cards.forEach((el, i) => {
+    el.style.transitionDelay = (i * 90) + 'ms';
+    io.observe(el);
+  });
+})();
+</script>

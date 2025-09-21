@@ -1,22 +1,74 @@
-<section class="max-w-6xl mx-auto px-6 md:px-10 py-10">
-  <div class="relative rounded-md overflow-hidden border border-slate-200/50 dark:border-white/10">
-    <img
-      src="{{ page.banner.image | default: '/images/banner.jpg' | relative_url }}"
-      class="w-full h-[36rem] object-cover"
-      alt="{{ page.banner.image_alt | default: '' }}" />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/0"></div>
-    <div class="absolute inset-0 p-8 md:p-14 flex flex-col justify-end">
-      <h3 class="font-display text-4xl md:text-5xl text-white">
+<section id="image-banner" class="py-10 sm:py-16 lg:py-24">
+  <div id="image-banner-bg"
+       class="relative min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-12 xl:px-20 overflow-hidden"
+       style="background-image: url('{{ page.banner.image | default: `/images/banner.jpg` | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- overlay for readability -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/10"></div>
+
+    <!-- content -->
+    <div class="relative max-w-6xl w-full mx-auto">
+      <h3 data-reveal class="font-display text-white text-4xl md:text-5xl opacity-0 translate-y-4 transition-all duration-700 ease-out">
         {{ page.banner.title | default: "HEALTHY FOOD" }}
       </h3>
-      <p class="text-white/90 text-xl md:text-2xl">
+      <p data-reveal class="font-semibold text-white/90 text-4xl md:text-2xl mt-1 opacity-0 translate-y-4 transition-all duration-700 ease-out">
         {{ page.banner.subtitle | default: "Should Be Inclusive and Accessible to Everyone" }}
       </p>
+
       {% if page.banner.button_url %}
-        <a href="{{ page.banner.button_url }}" class="btn-primary mt-6 w-max">
+        <a data-reveal href="{{ page.banner.button_url }}"
+           class="btn-primary mt-6 inline-flex items-center gap-2 opacity-0 translate-y-4 transition-all duration-700 ease-out hover:-translate-y-0.5">
           {{ page.banner.button_text | default: "START YOUR JOURNEY" }}
         </a>
       {% endif %}
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  const sec = document.getElementById('image-banner');
+  const bg  = document.getElementById('image-banner-bg');
+  if (!sec || !bg) return;
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reveal
+  const reveals = sec.querySelectorAll('[data-reveal]');
+  if (reveals.length){
+    if (reduce){
+      reveals.forEach(el => el.classList.remove('opacity-0','translate-y-4'));
+    } else {
+      const io = new IntersectionObserver((entries, obs)=>{
+        entries.forEach(e=>{
+          if (e.isIntersecting){
+            reveals.forEach((el, i)=>{
+              el.style.transitionDelay = (i*100)+'ms';
+              el.classList.remove('opacity-0','translate-y-4');
+              el.classList.add('opacity-100','translate-y-0');
+            });
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      io.observe(sec);
+    }
+  }
+
+  // extra parallax (aman di iOS): geser background-position saat scroll
+  if (!reduce){
+    let ticking = false;
+    function update(){
+      const rect = bg.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      const centerOffset = (rect.top + rect.height/2) - (vh/2);
+      const shift = Math.max(-150, Math.min(150, centerOffset * 0.15));
+      bg.style.backgroundPosition = `center calc(50% + ${shift}px)`;
+      ticking = false;
+    }
+    function onScroll(){ if (!ticking){ requestAnimationFrame(update); ticking = true; } }
+    update();
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll);
+  }
+})();
+</script>

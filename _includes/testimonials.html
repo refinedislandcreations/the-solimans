@@ -7,8 +7,14 @@
   <div class="mt-8 grid md:grid-cols-3 gap-6">
     {% if page.testimonials.testimonials_list and page.testimonials.testimonials_list.size > 0 %}
       {% for t in page.testimonials.testimonials_list limit:3 %}
-        <article class="border border-slate-200/60 bg-white/70 backdrop-blur p-6 shadow-sm dark:bg-white/5 dark:border-white/10">
-          <div class="text-lime-500 text-4xl font-extrabold">“</div>
+        <article
+          data-reveal
+          class="group border-2 border-slate-200/60 bg-white/70 backdrop-blur p-6 shadow-sm
+                 dark:bg-white/5 dark:border-[#919b4a]
+                 transition-all duration-500 ease-out
+                 opacity-0 translate-y-6
+                 hover:-translate-y-1 hover:shadow-xl hover:border-[#a4b35a] hover:bg-white/80 dark:hover:bg-white/10">
+          <div class="text-[#919b4a] text-4xl font-extrabold transition-transform duration-300 group-hover:scale-110">“</div>
           {% if t.highlight %}
             <p class="italic mt-2 font-semibold text-slate-800 dark:text-slate-200">{{ t.highlight }}</p>
           {% endif %}
@@ -21,3 +27,31 @@
     {% endif %}
   </div>
 </section>
+
+<script>
+(function(){
+  const cards = document.querySelectorAll('[data-reveal]');
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!cards.length) return;
+
+  if (reduce) {
+    cards.forEach(el => el.classList.remove('opacity-0','translate-y-6'));
+    return;
+  }
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.remove('opacity-0','translate-y-6');
+        e.target.classList.add('opacity-100','translate-y-0');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+
+  cards.forEach((el, i) => {
+    el.style.transitionDelay = (i * 80) + 'ms'; // stagger
+    io.observe(el);
+  });
+})();
+</script>

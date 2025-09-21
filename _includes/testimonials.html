@@ -7,10 +7,10 @@
   <div class="mt-8 grid md:grid-cols-3 gap-6">
     {% if page.testimonials.testimonials_list and page.testimonials.testimonials_list.size > 0 %}
       {% for t in page.testimonials.testimonials_list limit:3 %}
-        <article class="rounded-2xl border border-slate-200/60 bg-white/70 backdrop-blur p-6 shadow-sm dark:bg-white/5 dark:border-white/10">
-          <div class="text-lime-500 text-2xl">“</div>
+        <article class="border border-slate-200/60 bg-white/70 backdrop-blur p-6 shadow-sm dark:bg-white/5 dark:border-white/10">
+          <div class="text-lime-500 text-4xl font-extrabold">“</div>
           {% if t.highlight %}
-            <p class="mt-2 font-semibold text-slate-800 dark:text-slate-200">{{ t.highlight }}</p>
+            <p class="italic mt-2 font-semibold text-slate-800 dark:text-slate-200">{{ t.highlight }}</p>
           {% endif %}
           <p class="mt-2 text-slate-600 dark:text-slate-300">{{ t.paragraph | default: "Great!" }}</p>
           <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">– {{ t.name | default: "Customer" }}</p>

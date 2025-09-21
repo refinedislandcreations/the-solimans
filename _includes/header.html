@@ -103,7 +103,7 @@
     const saved=localStorage.getItem('theme'), prefersDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
     if((saved==='dark')||(!saved&&prefersDark)) root.classList.add('dark');
     function sync(){ const d=root.classList.contains('dark'); sun?.classList.toggle('hidden',d); moon?.classList.toggle('hidden',!d); }
-    sync(); btn?.addEventListener('click',()=>{ const d=!root.classList.contains('dark'); root.classList.toggle('dark',d); localStorage.setItem('theme',d?'dark':'light'); sync(); });
+    sync(); btn?.addEventListener('click',()=>{ const d=!root.classList.contains('dark'); root.classList.toggle('dark',d); localStorage.setItem('theme',d?'dark':'dark'); sync(); });
 
     // add safe bottom padding so content not hidden behind mobile nav
     const bar=document.getElementById('mobile-nav');

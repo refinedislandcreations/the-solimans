@@ -1,0 +1,460 @@
+categories:
+  - name: "Breakfast"
+  - name: "Wraps & Sandwiches"
+  - name: "Pasta & Rice"
+  - name: "Vegan Meals"
+  - name: "High Protein Low Carbs"
+  - name: "Desserts"
+  - name: "Protein Shakes & Juices"
+
+dishes:
+  - name: "The Solimans Omelette"
+    category: "Breakfast"
+    price: 65K
+    calories: 507
+    protein: 27g
+    carbs: 23g
+    fat: 43g
+    ingredients:
+      - Egg
+      - Spinach
+      - Mozzarella
+      - Chives
+      - Beef sausage
+      - Mushroom
+      - Green pepper
+      - Sourdough bread (1 pc)
+    image: "/images/temp-img.png"
+    alt: "The Solimans Omelette"
+  - name: "Keto Omelette"
+    category: "Breakfast"
+    price: 90K
+    calories: 963
+    protein: 55g
+    carbs: 17g
+    fat: 75g
+    ingredients:
+      - Egg
+      - Cooking cream
+      - Cheddar cheese
+      - Butter
+      - Red pepper
+      - Spinach
+      - Mushrooms
+      - Beef bacon
+      - Avocado
+    image: "/images/temp-img.png"
+    alt: "Keto Omelette"
+  - name: "Greek Yoghurt Bowl"
+    category: "Breakfast"
+    price: 95K
+    calories: 629
+    protein: 21g
+    carbs: 53g
+    fat: 37g
+    ingredients:
+      - Greek yoghurt (200g)
+      - Granola
+      - Strawberry
+      - Blueberry
+      - Walnut
+      - Maple syrup
+    image: "/images/temp-img.png"
+    alt: "Greek Yoghurt Bowl"
+  - name: "Mango Chia Overnight Oats"
+    category: "Breakfast"
+    price: 60K
+    calories: 449
+    protein: 9g
+    carbs: 65g
+    fat: 27g
+    ingredients:
+      - Oats
+      - Yoghurt
+      - Protein powder
+      - Honey
+      - Almond
+      - Oat milk
+      - Mango
+      - Chia seed
+      - Mint
+    image: "/images/temp-img.png"
+    alt: "Mango Chia Overnight Oats"
+  - name: "Dark Choco Protein Overnight Oats"
+    category: "Breakfast"
+    price: 95K
+    calories: 578
+    protein: 18g
+    carbs: 74g
+    fat: 30g
+    ingredients:
+      - Oats
+      - Yoghurt
+      - Protein powder
+      - Cacao powder
+      - Honey
+      - Vanilla
+      - Oat milk
+      - Strawberry
+      - Blueberry
+      - Dark chocolate
+      - Mint
+    image: "/images/temp-img.png"
+    alt: "Dark Choco Protein Overnight Oats"
+  - name: "Chicken Mozzarella Wrap"
+    category: "Wraps & Sandwiches"
+    price: 85K
+    calories: 803
+    protein: 67g
+    carbs: 64g
+    fat: 33g
+    ingredients:
+      - Tortilla wrap
+      - Chicken breast
+      - Mozzarella
+      - Pepper red
+      - Pepper green
+      - Onions
+      - Cassava chips
+      - Salsa
+      - Garlic sauce
+    image: "/images/temp-img.png"
+    alt: "Chicken Mozzarella Wrap"
+  - name: "Chicken Shawarma"
+    category: "Wraps & Sandwiches"
+    price: 70K
+    calories: 800
+    protein: 61g
+    carbs: 58g
+    fat: 39g
+    ingredients:
+      - Tortilla wrap
+      - Chicken breast
+      - Tomato
+      - Cucumber pickles
+      - Parsley
+      - Onions
+      - Salsa
+      - Cassava chips
+      - Garlic sauce
+    image: "/images/temp-img.png"
+    alt: "Chicken Shawarma"
+  - name: "Chicken Cheddar Wrap"
+    category: "Wraps & Sandwiches"
+    price: 95K
+    calories: 823
+    protein: 67g
+    carbs: 66g
+    fat: 33g
+    ingredients:
+      - Tortilla wrap
+      - Chicken breast
+      - Cheddar cheese
+      - Baby romaine lettuce
+      - Tomato
+      - Onions
+      - Cassava chips
+      - Salsa
+    image: "/images/temp-img.png"
+    alt: "Chicken Cheddar Wrap"
+  - name: "Californian Burrito"
+    category: "Wraps & Sandwiches"
+    price: 90K
+    calories: 927
+    protein: 35g
+    carbs: 81g
+    fat: 51g
+    ingredients:
+      - Tortilla wrap
+      - Minced beef
+      - Red & green peppers
+      - Onion
+      - Spinach
+      - Corn
+      - Kidney beans
+      - Red rice
+      - Mozzarella
+      - Garlic sauce
+      - Salsa
+      - Guacamole
+      - Cassava chips
+    image: "/images/temp-img.png"
+    alt: "Californian Burrito"
+  - name: "Avo Chicken Pesto Baguette"
+    category: "Wraps & Sandwiches"
+    price: 80K
+    calories: 768
+    protein: 64g
+    carbs: 64g
+    fat: 27g
+    ingredients:
+      - Sourdough baguette (half)
+      - Avocado
+      - Chicken breast
+      - Pesto sauce
+      - Mozzarella
+      - Arugula
+    image: "/images/temp-img.png"
+    alt: "Avo Chicken Pesto Baguette"
+  - name: "Salmon Zoodle Pasta"
+    category: "Pasta & Rice"
+    price: 140K
+    calories: 605
+    protein: 25g
+    carbs: 58g
+    fat: 37g
+    ingredients:
+      - Fettucine pasta
+      - Salmon
+      - Zucchini
+      - Tomato cherry
+      - Olive oil
+      - Oregano
+    image: "/images/temp-img.png"
+    alt: "Salmon Zoodle Pasta"
+  - name: "Salmon Teriyaki"
+    category: "Pasta & Rice"
+    price: 135K
+    calories: 611
+    protein: 27g
+    carbs: 56g
+    fat: 28g
+    ingredients:
+      - Salmon
+      - Red rice
+      - Teriyaki sauce
+      - Avocado
+      - Edamame
+    image: "/images/temp-img.png"
+    alt: "Salmon Teriyaki"
+  - name: "Chicken Cashew"
+    category: "Pasta & Rice"
+    price: 85K
+    calories: 712
+    protein: 28g
+    carbs: 55g
+    fat: 30g
+    ingredients:
+      - Chicken breast
+      - Red rice
+      - Cashew nut
+      - Green beans
+      - Broccoli
+    image: "/images/temp-img.png"
+    alt: "Chicken Cashew"
+  - name: "Fit Nasi Goreng"
+    category: "Pasta & Rice"
+    price: 80K
+    calories: 713
+    protein: 25g
+    carbs: 50g
+    fat: 35g
+    ingredients:
+      - Chicken breast
+      - Red rice
+      - Cabbage red
+      - Corn
+      - Green peas
+      - Carrot
+      - Egg
+      - Baby romaine lettuce
+      - Tomato
+      - Cucumber
+    image: "/images/temp-img.png"
+    alt: "Fit Nasi Goreng"
+  - name: "Beef Stir Fry"
+    category: "Pasta & Rice"
+    price: 120K
+    calories: 535
+    protein: 19g
+    carbs: 56g
+    fat: 19g
+    ingredients:
+      - Red rice
+      - Beef tenderloin
+      - Carrot
+      - Onions
+      - Broccoli
+    image: "/images/temp-img.png"
+    alt: "Beef Stir Fry"
+  - name: "Pasta Pesto Vegan Chicken"
+    category: "Vegan Meals"
+    price: 80K
+    calories: 759
+    protein: 23g
+    carbs: 69g
+    fat: 69g
+    ingredients:
+      - Fettucine pasta
+      - Vegan chicken
+      - Broccoli
+      - Tomato cherry
+      - Pesto sauce
+    image: "/images/temp-img.png"
+    alt: "Pasta Pesto Vegan Chicken"
+  - name: "Tempeh Stir Fry Rice"
+    category: "Vegan Meals"
+    price: 75K
+    calories: 709
+    protein: 29g
+    carbs: 41g
+    fat: 41g
+    ingredients:
+      - Tempeh
+      - Red rice
+      - Carrot
+      - Onions
+      - Broccoli
+    image: "/images/temp-img.png"
+    alt: "Tempeh Stir Fry Rice"
+  - name: "Tempeh Caramelized Wrap"
+    category: "Vegan Meals"
+    price: 75K
+    calories: 909
+    protein: 47g
+    carbs: 47g
+    fat: 47g
+    ingredients:
+      - Tempeh
+      - Tortilla wrap
+      - Onion red
+      - Baby romaine lettuce
+      - Tomato
+      - Cucumber
+      - Salsa
+      - Cassava chips
+    image: "/images/temp-img.png"
+    alt: "Tempeh Caramelized Wrap"
+  - name: "Vegan Solimans Salad"
+    category: "Vegan Meals"
+    price: 105K
+    calories: 788
+    protein: 45g
+    carbs: 44g
+    fat: 48g
+    ingredients:
+      - Tempeh
+      - Tofu
+      - Baby romaine lettuce
+      - Asparagus
+      - Pineapple
+      - Avocado
+      - Tomato cherry
+      - Olives
+      - Red & green pepper
+      - Walnut
+      - Lemon dressing
+    image: "/images/temp-img.png"
+    alt: "Vegan Solimans Salad"
+  - name: "Vegan Chicken Cashew"
+    category: "Vegan Meals"
+    price: 75K
+    calories: 692
+    protein: 28g
+    carbs: 63g
+    fat: 37g
+    ingredients:
+      - Vegan chicken
+      - Cashew nuts
+      - Green beans
+      - Red rice
+      - Broccoli
+    image: "/images/temp-img.png"
+    alt: "Vegan Chicken Cashew"
+  - name: "Tuna Avo Mixed"
+    category: "High Protein Low Carbs"
+    price: 100K
+    calories: 581
+    protein: 34g
+    carbs: 28g
+    fat: 37g
+    ingredients:
+      - Tuna can
+      - Lime
+      - Shallots
+      - Coriander
+      - Red pepper
+      - Avocado
+      - Tomato cherry
+      - Spring onion
+      - Olive oil
+    image: "/images/temp-img.png"
+    alt: "Tuna Avo Mixed"
+  - name: "Grilled Barramundi with Tabbouleh"
+    category: "High Protein Low Carbs"
+    price: 120K
+    calories: 398
+    protein: 35g
+    carbs: 33g
+    fat: 14g
+    ingredients:
+      - Barramundi
+      - Quinoa
+      - Parsley
+      - Mint
+      - Tomato
+      - Onions
+      - Lemon
+      - Pomegranate jus
+      - Olive oil
+    image: "/images/temp-img.png"
+    alt: "Grilled Barramundi with Tabbouleh"
+  - name: "Chicken Tawook with Baladi"
+    category: "High Protein Low Carbs"
+    price: 90K
+    calories: 841
+    protein: 74g
+    carbs: 17g
+    fat: 53g
+    ingredients:
+      - Chicken breast
+      - Onions
+      - Tomato
+      - Cucumber
+      - Parsley
+      - Lemon
+      - Olive oil
+      - Coriander
+      - Tahini dressing
+      - Garlic sauce
+    image: "/images/temp-img.png"
+    alt: "Chicken Tawook with Baladi"
+  - name: "Mie Goreng Shirataki"
+    category: "High Protein Low Carbs"
+    price: 90K
+    calories: 640
+    protein: 73g
+    carbs: 33g
+    fat: 24g
+    ingredients:
+      - Shirataki noodles
+      - Egg
+      - Carrot
+      - Chicken breast
+      - Cabbage white
+      - Leeks
+      - Sayur hijau
+      - Napa cabbage
+      - Baby romaine lettuce
+      - Tomato
+      - Cucumber
+    image: "/images/temp-img.png"
+    alt: "Mie Goreng Shirataki"
+  - name: "Chicken Cashew with Cauli Rice"
+    category: "High Protein Low Carbs"
+    price: 90K
+    calories: 613
+    protein: 62g
+    carbs: 26g
+    fat: 29g
+    ingredients:
+      - Chicken breast
+      - Cashew nuts
+      - Green beans
+      - Broccoli
+      - Cauliflower
+      - Carrot
+      - Onions
+      - Green peas
+    image: "/images/temp-img.png"
+    alt: "Chicken Cashew with Cauli Rice"

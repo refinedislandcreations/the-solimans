@@ -1,9 +1,9 @@
 <header class="sticky top-0 z-30 border-b border-slate-200/20 bg-white/70 dark:bg-neutral-950/70 backdrop-blur">
   {% assign current      = page.url | relative_url %}
   {% assign href_home    = '/' | relative_url %}
-  {% assign href_meal    = '/meal-plan/' | relative_url %}
-  {% assign href_about   = '/about/' | relative_url %}
-  {% assign href_contact = '/contact/' | relative_url %}
+  {% assign href_meal    = '/meal-plan.html' | relative_url %}
+  {% assign href_about   = '/about.html' | relative_url %}
+  {% assign href_contact = '/contact.html' | relative_url %}
 
   <!-- WIDER container + lebih center padding -->
   <div class="w-full max-w-[1440px] mx-auto h-16 px-8 lg:px-16 flex items-center justify-between">
@@ -121,3 +121,7 @@
     window.addEventListener('keydown', e=>{ if(e.key==='Escape' && !drawer.classList.contains('hidden')) closeMenu(); });
   })();
 </script>
+<!-- <script>
+  const current = {{ href_meal | jsonify }};
+  console.log('current:', current);
+</script> -->

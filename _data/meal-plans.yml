@@ -1,0 +1,3162 @@
+categories:
+  - name: balanced
+    description: "Solimans Balanced Menu presents an array of nourishing dishes that cater to diverse dietary preferences. The menu features choices from various cuisines, meticulously prepared to offer a holistic and healthful dining encounter. Ranging from crisp salads and lean protein to savory vegetarian and plant-based options, Solimans Balanced Menu seeks to harmonize flavors while advocating a well-balanced and wholesome dining approach. The menu underscores a dedication to providing options aligning with taste and nutrition, appealing to health-aware individuals and those pursuing a gratifying culinary journey."
+  - name: high protein
+    description: "Discover our High Protein meals, perfect for building and maintaining muscle."
+  - name: vegan
+    description: "Our Vegan meal plans are crafted for plant-based lifestyles."
+  - name: carnivore
+    description: "Satisfy your cravings with our protein-packed Carnivore meals."
+  - name: custom
+    description: "Design your own meal plan with Custom options tailored to you."
+weeks:
+  - week: 1
+    category: "balanced"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "Arabic Breakfast"
+            calories: 738
+            protein: 41g
+            carbs: 58g
+            fat: 38g
+            ingredients:
+              - Egg
+              - Feta
+              - Pita bread
+              - Kidney beans
+              - Falafel
+              - Hummus
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Arabic Breakfast"
+          - name: "Chicken Mozzarella Wrap"
+            calories: 817
+            protein: 66g
+            carbs: 64g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap
+              - Chicken breast
+              - Red pepper
+              - Green onions
+              - Mozzarella
+              - Cassava chips
+              - Salsa
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Chicken Mozzarella Wrap"
+          - name: "Beef Stir Fry"
+            calories: 535
+            protein: 35g
+            carbs: 56g
+            fat: 19g
+            ingredients:
+              - Red rice
+              - Beef tenderloin
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Beef Stir Fry"
+          - name: "Spiral Tuna Pasta"
+            calories: 467
+            protein: 30g
+            carbs: 44g
+            fat: 19g
+            ingredients:
+              - Tuna can
+              - LF mayonnaise
+              - Onion red
+              - Baby romaine lettuce
+              - Spring onion
+              - Olives
+              - Paprika powder
+            image: "/images/temp-img.png"
+            alt: "Spiral Tuna Pasta"
+          - name: "Pumpkin Chicken Mashawi"
+            calories: 662
+            protein: 53g
+            carbs: 54g
+            fat: 26g
+            ingredients:
+              - Chicken leg fillet
+              - Pumpkin
+              - Broccoli
+              - Green beans
+              - Cauliflower
+              - Carrot
+              - Bay leaves
+              - Rosemary
+              - Paprika powder smoked
+            image: "/images/temp-img.png"
+            alt: "Pumpkin Chicken Mashawi"
+      - day: "Tuesday"
+        meals:
+          - name: "Waffle Apple Cinnamon Breakfast"
+            calories: 758
+            protein: 38g
+            carbs: 95g
+            fat: 26g
+            ingredients:
+              - White flour
+              - Egg
+              - Oats
+              - Iso protein
+              - Scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Cream cheese
+              - Apple
+              - Cinnamon
+              - Strawberries
+            image: "/images/temp-img.png"
+            alt: "Waffle Apple Cinnamon Breakfast"
+          - name: "Californian Burrito Wrap"
+            calories: 933
+            protein: 51g
+            carbs: 81g
+            fat: 45g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Lean meat
+              - Pepper red
+              - Garlic sauce
+              - Pepper green
+              - Onions
+              - Spinach
+              - Corn
+              - Kidney beans
+              - Salsa
+              - Guacamole
+              - Cassava chips
+              - Mozzarella
+            image: "/images/temp-img.png"
+            alt: "Californian Burrito Wrap"
+          - name: "Rice Chicken Mashawi"
+            calories: 647
+            protein: 52g
+            carbs: 58g
+            fat: 23g
+            ingredients:
+              - Chicken leg fillet
+              - Red rice
+              - Long beans
+              - Bean sprouts
+              - Local spinach
+              - Garlic
+              - Shallots
+            image: "/images/temp-img.png"
+            alt: "Rice Chicken Mashawi"
+          - name: "Pasta Beef Stir Fry"
+            calories: 629
+            protein: 41g
+            carbs: 69g
+            fat: 21g
+            ingredients:
+              - Fettuccine pasta
+              - Beef tenderloin Indian
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Beef Stir Fry"
+          - name: "Solimans Chicken Burger"
+            calories: 898
+            protein: 50g
+            carbs: 80g
+            fat: 42g
+            ingredients:
+              - Burger bun GF
+              - Tomato
+              - Cucumber
+              - Onions
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Chicken patty
+              - White potato
+            image: "/images/temp-img.png"
+            alt: "Solimans Chicken Burger"
+      - day: "Wednesday"
+        meals:
+          - name: "Egg Lean Meat Wrap Breakfast"
+            calories: 906
+            protein: 60g
+            carbs: 72g
+            fat: 42g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Lean meat
+              - Onions
+              - Egg
+              - Watermelon
+              - Pineapple
+              - Papaya
+              - Salsa
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Egg Lean Meat Wrap Breakfast"
+          - name: "Chicken Shawarma"
+            calories: 730
+            protein: 60g
+            carbs: 55g
+            fat: 30g
+            ingredients:
+              - Chicken breast
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Garlic sauce
+              - Tortilla wrap 1 pcs
+            image: "/images/temp-img.png"
+            alt: "Chicken Shawarma"
+          - name: "Solimans Chicken Satay"
+            calories: 689
+            protein: 63g
+            carbs: 71g
+            fat: 17g
+            ingredients:
+              - White rice
+              - Chicken breast
+              - Peanut sauce
+              - Bean sprouts
+              - Long beans
+              - Local spinach
+              - Lime
+            image: "/images/temp-img.png"
+            alt: "Solimans Chicken Satay"
+          - name: "Salmon Zoodle Pasta"
+            calories: 605
+            protein: 37g
+            carbs: 58g
+            fat: 25g
+            ingredients:
+              - Fettuccine pasta
+              - Zucchini
+              - Salmon
+              - Tomato cherry
+              - Olive oil
+              - Oregano
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Salmon Zoodle Pasta"
+          - name: "Quinoa Honey Chicken"
+            calories: 546
+            protein: 58g
+            carbs: 47g
+            fat: 14g
+            ingredients:
+              - Chicken breast
+              - Quinoa
+              - Onions
+              - Pepper red
+              - Pepper green
+              - Honey
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Quinoa Honey Chicken"
+      - day: "Thursday"
+        meals:
+          - name: "Pancake Non Nutella Breakfast"
+            calories: 718
+            protein: 38g
+            carbs: 83g
+            fat: 26g
+            ingredients:
+              - White flour
+              - Egg
+              - Oats
+              - Iso protein
+              - Scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Hazelnut
+              - Strawberries
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Pancake Non Nutella Breakfast"
+          - name: "Tuna Light Mayo Wrap"
+            calories: 761
+            protein: 44g
+            carbs: 72g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Tuna can
+              - Onion red
+              - Baby romaine lettuce
+              - Tomato
+              - Olives
+              - Cucumber
+              - LF mayonnaise
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Tuna Light Mayo Wrap"
+          - name: "Arabic Beef Kofta"
+            calories: 1013
+            protein: 53g
+            carbs: 90g
+            fat: 49g
+            ingredients:
+              - Beef kofta
+              - White rice
+              - Turmeric powder
+              - Onions
+              - Almonds
+              - Tomato
+              - Cucumber
+              - Onions
+              - Parsley
+              - Garlic
+              - Sauce
+              - Hummus
+            image: "/images/temp-img.png"
+            alt: "Arabic Beef Kofta"
+          - name: "Pad Thai Chicken"
+            calories: 899
+            protein: 77g
+            carbs: 87g
+            fat: 27g
+            ingredients:
+              - Rice noodles
+              - Chicken breast
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Tamarind
+              - Egg
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pad Thai Chicken"
+          - name: "Stuffed Chicken Creamy Corn Sauce"
+            calories: 660
+            protein: 65g
+            carbs: 55g
+            fat: 20g
+            ingredients:
+              - Chicken breast
+              - White potato
+              - Spinach
+              - Mushrooms
+              - Peas green
+              - Carrot
+              - Creamy corn sauce
+              - Garlic
+              - Onions
+            image: "/images/temp-img.png"
+            alt: "Stuffed Chicken Creamy Corn Sauce"
+      - day: "Friday"
+        meals:
+          - name: "Pulled Beef Benny Breakfast"
+            calories: 780
+            protein: 41g
+            carbs: 73g
+            fat: 36g
+            ingredients:
+              - English muffins GF 1 pcs
+              - Beef tenderloin Indian
+              - Avocado
+              - Egg
+              - Demi glace sauce
+              - Tomato cherry
+              - Hollandaise
+              - Cabbage red
+            image: "/images/temp-img.png"
+            alt: "Pulled Beef Benny Breakfast"
+          - name: "Chicken Cheddar Wrap"
+            calories: 829
+            protein: 67g
+            carbs: 66g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Chicken breast
+              - Cheddar cheese
+              - LF mayonnaise
+              - Baby romaine lettuce
+              - Tomato
+              - Onions
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Cheddar Wrap"
+          - name: "Salmon Teriyaki"
+            calories: 611
+            protein: 36g
+            carbs: 56g
+            fat: 27g
+            ingredients:
+              - Red rice
+              - Teriyaki sauce
+              - Avocado
+              - Edamame
+              - Salmon
+            image: "/images/temp-img.png"
+            alt: "Salmon Teriyaki"
+          - name: "Mie Goreng Chicken"
+            calories: 846
+            protein: 81g
+            carbs: 72g
+            fat: 26g
+            ingredients:
+              - Noodles
+              - Egg
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Chicken breast
+              - Napa cabbage
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Chicken"
+          - name: "Black Pepper Beef Steak"
+            calories: 613
+            protein: 38g
+            carbs: 68g
+            fat: 21g
+            ingredients:
+              - Beef tenderloin Indian
+              - Baked white potato
+              - Asparagus
+              - Tomato cherry
+              - Demi glace sauce
+            image: "/images/temp-img.png"
+            alt: "Black Pepper Beef Steak"
+      - day: "Saturday"
+        meals:    
+          - name: "Solimans Pudding Breakfast"
+            calories: 585
+            protein: 21g
+            carbs: 87g
+            fat: 17g
+            ingredients:
+              - Rice cereal
+              - Mango
+              - Strawberries
+              - Almonds
+              - Chia seed
+              - Coconut flakes
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Solimans Pudding Breakfast"
+          - name: "Beef Shawarma Wrap"
+            calories: 700
+            protein: 38g
+            carbs: 56g
+            fat: 36g
+            ingredients:
+              - Beef tenderloin Indian
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Tahini dressing
+              - Tortilla wrap 1 pcs
+            image: "/images/temp-img.png"
+            alt: "Beef Shawarma Wrap"
+          - name: "Mexican Chicken Bowl"
+            calories: 661
+            protein: 63g
+            carbs: 55g
+            fat: 21g
+            ingredients:
+              - Red rice
+              - Chicken breast
+              - Onions
+              - Pepper red
+              - Pepper green
+              - Corn
+              - Kidney beans
+              - Mozzarella
+              - Salsa
+              - Guacamole
+              - Jalapeno
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Mexican Chicken Bowl"
+          - name: "Pasta Pesto Chicken Broccoli"
+            calories: 668
+            protein: 65g
+            carbs: 57g
+            fat: 20g
+            ingredients:
+              - Fettuccine pasta
+              - Chicken breast
+              - Pesto sauce
+              - Broccoli
+              - Tomato cherry
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Pesto Chicken Broccoli"
+          - name: "Grill Snapper Garlic Butter Sauce"
+            calories: 558
+            protein: 39g
+            carbs: 42g
+            fat: 26g
+            ingredients:
+              - Red snapper
+              - Garlic
+              - Butter
+              - Orange
+              - Kale
+              - Quinoa
+              - Lime
+            image: "/images/temp-img.png"
+            alt: "Grill Snapper Garlic Butter Sauce"
+  - week: 2
+    category: "balanced"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "Spanish Omelette Breakfast"
+            calories: 685
+            protein: 39g
+            carbs: 58g
+            fat: 33g
+            ingredients:
+              - Egg
+              - White potato
+              - Onions
+              - Olive oil
+              - Mix lettuce
+              - Tomato cherry
+              - Multigrain bread GF 1 pcs
+              - Tomato
+            image: "/images/temp-img.png"
+            alt: "Spanish Omelette Breakfast"
+          - name: "Chicken Mozzarella Wrap"
+            calories: 817
+            protein: 66g
+            carbs: 64g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Chicken breast
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Mozzarella
+              - Cassava chips
+              - Salsa
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Chicken Mozzarella Wrap"
+          - name: "Chicken Stir Fry"
+            calories: 626
+            protein: 60g
+            carbs: 56g
+            fat: 18g
+            ingredients:
+              - Red rice
+              - Chicken breast
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Stir Fry"
+          - name: "Spiral Tuna Pasta"
+            calories: 467
+            protein: 30g
+            carbs: 44g
+            fat: 19g
+            ingredients:
+              - Tuna can
+              - LF mayonnaise
+              - Onion red
+              - Baby romaine lettuce
+              - Spring onion
+              - Olives
+              - Paprika powder smoke
+              - Gluten-free pasta
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Spiral Tuna Pasta"
+          - name: "Potato Beef Mashawi"
+            calories: 561
+            protein: 40g
+            carbs: 53g
+            fat: 21g
+            ingredients:
+              - Beef tenderloin Indian
+              - Baked white potato
+              - Broccoli
+            image: "/images/temp-img.png"
+            alt: "Potato Beef Mashawi"
+      - day: "Tuesday"
+        meals:
+          - name: "Waffle Peanut Butter Breakfast"
+            calories: 884
+            protein: 46g
+            carbs: 94g
+            fat: 36g
+            ingredients:
+              - White flour
+              - Egg
+              - Oats
+              - Iso protein
+              - Scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Peanut butter
+              - Banana
+              - Almonds
+              - Strawberries
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Waffle Peanut Butter Breakfast"
+          - name: "Californian Burrito Wrap"
+            calories: 933
+            protein: 51g
+            carbs: 81g
+            fat: 45g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Lean meat
+              - Pepper red
+              - Garlic sauce
+              - Pepper green
+              - Onions
+              - Spinach
+              - Corn
+              - Kidney beans
+              - Red rice
+              - Salsa
+              - Guacamole
+              - Cassava chips
+              - Mozzarella
+            image: "/images/temp-img.png"
+            alt: "Californian Burrito Wrap"
+          - name: "Poke Bowl Tuna Mango"
+            calories: 574
+            protein: 42g
+            carbs: 61g
+            fat: 18g
+            ingredients:
+              - Red rice
+              - Corn
+              - Edamame
+              - Carrot
+              - Cabbage red
+              - Cucumber
+              - Tomato cherry
+              - Red radish
+              - Mango
+              - Tuna
+              - Cocktail
+            image: "/images/temp-img.png"
+            alt: "Poke Bowl Tuna Mango"
+          - name: "Pasta Beef Stir Fry"
+            calories: 629
+            protein: 41g
+            carbs: 69g
+            fat: 21g
+            ingredients:
+              - Fettuccine pasta
+              - Beef tenderloin Indian
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Beef Stir Fry"
+          - name: "Chicken Ratatouille"
+            calories: 647
+            protein: 64g
+            carbs: 55g
+            fat: 19g
+            ingredients:
+              - Chicken breast
+              - Baby potato
+              - Pepper red
+              - Pepper green
+              - Zucchini
+              - Eggplant
+              - Tomato
+              - Tomato marinara sauce
+              - Sunflower seeds
+            image: "/images/temp-img.png"
+            alt: "Chicken Ratatouille"
+      - day: "Wednesday"
+        meals:
+          - name: "Mediterranean Breakfast"
+            calories: 803
+            protein: 36g
+            carbs: 50g
+            fat: 51g
+            ingredients:
+              - Egg
+              - Cheddar cheese
+              - Hummus
+              - Carrot
+              - Celery
+              - Cucumber
+              - Tomato cherry
+              - Butter
+              - Multigrain bread GF 1 pcs
+              - Olives
+              - Strawberry jam
+            image: "/images/temp-img.png"
+            alt: "Mediterranean Breakfast"
+          - name: "Chicken Shawarma"
+            calories: 730
+            protein: 60g
+            carbs: 55g
+            fat: 30g
+            ingredients:
+              - Chicken breast
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Garlic sauce
+              - Tortilla wrap 1 pcs
+            image: "/images/temp-img.png"
+            alt: "Chicken Shawarma"
+          - name: "Solimans Chicken Kebab"
+            calories: 855
+            protein: 66g
+            carbs: 87g
+            fat: 27g
+            ingredients:
+              - White rice
+              - Chicken breast
+              - Paprika powder smoke
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Yogurt plain
+              - Mix lettuce
+              - Cashew nut
+              - Cocktail
+              - Pineapple
+            image: "/images/temp-img.png"
+            alt: "Solimans Chicken Kebab"
+          - name: "Salmon Zoodle Pasta"
+            calories: 605
+            protein: 37g
+            carbs: 58g
+            fat: 25g
+            ingredients:
+              - Fettuccine pasta
+              - Zucchini
+              - Salmon
+              - Tomato cherry
+              - Olive oil
+              - Oregano
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Salmon Zoodle Pasta"
+          - name: "Solimans Beef Burger"
+            calories: 929
+            protein: 48g
+            carbs: 83g
+            fat: 45g
+            ingredients:
+              - Burger bun GF
+              - Tomato
+              - Cucumber
+              - Onion red
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Beef patty
+              - Baked baby potato
+            image: "/images/temp-img.png"
+            alt: "Solimans Beef Burger"
+      - day: "Thursday"
+        meals:
+          - name: "Pancake Cream Cheese Breakfast"
+            calories: 1095
+            protein: 38g
+            carbs: 67g
+            fat: 75g
+            ingredients:
+              - Almond flour
+              - Coconut flour
+              - Baking powder
+              - Butter
+              - Egg
+              - Soy milk
+              - Cream cheese
+              - Strawberry jam
+              - Blueberry jam
+              - Granola
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Pancake Cream Cheese Breakfast"
+          - name: "Tuna Light Mayo Wrap"
+            calories: 761
+            protein: 44g
+            carbs: 72g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Tuna can
+              - Onion red
+              - Baby romaine lettuce
+              - Tomato
+              - Olives
+              - Cucumber
+              - LF mayonnaise
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Tuna Light Mayo Wrap"
+          - name: "Chicken Cashew"
+            calories: 712
+            protein: 60g
+            carbs: 55g
+            fat: 28g
+            ingredients:
+              - Chicken breast
+              - Cashew nut
+              - Green beans
+              - Red rice
+              - Broccoli
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Cashew"
+          - name: "Pad Thai Chicken"
+            calories: 899
+            protein: 77g
+            carbs: 87g
+            fat: 27g
+            ingredients:
+              - Rice noodles
+              - Chicken breast
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Tamarind
+              - Egg
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pad Thai Chicken"
+          - name: "Grill Salmon Creamy Pesto"
+            calories: 547
+            protein: 35g
+            carbs: 41g
+            fat: 27g
+            ingredients:
+              - Salmon
+              - White potato
+              - Asparagus
+              - Tomato cherry
+              - Cooking cream
+              - Milk
+              - Bay leaves
+              - Creamy pesto sauce
+            image: "/images/temp-img.png"
+            alt: "Grill Salmon Creamy Pesto"
+      - day: "Friday"
+        meals:
+          - name: "GF Croissant Cheese Bacon Egg Sandwich"
+            calories: 719
+            protein: 41g
+            carbs: 33g
+            fat: 47g
+            ingredients:
+              - Croissant GF
+              - Beef bacon
+              - Egg
+              - Mozzarella
+              - Tomato cherry
+              - Mix lettuce
+            image: "/images/temp-img.png"
+            alt: "GF Croissant Cheese Bacon Egg Sandwich"
+          - name: "Chicken Cheddar Wrap"
+            calories: 829
+            protein: 67g
+            carbs: 66g
+            fat: 33g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Chicken breast
+              - Cheddar cheese
+              - LF mayonnaise
+              - Baby romaine lettuce
+              - Tomato
+              - Onions
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Cheddar Wrap"
+          - name: "Arabic Chicken Kofta"
+            calories: 957
+            protein: 57g
+            carbs: 90g
+            fat: 41g
+            ingredients:
+              - Chicken kofta
+              - White rice
+              - Turmeric powder
+              - Onions
+              - Almonds
+              - Tomato
+              - Cucumber
+              - Onions
+              - Parsley
+              - Garlic sauce
+              - Hummus
+            image: "/images/temp-img.png"
+            alt: "Arabic Chicken Kofta"
+          - name: "Mie Goreng Chicken"
+            calories: 846
+            protein: 81g
+            carbs: 72g
+            fat: 26g
+            ingredients:
+              - Noodles
+              - Egg
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Chicken breast
+              - Napa cabbage
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Chicken"
+          - name: "Baked Sweet Potato Barramundi"
+            calories: 471
+            protein: 38g
+            carbs: 46g
+            fat: 15g
+            ingredients:
+              - Barramundi
+              - Tomato cherry
+              - Baked sweet potato
+              - Bok choy
+            image: "/images/temp-img.png"
+            alt: "Baked Sweet Potato Barramundi"
+      - day: "Saturday"
+        meals:
+          - name: "Breakfast Burrito"
+            calories: 819
+            protein: 41g
+            carbs: 76g
+            fat: 39g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Egg
+              - Mushrooms
+              - Mozzarella
+              - Garlic sauce
+              - Salsa
+              - Guacamole
+              - Watermelon
+              - Pineapple
+              - Papaya
+            image: "/images/temp-img.png"
+            alt: "Breakfast Burrito"
+          - name: "Beef Shawarma Wrap"
+            calories: 700
+            protein: 38g
+            carbs: 56g
+            fat: 36g
+            ingredients:
+              - Beef tenderloin Indian
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Tahini dressing
+              - Tortilla wrap 1 pcs
+            image: "/images/temp-img.png"
+            alt: "Beef Shawarma Wrap"
+          - name: "Solimans Platter"
+            calories: 798
+            protein: 52g
+            carbs: 71g
+            fat: 34g
+            ingredients:
+              - White rice
+              - Onions
+              - Raisin
+              - Almonds
+              - Turmeric powder
+              - Onions
+              - Tomato
+              - Cucumber pickles
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / Cilantro
+              - Chicken breast
+              - Beef tenderloin Indian
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Solimans Platter"
+          - name: "Pasta Pesto Chicken Broccoli"
+            calories: 668
+            protein: 65g
+            carbs: 57g
+            fat: 20g
+            ingredients:
+              - Fettuccine pasta
+              - Chicken breast
+              - Pesto sauce
+              - Broccoli
+              - Tomato cherry
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Pesto Chicken Broccoli"
+          - name: "Grill Butterfish Salsa"
+            calories: 522
+            protein: 37g
+            carbs: 53g
+            fat: 18g
+            ingredients:
+              - Butter fish
+              - Salsa
+              - Kale
+              - Green beans
+              - White potato
+              - Cooking cream
+              - Bay leaves
+              - Milk
+            image: "/images/temp-img.png"
+            alt: "Grill Butterfish Salsa"
+  - week: 1
+    category: "high protein"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "American Omelette"
+            calories: 794
+            protein: 77g
+            carbs: 9g
+            fat: 50g
+            ingredients:
+              - Chicken breast
+              - Egg
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Mozzarella
+              - Milk
+              - Keto bread 1 slices
+            image: "/images/temp-img.png"
+            alt: "American Omelette"
+          - name: "American Salad"
+            calories: 660
+            protein: 64g
+            carbs: 29g
+            fat: 32g
+            ingredients:
+              - Baby romaine lettuce
+              - Corn
+              - Tomato cherry
+              - Apple
+              - Broccoli
+              - Celery
+              - Egg
+              - Chicken breast
+              - Lemon dressing
+            image: "/images/temp-img.png"
+            alt: "American Salad"
+          - name: "Shirataki Beef Stir Fry"
+            calories: 401
+            protein: 32g
+            carbs: 30g
+            fat: 17g
+            ingredients:
+              - Konjac noodles
+              - Beef tenderloin Indian
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Shirataki Beef Stir Fry"
+          - name: "Tuna Avo Mixed"
+            calories: 581
+            protein: 34g
+            carbs: 28g
+            fat: 57g
+            ingredients:
+              - Tuna can
+              - Lime
+              - Shallots
+              - Coriander / Cilantro
+              - Pepper red
+              - Avocado
+              - Olive oil
+              - Tomato cherry
+              - Spring onion
+            image: "/images/temp-img.png"
+            alt: "Tuna Avo Mixed"
+          - name: "Chicken Tawook and Fattoush"
+            calories: 684
+            protein: 79g
+            carbs: 38g
+            fat: 24g
+            ingredients:
+              - Chicken breast
+              - Baby romaine lettuce
+              - Cucumber
+              - Onions
+              - Red radish
+              - Pepper green
+              - Pepper red
+              - Tomato
+              - Parsley
+              - Mint
+              - Lemon
+              - Olive oil
+              - Sumac powder
+              - Pita bread 1 pcs
+            image: "/images/temp-img.png"
+            alt: "Chicken Tawook and Fattoush"
+      - day: "Tuesday"
+        meals:
+          - name: "Scrambled Eggs Salmon"
+            calories: 659
+            protein: 43g
+            carbs: 16g
+            fat: 47g
+            ingredients:
+              - Egg
+              - Salmon
+              - Avocado
+              - Arugula
+              - Olive oil
+              - Tomato cherry
+              - Lemon
+            image: "/images/temp-img.png"
+            alt: "Scrambled Eggs Salmon"
+          - name: "Crunchy Salad"
+            calories: 652
+            protein: 68g
+            carbs: 32g
+            fat: 28g
+            ingredients:
+              - Kale
+              - Cabbage white
+              - Cabbage red
+              - Carrot
+              - Apple
+              - Almonds
+              - Chicken breast
+              - Egg
+              - Peanut dressing
+            image: "/images/temp-img.png"
+            alt: "Crunchy Salad"
+          - name: "Chicken Mashawi Fried Cauliflower Rice"
+            calories: 664
+            protein: 58g
+            carbs: 36g
+            fat: 32g
+            ingredients:
+              - Chicken leg fillet
+              - Long beans
+              - Bean sprouts
+              - Local spinach
+              - Garlic
+              - Shallots
+              - Garlic
+              - Cauliflower
+              - Carrot
+              - Onions
+              - Peas green
+            image: "/images/temp-img.png"
+            alt: "Chicken Mashawi Fried Cauliflower Rice"
+          - name: "Shirataki Beef Stir Fry"
+            calories: 401
+            protein: 32g
+            carbs: 30g
+            fat: 17g
+            ingredients:
+              - Konjac noodles
+              - Beef tenderloin Indian
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Shirataki Beef Stir Fry"
+          - name: "Lettuce Chicken Burger"
+            calories: 732
+            protein: 56g
+            carbs: 28g
+            fat: 44g
+            ingredients:
+              - Tomato
+              - Cucumber
+              - Onion red
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Chicken patty
+              - Egg
+              - Green beans
+              - Carrot
+              - Mozzarella
+            image: "/images/temp-img.png"
+            alt: "Lettuce Chicken Burger"
+      - day: "Wednesday"
+        meals:
+          - name: "Scrambled Eggs Lean Meat"
+            calories: 653
+            protein: 57g
+            carbs: 14g
+            fat: 41g
+            ingredients:
+              - Egg
+              - Lean meat
+              - Mix lettuce
+              - Olive oil
+              - Tomato cherry
+              - Pineapple
+            image: "/images/temp-img.png"
+            alt: "Scrambled Eggs Lean Meat"
+          - name: "Italian Salad"
+            calories: 720
+            protein: 51g
+            carbs: 39g
+            fat: 40g
+            ingredients:
+              - Spinach
+              - Pepper red
+              - Pepper green
+              - Zucchini
+              - Mushrooms
+              - Fettuccine pasta
+              - Olives
+              - Halloumi cheese
+              - Egg
+              - Beef tenderloin Indian
+              - Balsamic dressing
+            image: "/images/temp-img.png"
+            alt: "Italian Salad"
+          - name: "Cauli Rices Chicken Satay"
+            calories: 683
+            protein: 67g
+            carbs: 43g
+            fat: 27g
+            ingredients:
+              - Chicken breast
+              - Peanut sauce
+              - Bean sprout
+              - Long beans
+              - Local spinach
+              - Lime
+              - Garlic
+              - Cauliflower
+              - Carrot
+              - Onions
+              - Peas green
+            image: "/images/temp-img.png"
+            alt: "Cauli Rices Chicken Satay"
+          - name: "Salmon Zoodle"
+            calories: 483
+            protein: 36g
+            carbs: 15g
+            fat: 31g
+            ingredients:
+              - Zucchini
+              - Salmon
+              - Oregano
+              - Broccoli
+              - Olive oil
+              - Tomato cherry
+              - Egg
+            image: "/images/temp-img.png"
+            alt: "Salmon Zoodle"
+          - name: "Chicken Tawook and Tabbouleh"
+            calories: 600
+            protein: 72g
+            carbs: 33g
+            fat: 20g
+            ingredients:
+              - Chicken breast
+              - Parsley
+              - Mint
+              - Tomato
+              - Onions
+              - Quinoa
+              - Lemon
+              - Pomegranate jus
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Chicken Tawook and Tabbouleh"
+      - day: "Thursday"
+        meals:
+          - name: "Sydney Bacon Scrambled"
+            calories: 796
+            protein: 53g
+            carbs: 11g
+            fat: 60g
+            ingredients:
+              - Egg
+              - Beef bacon
+              - Mushrooms
+              - Tomato
+              - Keto wrap
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Sydney Bacon Scrambled"
+          - name: "Hawaiian Salad"
+            calories: 694
+            protein: 57g
+            carbs: 31g
+            fat: 38g
+            ingredients:
+              - Mix lettuce
+              - White potato
+              - Pineapple
+              - Carrot
+              - Celery
+              - Walnut
+              - Peas green
+              - Egg
+              - Tuna
+              - Cocktail
+            image: "/images/temp-img.png"
+            alt: "Hawaiian Salad"
+          - name: "Beef Kofta Platter"
+            calories: 915
+            protein: 50g
+            carbs: 37g
+            fat: 63g
+            ingredients:
+              - Beef kofta
+              - Onions
+              - Tomato
+              - Cucumber
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / Cilantro
+              - Hummus
+              - Garlic sauce
+              - Keto wrap
+            image: "/images/temp-img.png"
+            alt: "Beef Kofta Platter"
+          - name: "Pad Thai Chicken Shirataki"
+            calories: 654
+            protein: 72g
+            carbs: 35g
+            fat: 26g
+            ingredients:
+              - Konjac noodles
+              - Chicken breast
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Tamarind
+              - Egg
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pad Thai Chicken Shirataki"
+          - name: "Stuffed Chicken w/ Baked Sweet Potato"
+            calories: 785
+            protein: 70g
+            carbs: 6g
+            fat: 29g
+            ingredients:
+              - Chicken breast
+              - Spinach
+              - Mushrooms
+              - Peas green
+              - Carrot
+              - Creamy corn sauce
+              - Garlic
+              - Onions
+              - Baked sweet potato
+            image: "/images/temp-img.png"
+            alt: "Stuffed Chicken w/ Baked Sweet Potato"
+      - day: "Friday"
+        meals:
+          - name: "Egg Sunny & Beef"
+            calories: 559
+            protein: 51g
+            carbs: 10g
+            fat: 35g
+            ingredients:
+              - Egg
+              - Beef tenderloin Indian
+              - Strawberries
+              - Arugula
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Egg Sunny & Beef"
+          - name: "Rainbow Salmon Salad"
+            calories: 557
+            protein: 32g
+            carbs: 35g
+            fat: 35g
+            ingredients:
+              - Mix lettuce
+              - Red radish
+              - Carrot
+              - Avocado
+              - Kiwi
+              - Cabbage red
+              - Tomato cherry
+              - Salmon
+              - Avocado creamy dressing
+            image: "/images/temp-img.png"
+            alt: "Rainbow Salmon Salad"
+          - name: "Grill Salmon Teriyaki"
+            calories: 466
+            protein: 35g
+            carbs: 23g
+            fat: 26g
+            ingredients:
+              - Asparagus
+              - Teriyaki sauce
+              - Avocado
+              - Edamame
+              - Salmon
+            image: "/images/temp-img.png"
+            alt: "Grill Salmon Teriyaki"
+          - name: "Mie Goreng Shirataki"
+            calories: 640
+            protein: 73g
+            carbs: 33g
+            fat: 24g
+            ingredients:
+              - Konjac noodles
+              - Egg
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Chicken breast
+              - Napa cabbage
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Shirataki"
+          - name: "Chicken Tawook and Baladi"
+            calories: 841
+            protein: 74g
+            carbs: 17g
+            fat: 53g
+            ingredients:
+              - Chicken breast
+              - Onions
+              - Tomato
+              - Cucumber
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / Cilantro
+              - Tahini dressing
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Chicken Tawook and Baladi"
+      - day: "Saturday"
+        meals:
+          - name: "Mexican Omelette"
+            calories: 894
+            protein: 76g
+            carbs: 17g
+            fat: 58g
+            ingredients:
+              - Egg
+              - Pepper green
+              - Chicken breast
+              - Pepper red
+              - Parsley
+              - Leeks
+              - Mozzarella
+              - Avocado
+              - Keto bread 1 slices
+            image: "/images/temp-img.png"
+            alt: "Mexican Omelette"
+          - name: "Arabic Salad"
+            calories: 826
+            protein: 69g
+            carbs: 52g
+            fat: 38g
+            ingredients:
+              - Spinach
+              - Lentils green
+              - Chickpeas
+              - Dates
+              - Carrot
+              - Cabbage red
+              - Hummus
+              - Chicken breast
+              - Pita bread 1 pcs
+              - Tahini dressing
+            image: "/images/temp-img.png"
+            alt: "Arabic Salad"
+          - name: "Beef Shawarma Platter"
+            calories: 672
+            protein: 34g
+            carbs: 17g
+            fat: 52g
+            ingredients:
+              - Beef tenderloin Indian
+              - Onions
+              - Tomato
+              - Cucumber pickles
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / Cilantro
+              - Tahini dressing
+              - Garlic sauce
+            image: "/images/temp-img.png"
+            alt: "Beef Shawarma Platter"
+          - name: "Pesto Chicken Shirataki"
+            calories: 466
+            protein: 56g
+            carbs: 20g
+            fat: 18g
+            ingredients:
+              - Konjac noodles
+              - Chicken breast
+              - Pesto sauce
+              - Broccoli
+              - Tomato cherry
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pesto Chicken Shirataki"
+          - name: "Grill Snapper Garlic Butter"
+            calories: 558
+            protein: 39g
+            carbs: 42g
+            fat: 26g
+            ingredients:
+              - Red snapper
+              - Garlic
+              - Butter
+              - Orange
+              - Kale
+              - Quinoa
+              - Lime
+            image: "/images/temp-img.png"
+            alt: "Grill Snapper Garlic Butter" 
+  - week: 2
+    category: "high protein"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "Texas Breakfast (HP)"
+            calories: 836
+            protein: 57g
+            carbs: 26g
+            fat: 56g
+            ingredients:
+              - Egg
+              - Chicken sausage
+              - Cheddar cheese
+              - Papaya
+              - Salt
+              - Black pepper
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Texas Breakfast (HP)"
+          - name: "Multivitamin Salad (HP)"
+            calories: 682
+            protein: 59g
+            carbs: 35g
+            fat: 34g
+            ingredients:
+              - Baby romaine lettuce
+              - Cucumber
+              - Tomato cherry
+              - Green beans
+              - Avocado
+              - Dried cranberry
+              - Walnut
+              - Chicken breast
+              - Balsamic dressing
+            image: "/images/temp-img.png"
+            alt: "Multivitamin Salad (HP)"
+          - name: "Shirataki Chicken Stir Fry (HP)"
+            calories: 518
+            protein: 57g
+            carbs: 32g
+            fat: 18g
+            ingredients:
+              - Shirataki
+              - Chicken breast
+              - Carrot
+              - Onions
+              - Broccoli
+              - Oysters sauce
+              - Sweet soy sauce
+              - Sesame oil
+              - Ketchup
+              - Raja rasa sauce
+              - Garlic
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Shirataki Chicken Stir Fry (HP)"
+          - name: "Chicken Tawook and Fattoush (HP)"
+            calories: 684
+            protein: 79g
+            carbs: 38g
+            fat: 24g
+            ingredients:
+              - Chicken breast
+              - Baby romaine lettuce
+              - Cucumber
+              - Onions
+              - Red radish
+              - Pepper green
+              - Pepper red
+              - Tomato
+              - Parsley
+              - Mint
+              - Lemon
+              - Olive oil
+              - Sumac powder
+              - Pita bread 1pcs
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Chicken Tawook and Fattoush (HP)"
+          - name: "Beef Mashawi w/ Baked Sweet Potato (HP)"
+            calories: 549
+            protein: 39g
+            carbs: 51g
+            fat: 21g
+            ingredients:
+              - Beef tenderloin Indian
+              - Red chili sauce
+              - Sweet potato
+              - Broccoli
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Beef Mashawi with Baked Sweet Potato (HP)"
+      - day: "Tuesday"
+        meals:
+          - name: "Scrambled Eggs Salmon (HP)"
+            calories: 659
+            protein: 43g
+            carbs: 16g
+            fat: 47g
+            ingredients:
+              - Egg
+              - Salmon
+              - Avocado
+              - Arugula
+              - Salt
+              - Black pepper
+              - Olive oil
+              - Tomato cherry
+              - Lemon
+            image: "/images/temp-img.png"
+            alt: "Scrambled Eggs Salmon (HP)"
+          - name: "Endurance Salad (HP)"
+            calories: 755
+            protein: 64g
+            carbs: 46g
+            fat: 35g
+            ingredients:
+              - Spinach
+              - Avocado
+              - Onion red
+              - Carrot
+              - Almond
+              - Broccoli
+              - Quinoa
+              - Dates
+              - Chicken breast
+              - Creamy garlic dressing
+            image: "/images/temp-img.png"
+            alt: "Endurance Salad (HP)"
+          - name: "HPLC Poke Bowl Tuna Mango (HP)"
+            calories: 482
+            protein: 42g
+            carbs: 38g
+            fat: 18g
+            ingredients:
+              - Quinoa
+              - Corn
+              - Edamame
+              - Carrot
+              - Cabbage red
+              - Cucumber
+              - Tomato cherry
+              - Red radish
+              - Mango
+              - Tuna
+              - Cocktail
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "HPLC Poke Bowl Tuna Mango (HP)"
+          - name: "Shirataki Beef Stir Fry (HP)"
+            calories: 401
+            protein: 32g
+            carbs: 30g
+            fat: 17g
+            ingredients:
+              - Shirataki
+              - Beef tenderloin Indian
+              - Carrot
+              - Onions
+              - Broccoli
+              - Oysters sauce
+              - Sweet soy sauce
+              - Sesame oil
+              - Ketchup
+              - Raja rasa sauce
+              - Garlic
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Shirataki Beef Stir Fry (HP)"
+          - name: "Chicken Spinach, Mushroom, Baked Sweet Potato (HP)"
+            calories: 701
+            protein: 79g
+            carbs: 49g
+            fat: 21g
+            ingredients:
+              - Chicken breast
+              - Spinach
+              - Mushrooms
+              - Sweet potato
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Chicken Spinach, Mushroom, Baked Sweet Potato (HP)"
+      - day: "Wednesday"
+        meals:
+          - name: "Scrambled Eggs Lean Meat (HP)"
+            calories: 653
+            protein: 57g
+            carbs: 14g
+            fat: 41g
+            ingredients:
+              - Egg
+              - Minced beef
+              - Mix lettuce
+              - Olive oil
+              - Tomato cherry
+              - Salt
+              - Black pepper
+              - Pineapple
+            image: "/images/temp-img.png"
+            alt: "Scrambled Eggs Lean Meat (HP)"
+          - name: "Solimans Salad (HP)"
+            calories: 791
+            protein: 53g
+            carbs: 30g
+            fat: 51g
+            ingredients:
+              - Baby romaine lettuce
+              - Asparagus
+              - Pineapple
+              - Avocado
+              - Tomato cherry
+              - Olives
+              - Pepper red
+              - Pepper green
+              - Walnut
+              - Chicken breast
+              - Beef tenderloin Indian
+              - Lemon dressing
+            image: "/images/temp-img.png"
+            alt: "Solimans Salad (HP)"
+          - name: "Chicken Kebab w/ Baladi (HP)"
+            calories: 593
+            protein: 59g
+            carbs: 33g
+            fat: 25g
+            ingredients:
+              - Chicken breast
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Tomato
+              - Cucumber pickles
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / cilantro
+              - Cocktail
+              - Pineapple
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Chicken Kebab with Baladi (HP)"
+          - name: "Salmon Zoodle (HP)"
+            calories: 483
+            protein: 36g
+            carbs: 15g
+            fat: 31g
+            ingredients:
+              - Zucchini
+              - Salmon
+              - Oregano
+              - Olive oil
+              - Tomato cherry
+              - Salt
+              - Black pepper
+              - Chicken Knorr
+            image: "/images/temp-img.png"
+            alt: "Salmon Zoodle (HP)"
+          - name: "Lettuce Beef Burger (HP)"
+            calories: 725
+            protein: 52g
+            carbs: 28g
+            fat: 45g
+            ingredients:
+              - Tomato
+              - Cucumber
+              - Onion red
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Beef patty
+              - Egg
+              - Green beans
+              - Carrot
+              - Mozzarella
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Lettuce Beef Burger (HP)"
+      - day: "Thursday"
+        meals:
+          - name: "Egg Sunny & Beef (HP)"
+            calories: 559
+            protein: 51g
+            carbs: 10g
+            fat: 35g
+            ingredients:
+              - Egg
+              - Meltique beef
+              - Strawberry
+              - Arugula
+              - Olive oil
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Egg Sunny & Beef (HP)"
+          - name: "Recovery Salad (HP)"
+            calories: 828
+            protein: 68g
+            carbs: 40g
+            fat: 44g
+            ingredients:
+              - Baby romaine lettuce
+              - Pepper red
+              - Pepper green
+              - Avocado
+              - Celery
+              - Dried cranberry
+              - Onion red
+              - Cauliflower
+              - Cashew nut
+              - Halloumi cheese
+              - Chicken breast
+              - Peanut dressing
+            image: "/images/temp-img.png"
+            alt: "Recovery Salad (HP)"
+          - name: "Chicken Cashew w/ Fried Cauli Rice (HP)"
+            calories: 613
+            protein: 62g
+            carbs: 26g
+            fat: 29g
+            ingredients:
+              - Chicken breast
+              - Cashew nut
+              - Green beans
+              - Broccoli
+              - Sesame oil
+              - Soy sauce
+              - Oysters sauce
+              - Garlic
+              - Cauliflower
+              - Carrot
+              - Onions
+              - Peas green
+            image: "/images/temp-img.png"
+            alt: "Chicken Cashew with Fried Cauli Rice (HP)"
+          - name: "Pad Thai Chicken Shirataki (HP)"
+            calories: 654
+            protein: 72g
+            carbs: 33g
+            fat: 26g
+            ingredients:
+              - Shirataki
+              - Chicken breast
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Oysters sauce
+              - Sweet soy sauce
+              - Tamarind
+              - Egg
+              - Garlic
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Pad Thai Chicken Shirataki (HP)"
+          - name: "Grilled Salmon Creamy Pesto (HP)"
+            calories: 413
+            protein: 33g
+            carbs: 14g
+            fat: 25g
+            ingredients:
+              - Salmon
+              - Kale
+              - Asparagus
+              - Tomato cherry
+              - Cooking cream
+              - Milk
+              - Bay leaves
+              - Creamy pesto sauce
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Grilled Salmon Creamy Pesto (HP)"
+      - day: "Friday"
+        meals:
+          - name: "Sydney Bacon Scrambled (HP)"
+            calories: 796
+            protein: 53g
+            carbs: 11g
+            fat: 60g
+            ingredients:
+              - Egg
+              - Beef bacon
+              - Mushrooms
+              - Tomato
+              - Keto wrap
+              - Salt
+              - Black pepper
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Sydney Bacon Scrambled (HP)"
+          - name: "Omega Salad (HP)"
+            calories: 496
+            protein: 32g
+            carbs: 29g
+            fat: 28g
+            ingredients:
+              - Spinach
+              - Red radish
+              - Onion red
+              - Cucumber
+              - Dried cranberry
+              - Almond
+              - Salmon
+              - Avocado
+              - Creamy dressing
+            image: "/images/temp-img.png"
+            alt: "Omega Salad (HP)"
+          - name: "Chicken Kofta Platter (HP)"
+            calories: 859
+            protein: 54g
+            carbs: 37g
+            fat: 55g
+            ingredients:
+              - Chicken kofta
+              - Onions
+              - Tomato
+              - Cucumber
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / cilantro
+              - Hummus
+              - Garlic sauce
+              - Salt
+              - Black pepper
+              - Keto wrap
+            image: "/images/temp-img.png"
+            alt: "Chicken Kofta Platter (HP)"
+          - name: "Mie Goreng Shirataki (HP)"
+            calories: 640
+            protein: 73g
+            carbs: 33g
+            fat: 24g
+            ingredients:
+              - Shirataki
+              - Egg
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Chicken breast
+              - Oysters sauce
+              - Sweet soy sauce
+              - Ketchup
+              - Napa cabbage / sawi putih
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Shirataki (HP)"
+          - name: "Grill Barramundi w/ Tabbouleh (HP)"
+            calories: 398
+            protein: 35g
+            carbs: 33g
+            fat: 14g
+            ingredients:
+              - Barramundi
+              - Parsley
+              - Mint
+              - Tomato
+              - Onions
+              - Quinoa
+              - Lemon
+              - Pomegranate jus
+              - Olive oil
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Grill Barramundi with Tabbouleh (HP)"
+      - day: "Saturday"
+        meals:
+          - name: "Egg Chicken Frittata (HP)"
+            calories: 561
+            protein: 64g
+            carbs: 11g
+            fat: 29g
+            ingredients:
+              - Egg
+              - Broccoli
+              - Zucchini
+              - Pepper red
+              - Chicken breast
+              - Mix lettuce
+              - Salt
+              - Black pepper
+              - Spring onion
+            image: "/images/temp-img.png"
+            alt: "Egg Chicken Frittata (HP)"
+          - name: "Stamina Salad (HP)"
+            calories: 834
+            protein: 65g
+            carbs: 40g
+            fat: 46g
+            ingredients:
+              - Baby romaine lettuce
+              - Avocado
+              - Onion red
+              - Cucumber
+              - Walnut
+              - Apple
+              - Edamame
+              - Baby potato
+              - Feta
+              - Chicken breast
+              - Tahini dressing
+            image: "/images/temp-img.png"
+            alt: "Stamina Salad (HP)"
+          - name: "HPLC Solimans Platter (HP)"
+            calories: 638
+            protein: 49g
+            carbs: 34g
+            fat: 34g
+            ingredients:
+              - Cauliflower
+              - Onions
+              - Raisin
+              - Almond
+              - Turmeric
+              - Onions
+              - Tomato
+              - Cucumber pickles
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / cilantro
+              - Chicken breast
+              - Beef tenderloin Indian
+              - Garlic sauce
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "HPLC Solimans Platter (HP)"
+          - name: "Chicken Tawook and Tabbouleh (HP)"
+            calories: 600
+            protein: 72g
+            carbs: 33g
+            fat: 20g
+            ingredients:
+              - Chicken breast
+              - Parsley
+              - Mint
+              - Tomato
+              - Onions
+              - Quinoa
+              - Lemon
+              - Pomegranate jus
+              - Olive oil
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Chicken Tawook and Tabbouleh (HP)"
+          - name: "Grill Butter Fish Salsa (HP)"
+            calories: 426
+            protein: 39g
+            carbs: 36g
+            fat: 14g
+            ingredients:
+              - Butter fish
+              - Green beans
+              - Kale
+              - Lentils green
+              - Salsa
+              - Salt
+              - Black pepper
+            image: "/images/temp-img.png"
+            alt: "Grill Butter Fish Salsa (HP)"
+  - week: 1
+    category: "vegan"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "Arabic Breakfast"
+            calories: 1144
+            protein: 66g
+            carbs: 85g
+            fat: 60g
+            ingredients:
+              - Tofu
+              - Tempeh
+              - Pita bread 1 pcs
+              - Kidney beans
+              - Falafel
+              - Hummus
+              - Olive oil
+              - Vegan feta
+            image: "/images/temp-img.png"
+            alt: "Arabic Breakfast"
+          - name: "Chicken Mozzarella Wrap"
+            calories: 709
+            protein: 46g
+            carbs: 75g
+            fat: 25g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan chicken
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Vegan mozzarella
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Mozzarella Wrap"
+          - name: "Tempeh Stir Fry"
+            calories: 709
+            protein: 41g
+            carbs: 71g
+            fat: 29g
+            ingredients:
+              - Red rice
+              - Tempeh
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Tempeh Stir Fry"
+          - name: "Spiral GF Chicken Pasta"
+            calories: 512
+            protein: 44g
+            carbs: 48g
+            fat: 16g
+            ingredients:
+              - Vegan chicken
+              - Pepper red
+              - Onions
+              - Basil
+              - Spring onion
+              - Olives
+              - Paprika powder smoke
+              - Gluten-free pasta
+            image: "/images/temp-img.png"
+            alt: "Spiral GF Chicken Pasta"
+          - name: "Pumpkin Chicken Mashawi"
+            calories: 725
+            protein: 68g
+            carbs: 66g
+            fat: 21g
+            ingredients:
+              - Vegan chicken
+              - Pumpkin
+              - Broccoli
+              - Green beans
+              - Cauliflower
+              - Carrot
+              - Bay leaves
+              - Rosemary
+              - Paprika powder smoke
+            image: "/images/temp-img.png"
+            alt: "Pumpkin Chicken Mashawi"
+      - day: "Tuesday"
+        meals:
+          - name: "Waffle Apple Cinnamon Breakfast"
+            calories: 663
+            protein: 30g
+            carbs: 93g
+            fat: 19g
+            ingredients:
+              - White flour
+              - Oats
+              - Soy protein
+              - Scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Coconut milk
+              - Apple
+              - Cinnamon
+              - Strawberries
+            image: "/images/temp-img.png"
+            alt: "Waffle Apple Cinnamon Breakfast"
+          - name: "Californian Burrito Wrap"
+            calories: 808
+            protein: 49g
+            carbs: 99g
+            fat: 24g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan beef
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Spinach
+              - Corn
+              - Kidney beans
+              - Red rice
+              - Salsa
+              - Guacamole
+              - Cassava chips
+            image: "/images/temp-img.png"
+            alt: "Californian Burrito Wrap"
+          - name: "Rice Chicken Mashawi"
+            calories: 599
+            protein: 50g
+            carbs: 66g
+            fat: 15g
+            ingredients:
+              - Vegan chicken
+              - Red rice
+              - Long beans
+              - Bean sprouts
+              - Lokal spinach
+              - Garlic
+              - Shallots
+            image: "/images/temp-img.png"
+            alt: "Rice Chicken Mashawi"
+          - name: "Pasta Tofu Stir Fry"
+            calories: 728
+            protein: 43g
+            carbs: 76g
+            fat: 28g
+            ingredients:
+              - Fettuccine pasta
+              - Tofu
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Tofu Stir Fry"
+          - name: "Chicken Burger"
+            calories: 985
+            protein: 67g
+            carbs: 87g
+            fat: 41g
+            ingredients:
+              - Burger bun GF
+              - Tomato
+              - Cucumber
+              - Onions
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Vegan chicken
+              - White potato
+            image: "/images/temp-img.png"
+            alt: "Chicken Burger"
+      - day: "Wednesday"
+        meals:
+          - name: "Tofu Lean Meat Wrap Breakfast"
+            calories: 823
+            protein: 60g
+            carbs: 94g
+            fat: 23g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan beef
+              - Onions
+              - Tofu
+              - Watermelon
+              - Pineapple
+              - Papaya
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Tofu Lean Meat Wrap Breakfast"
+          - name: "Falafel Shawarma"
+            calories: 1003
+            protein: 37g
+            carbs: 99g
+            fat: 51g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Falafel
+              - Tahini dressing
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Salsa
+              - Cassava chips
+            image: "/images/temp-img.png"
+            alt: "Falafel Shawarma"
+          - name: "Solimans Chicken Sate"
+            calories: 669
+            protein: 50g
+            carbs: 79g
+            fat: 17g
+            ingredients:
+              - White rice
+              - Vegan chicken
+              - Peanut sauce
+              - Bean sprouts
+              - Long beans
+              - Lokal spinach
+              - Lime
+            image: "/images/temp-img.png"
+            alt: "Solimans Chicken Sate"
+          - name: "Chicken Zoodle Pasta"
+            calories: 622
+            protein: 49g
+            carbs: 66g
+            fat: 18g
+            ingredients:
+              - Fettuccine pasta
+              - Zucchini
+              - Vegan chicken
+              - Tomato cherry
+              - Olive oil
+              - Oregano
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Zoodle Pasta"
+          - name: "Sweet Quinoa Chicken"
+            calories: 556
+            protein: 61g
+            carbs: 42g
+            fat: 16g
+            ingredients:
+              - Vegan chicken
+              - Quinoa
+              - Onions
+              - Pepper red
+              - Pepper green
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Sweet Quinoa Chicken"
+      - day: "Thursday"
+        meals:
+          - name: "Pancake Non Nutella Breakfast"
+            calories: 694
+            protein: 40g
+            carbs: 84g
+            fat: 22g
+            ingredients:
+              - White flour
+              - Oats
+              - Iso protein / scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Hazelnut
+              - Soy protein
+              - Scoop
+              - Strawberries
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Pancake Non Nutella Breakfast"
+          - name: "Tempeh Caramelized Wrap"
+            calories: 919
+            protein: 38g
+            carbs: 86g
+            fat: 47g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Tempeh
+              - Onion red
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Tempeh Caramelized Wrap"
+          - name: "Arabic Kofta"
+            calories: 1010
+            protein: 38g
+            carbs: 120g
+            fat: 42g
+            ingredients:
+              - Vegan kofta patty
+              - White rice
+              - Turmeric powder
+              - Onions
+              - Almonds
+              - Raisin
+              - Tomato
+              - Cucumber
+              - Onions
+              - Parsley
+              - Garlic sauce
+              - Hummus
+            image: "/images/temp-img.png"
+            alt: "Arabic Kofta"
+          - name: "Tempeh Pad Thai"
+            calories: 836
+            protein: 45g
+            carbs: 101g
+            fat: 28g
+            ingredients:
+              - Rice noodles
+              - Tempeh
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Tamarind
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Tempeh Pad Thai"
+          - name: "Chicken Creamy Corn Sauce"
+            calories: 589
+            protein: 51g
+            carbs: 58g
+            fat: 17g
+            ingredients:
+              - Vegan chicken
+              - White potato
+              - Spinach
+              - Mushrooms
+              - Peas green
+              - Carrot
+              - Corn
+              - Soy milk
+              - Onions
+            image: "/images/temp-img.png"
+            alt: "Chicken Creamy Corn Sauce"
+      - day: "Friday"
+        meals:
+          - name: "Tempeh Caramelized Toast Breakfast"
+            calories: 885
+            protein: 44g
+            carbs: 76g
+            fat: 45g
+            ingredients:
+              - Multigrain bread GF 1 pcs
+              - Tempeh
+              - Onions
+              - Cabbage red
+              - Tomato cherry
+              - Mix lettuce
+              - Guacamole
+              - Olive oil
+            image: "/images/temp-img.png"
+            alt: "Tempeh Caramelized Toast Breakfast"
+          - name: "Chicken Cheddar Wrap"
+            calories: 679
+            protein: 46g
+            carbs: 72g
+            fat: 23g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan chicken
+              - Vegan cheddar
+              - Baby romaine lettuce
+              - Tomato
+              - Onions
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Cheddar Wrap"
+          - name: "Tempeh Teriyaki"
+            calories: 731
+            protein: 42g
+            carbs: 71g
+            fat: 31g
+            ingredients:
+              - Red rice
+              - Teriyaki sauce
+              - Avocado
+              - Edamame
+              - Tempeh
+            image: "/images/temp-img.png"
+            alt: "Tempeh Teriyaki"
+          - name: "Mie Goreng Chicken"
+            calories: 680
+            protein: 55g
+            carbs: 79g
+            fat: 16g
+            ingredients:
+              - Noodles
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Vegan chicken
+              - Napa cabbage
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Chicken"
+          - name: "Black Pepper Beef Steak"
+            calories: 702
+            protein: 47g
+            carbs: 88g
+            fat: 18g
+            ingredients:
+              - Vegan beef
+              - Baked white potato
+              - Asparagus
+              - Tomato cherry
+              - Demi glace sauce
+            image: "/images/temp-img.png"
+            alt: "Black Pepper Beef Steak"
+      - day: "Saturday"
+        meals:
+          - name: "Protein Peanut Butter Banana Oats"
+            calories: 820
+            protein: 36g
+            carbs: 106g
+            fat: 28g
+            ingredients:
+              - Oats
+              - Soy milk
+              - Soy protein / scoop
+              - Banana
+              - Strawberries
+              - Water
+              - Almonds
+              - Raisin
+              - Pumpkin seeds
+              - Peanut butter
+            image: "/images/temp-img.png"
+            alt: "Protein Peanut Butter Banana Oats"
+          - name: "Chicken Shawarma Wrap"
+            calories: 651
+            protein: 47g
+            carbs: 73g
+            fat: 19g
+            ingredients:
+              - Vegan chicken
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Tortilla wrap 1 pcs
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Shawarma Wrap"
+          - name: "Mexican Chicken Bowl"
+            calories: 598
+            protein: 47g
+            carbs: 62g
+            fat: 18g
+            ingredients:
+              - Red rice
+              - Vegan chicken
+              - Onions
+              - Pepper red
+              - Pepper green
+              - Corn
+              - Kidney beans
+              - Salsa
+              - Guacamole
+              - Jalapeno
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Mexican Chicken Bowl"
+          - name: "Pasta Pesto Chicken"
+            calories: 759
+            protein: 69g
+            carbs: 69g
+            fat: 23g
+            ingredients:
+              - Fettuccine pasta
+              - Vegan chicken
+              - Pesto sauce
+              - Broccoli
+              - Tomato cherry
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Pesto Chicken"
+          - name: "Grill Tofu Caramelized"
+            calories: 543
+            protein: 34g
+            carbs: 59g
+            fat: 19g
+            ingredients:
+              - Tofu
+              - Garlic
+              - Onion red
+              - Orange
+              - Kale
+              - Quinoa
+              - Lime
+            image: "/images/temp-img.png"
+            alt: "Grill Tofu Caramelized"
+  - week: 2
+    category: "vegan"
+    days:
+      - day: "Monday"
+        meals:
+          - name: "Arabic Breakfast"
+            calories: 1144
+            protein: 66g
+            carbs: 85g
+            fat: 60g
+            ingredients:
+              - Tofu
+              - Tempeh
+              - Pita bread 1 pcs
+              - Kidney beans
+              - Falafel
+              - Hummus
+              - Olive oil
+              - Vegan feta
+            image: "/images/temp-img.png"
+            alt: "Arabic Breakfast"
+          - name: "Chicken Mozzarella Wrap"
+            calories: 709
+            protein: 46g
+            carbs: 75g
+            fat: 25g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan chicken
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Vegan mozzarella
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Mozzarella Wrap"
+          - name: "Chicken Stir Fry"
+            calories: 606
+            protein: 47g
+            carbs: 64g
+            fat: 18g
+            ingredients:
+              - Red rice
+              - Vegan chicken
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Stir Fry"
+          - name: "Spiral GF Chicken Pasta"
+            calories: 512
+            protein: 44g
+            carbs: 48g
+            fat: 16g
+            ingredients:
+              - Vegan chicken
+              - Pepper red
+              - Onions
+              - Basil
+              - Spring onion
+              - Olives
+              - Paprika powder smoke
+              - Gluten-free pasta
+            image: "/images/temp-img.png"
+            alt: "Spiral GF Chicken Pasta"
+          - name: "Potato Beef Mashawi"
+            calories: 650
+            protein: 49g
+            carbs: 75g
+            fat: 18g
+            ingredients:
+              - Vegan beef
+              - Baked white potato
+              - Broccoli
+            image: "/images/temp-img.png"
+            alt: "Potato Beef Mashawi"
+      - day: "Tuesday"
+        meals:
+          - name: "Waffle Peanut Butter Breakfast"
+            calories: 820
+            protein: 39g
+            carbs: 94g
+            fat: 32g
+            ingredients:
+              - White flour
+              - Oats
+              - Soy protein / scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Peanut butter
+              - Banana
+              - Almonds
+              - Strawberries
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Waffle Peanut Butter Breakfast"
+          - name: "Californian Burrito Wrap"
+            calories: 808
+            protein: 49g
+            carbs: 99g
+            fat: 24g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan beef
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Spinach
+              - Corn
+              - Kidney beans
+              - Red rice
+              - Salsa
+              - Guacamole
+              - Cassava chips
+            image: "/images/temp-img.png"
+            alt: "Californian Burrito Wrap"
+          - name: "Poke Bowl Tofu Mango"
+            calories: 666
+            protein: 40g
+            carbs: 68g
+            fat: 26g
+            ingredients:
+              - Red rice
+              - Corn
+              - Edamame
+              - Carrot
+              - Cabbage red
+              - Cucumber
+              - Tomato cherry
+              - Red radish
+              - Mango
+              - Tofu
+            image: "/images/temp-img.png"
+            alt: "Poke Bowl Tofu Mango"
+          - name: "Pasta Tofu Stir Fry"
+            calories: 728
+            protein: 43g
+            carbs: 76g
+            fat: 28g
+            ingredients:
+              - Fettuccine pasta
+              - Tofu
+              - Carrot
+              - Onions
+              - Broccoli
+              - Raja rasa sauce
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Tofu Stir Fry"
+          - name: "Chicken Ratatouille"
+            calories: 627
+            protein: 51g
+            carbs: 63g
+            fat: 19g
+            ingredients:
+              - Vegan chicken
+              - Baby potato
+              - Pepper red
+              - Pepper green
+              - Zucchini
+              - Eggplant
+              - Tomato cherry
+              - Tomato marinara sauce
+              - Sunflower seeds
+            image: "/images/temp-img.png"
+            alt: "Chicken Ratatouille"
+      - day: "Wednesday"
+        meals:
+          - name: "Mediterranean Breakfast"
+            calories: 1026
+            protein: 56g
+            carbs: 88g
+            fat: 50g
+            ingredients:
+              - Tempeh
+              - Falafel
+              - Hummus
+              - Carrot
+              - Celery
+              - Cucumber
+              - Tomato cherry
+              - Multigrain bread GF 1 pcs
+              - Olives
+              - Strawberry jam
+            image: "/images/temp-img.png"
+            alt: "Mediterranean Breakfast"
+          - name: "Falafel Shawarma"
+            calories: 1003
+            protein: 37g
+            carbs: 99g
+            fat: 51g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Falafel
+              - Tahini dressing
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Salsa
+              - Cassava chips
+            image: "/images/temp-img.png"
+            alt: "Falafel Shawarma"
+          - name: "Solimans Chicken Kebab"
+            calories: 810
+            protein: 52g
+            carbs: 110g
+            fat: 18g
+            ingredients:
+              - Pineapple
+              - Vegan chicken
+              - Paprika powder smoke
+              - Pepper red
+              - Pepper green
+              - Onions
+              - Raisin
+              - Almonds
+              - Turmeric powder
+              - Mix lettuce
+              - White rice
+            image: "/images/temp-img.png"
+            alt: "Solimans Chicken Kebab"
+          - name: "Chicken Zoodle Pasta"
+            calories: 622
+            protein: 49g
+            carbs: 66g
+            fat: 18g
+            ingredients:
+              - Fettuccine pasta
+              - Zucchini
+              - Vegan chicken
+              - Tomato cherry
+              - Olive oil
+              - Oregano
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Zoodle Pasta"
+          - name: "Solimans Beef Burger"
+            calories: 930
+            protein: 49g
+            carbs: 98g
+            fat: 38g
+            ingredients:
+              - Burger bun GF
+              - Tomato
+              - Cucumber
+              - Onion red
+              - Avocado
+              - Tahini dressing
+              - Baby romaine lettuce
+              - Vegan beef
+              - Baked baby potato
+            image: "/images/temp-img.png"
+            alt: "Solimans Beef Burger"
+      - day: "Thursday"
+        meals:
+          - name: "Choco Pancake Breakfast"
+            calories: 625
+            protein: 38g
+            carbs: 89g
+            fat: 13g
+            ingredients:
+              - White flour
+              - Oats
+              - Iso protein / scoop
+              - Soy milk
+              - Banana
+              - Cacao powder
+              - Baking powder
+              - Mango
+              - Soy protein / scoop
+              - Strawberries
+              - Pumpkin seeds
+            image: "/images/temp-img.png"
+            alt: "Choco Pancake Breakfast"
+          - name: "Tempeh Caramelized Wrap"
+            calories: 919
+            protein: 38g
+            carbs: 86g
+            fat: 47g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Tempeh
+              - Onion red
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Tempeh Caramelized Wrap"
+          - name: "Chicken Cashew"
+            calories: 692
+            protein: 47g
+            carbs: 63g
+            fat: 28g
+            ingredients:
+              - Vegan chicken
+              - Cashew nut
+              - Green beans
+              - Red rice
+              - Broccoli
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Chicken Cashew"
+          - name: "Tempeh Pad Thai"
+            calories: 836
+            protein: 45g
+            carbs: 101g
+            fat: 28g
+            ingredients:
+              - Rice noodles
+              - Tempeh
+              - Beans sprout
+              - Carrot
+              - Leeks
+              - Cabbage red
+              - Peanut
+              - Tamarind
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Tempeh Pad Thai"
+          - name: "Grill Tofu Creamy Pesto"
+            calories: 583
+            protein: 37g
+            carbs: 48g
+            fat: 27g
+            ingredients:
+              - Tofu
+              - White potato
+              - Asparagus
+              - Tomato cherry
+              - Soy milk
+              - Milk
+              - Bay leaves
+              - Creamy pesto sauce
+            image: "/images/temp-img.png"
+            alt: "Grill Tofu Creamy Pesto"
+      - day: "Friday"
+        meals:
+          - name: "Croissant Tempeh Sandwich"
+            calories: 642
+            protein: 35g
+            carbs: 49g
+            fat: 34g
+            ingredients:
+              - Croissant GF
+              - Tempeh
+              - Onions
+              - Guacamole
+              - Tomato cherry
+              - Mix lettuce
+            image: "/images/temp-img.png"
+            alt: "Croissant Tempeh Sandwich"
+          - name: "Chicken Cheddar Wrap"
+            calories: 679
+            protein: 46g
+            carbs: 72g
+            fat: 23g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Vegan chicken
+              - Vegan cheddar
+              - Baby romaine lettuce
+              - Tomato
+              - Onions
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Cheddar Wrap"
+          - name: "Arabic Kofta"
+            calories: 1010
+            protein: 38g
+            carbs: 120g
+            fat: 42g
+            ingredients:
+              - Vegan kofta patty
+              - White rice
+              - Turmeric powder
+              - Onions
+              - Almonds
+              - Raisin
+              - Tomato
+              - Cucumber
+              - Onions
+              - Parsley
+              - Garlic sauce
+              - Hummus
+            image: "/images/temp-img.png"
+            alt: "Arabic Kofta"
+          - name: "Mie Goreng Chicken"
+            calories: 680
+            protein: 55g
+            carbs: 79g
+            fat: 16g
+            ingredients:
+              - Noodles
+              - Carrot
+              - Cabbage white
+              - Leeks
+              - Sayur hijau
+              - Vegan chicken
+              - Napa cabbage
+              - Garlic
+              - Baby romaine lettuce
+              - Tomato
+              - Cucumber
+            image: "/images/temp-img.png"
+            alt: "Mie Goreng Chicken"
+          - name: "Sweet Potato Chicken Mashawi"
+            calories: 616
+            protein: 50g
+            carbs: 59g
+            fat: 20g
+            ingredients:
+              - Vegan chicken
+              - Baked sweet potato
+              - Bok choy
+            image: "/images/temp-img.png"
+            alt: "Sweet Potato Chicken Mashawi"
+      - day: "Saturday"
+        meals:
+          - name: "Breakfast Burrito"
+            calories: 753
+            protein: 40g
+            carbs: 83g
+            fat: 29g
+            ingredients:
+              - Tortilla wrap 1 pcs
+              - Tofu
+              - Mushrooms
+              - Salsa
+              - Guacamole
+              - Watermelon
+              - Pineapple
+              - Papaya
+            image: "/images/temp-img.png"
+            alt: "Breakfast Burrito"
+          - name: "Chicken Shawarma Wrap"
+            calories: 651
+            protein: 47g
+            carbs: 75g
+            fat: 19g
+            ingredients:
+              - Vegan chicken
+              - Tomato
+              - Cucumber pickles
+              - Onions
+              - Parsley
+              - Tortilla wrap 1 pcs
+              - Cassava chips
+              - Salsa
+            image: "/images/temp-img.png"
+            alt: "Chicken Shawarma Wrap"
+          - name: "Solimans Platter"
+            calories: 1020
+            protein: 56g
+            carbs: 91g
+            fat: 48g
+            ingredients:
+              - White rice
+              - Onions
+              - Raisin
+              - Almonds
+              - Turmeric powder
+              - Onions
+              - Tomato
+              - Cucumber pickles
+              - Parsley
+              - Lemon
+              - Olive oil
+              - Coriander / Cilantro
+              - Tempeh
+              - Tofu
+              - Tahini
+            image: "/images/temp-img.png"
+            alt: "Solimans Platter"
+          - name: "Pasta Pesto Chicken"
+            calories: 759
+            protein: 69g
+            carbs: 69g
+            fat: 23g
+            ingredients:
+              - Fettuccine pasta
+              - Vegan chicken
+              - Pesto sauce
+              - Broccoli
+              - Tomato cherry
+              - Garlic
+            image: "/images/temp-img.png"
+            alt: "Pasta Pesto Chicken"
+          - name: "Grill Tempeh Salsa"
+            calories: 738
+            protein: 45g
+            carbs: 72g
+            fat: 30g
+            ingredients:
+              - Tempeh
+              - Salsa
+              - Kale
+              - Green beans
+              - Baked white potato
+            image: "/images/temp-img.png"
+            alt: "Grill Tempeh Salsa"

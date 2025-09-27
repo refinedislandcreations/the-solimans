@@ -1,17 +1,22 @@
 <header class="sticky top-0 z-30 border-b border-slate-200/20 bg-white/70 dark:bg-neutral-950/70 backdrop-blur">
-  {% assign current     = page.url | relative_url %}
-  {% assign href_home   = '/' | relative_url %}
-  {% assign href_meal   = '/meal-plan/' | relative_url %}
-  {% assign href_about  = '/about/' | relative_url %}
-  {% assign href_contact= '/contact/' | relative_url %}
+  {% assign current      = page.url | relative_url %}
+  {% assign href_home    = '/' | relative_url %}
+  {% assign href_meal    = '/meal-plan/' | relative_url %}
+  {% assign href_about   = '/about/' | relative_url %}
+  {% assign href_contact = '/contact/' | relative_url %}
 
-  <div class="max-w-6xl mx-auto h-16 px-6 md:px-10 flex items-center justify-between">
-    <a href="{{ href_home }}" class="flex items-center gap-3">
-      <img src="{{ '/images/the-solimans-logo.png' | relative_url }}" alt="The Solimans" class="h-12 w-12 object-cover" onerror="this.style.display='none'">
-      <span class="font-extrabold tracking-tight text-lg">THE SOLIMANS</span>
+  <!-- WIDER container + lebih center padding -->
+  <div class="w-full max-w-[1440px] mx-auto h-16 px-8 lg:px-16 flex items-center justify-between">
+    <!-- Brand: logo saja, lebih besar -->
+    <a href="{{ href_home }}" class="inline-flex items-center">
+      <img
+        src="{{ '/images/the-solimans-logo.png' | relative_url }}"
+        alt="The Solimans"
+        class="h-14 w-14 md:h-16 md:w-16 object-cover"
+        onerror="this.style.display='none'">
     </a>
 
-    <div class="flex gap-10">
+    <div class="flex items-center gap-4 lg:gap-8">
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="{{ href_home }}"
@@ -20,9 +25,7 @@
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
-           {% endif %}">
-          Home
-        </a>
+           {% endif %}">Home</a>
 
         <a href="{{ href_meal }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
@@ -30,9 +33,7 @@
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
-           {% endif %}">
-          Meal Plan
-        </a>
+           {% endif %}">Meal Plan</a>
 
         <a href="{{ href_about }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
@@ -40,9 +41,7 @@
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
-           {% endif %}">
-          About
-        </a>
+           {% endif %}">About</a>
 
         <a href="{{ href_contact }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
@@ -50,14 +49,12 @@
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
-           {% endif %}">
-          Contact
-        </a>
+           {% endif %}">Contact</a>
       </nav>
 
       <!-- Theme toggle -->
-      <button id="theme-toggle"
-        class="invisible cursor-pointer shrink-0 inline-grid place-items-center h-10 w-10 rounded-full border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
+      <!-- <button id="theme-toggle"
+        class="inline-grid place-items-center h-10 w-10 rounded-full border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
         type="button" aria-label="Toggle dark mode">
         <svg id="icon-sun" class="h-5 w-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="4"></circle>
@@ -66,85 +63,61 @@
         <svg id="icon-moon" class="h-5 w-5 hidden dark:inline" viewBox="0 0 24 24" fill="currentColor">
           <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
         </svg>
+      </button> -->
+
+      <!-- Hamburger (mobile) -->
+      <button id="menu-toggle"
+        class="md:hidden inline-grid place-items-center h-10 w-10 border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
+        type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="h-8 w-8 text-white-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <line x1="3" y1="12" x2="21" y2="12" />  <line x1="3" y1="6" x2="21" y2="6" />  <line x1="3" y1="18" x2="21" y2="18" /></svg>
       </button>
     </div>
   </div>
 </header>
 
-<!-- Mobile bottom nav -->
-<nav id="mobile-nav" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/90 dark:bg-neutral-950/90 backdrop-blur border-t border-slate-200/20 dark:border-white/10">
-  <ul class="grid grid-cols-4 text-xs">
-    <li>
-      <a href="{{ href_home }}" class="flex flex-col items-center py-2
-         {% if current == href_home %} text-white font-extrabold {% else %} text-slate-600 dark:text-slate-300 {% endif %}">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>
-        <span class="mt-0.5">Home</span>
-        <span class="mt-1 block h-0.5 w-8 rounded-full {% if current == href_home %}bg-lime-400{% else %}bg-transparent{% endif %}"></span>
-      </a>
-    </li>
-
-    <li>
-      <a href="{{ href_meal }}" class="flex flex-col items-center py-2
-         {% if current == href_meal or current contains href_meal %} text-white font-extrabold {% else %} text-slate-600 dark:text-slate-300 {% endif %}">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v20h2v-7h2v7h2V2h-2v7H9V2zM18 2h2v20h-2z"/></svg>
-        <span class="mt-0.5">Meal</span>
-        <span class="mt-1 block h-0.5 w-8 rounded-full {% if current == href_meal or current contains href_meal %}bg-lime-400{% else %}bg-transparent{% endif %}"></span>
-      </a>
-    </li>
-
-    <li>
-      <a href="{{ href_about }}" class="flex flex-col items-center py-2
-         {% if current == href_about or current contains href_about %} text-white font-extrabold {% else %} text-slate-600 dark:text-slate-300 {% endif %}">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm-7 9a7 7 0 0114 0H5z"/></svg>
-        <span class="mt-0.5">About</span>
-        <span class="mt-1 block h-0.5 w-8 rounded-full {% if current == href_about or current contains href_about %}bg-lime-400{% else %}bg-transparent{% endif %}"></span>
-      </a>
-    </li>
-
-    <li>
-      <a href="{{ href_contact }}" class="flex flex-col items-center py-2
-         {% if current == href_contact or current contains href_contact %} text-white font-extrabold {% else %} text-slate-600 dark:text-slate-300 {% endif %}">
-        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2 .6 3.1.6.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.5 21.3 2.7 14.5 2.7 5.3 2.7 4.6 3.3 4 4 4h3.1c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.6 3.1.2.4.1.9-.2 1.2l-2.2 2.2z"/></svg>
-        <span class="mt-0.5">Contact</span>
-        <span class="mt-1 block h-0.5 w-8 rounded-full {% if current == href_contact or current contains href_contact %}bg-lime-400{% else %}bg-transparent{% endif %}"></span>
-      </a>
-    </li>
-  </ul>
-</nav>
+<!-- Drawer menu -->
+<div id="mobile-menu" class="md:hidden fixed inset-0 z-40 hidden">
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" data-close></div>
+  <div class="absolute top-0 right-0 h-full w-full max-w-sm bg-neutral-950 text-white shadow-xl translate-x-full transition-transform duration-300 ease-out" data-panel>
+    <div class="h-16 px-6 flex items-center justify-between">
+      <span class="font-extrabold tracking-tight">Menu</span>
+      <button type="button" class="h-10 w-10 grid place-items-center rounded-full border border-white/10 hover:bg-white/5" data-close aria-label="Close menu">
+        <svg class="h-8 w-8 text-white-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="18" y1="6" x2="6" y2="18" />  <line x1="6" y1="6" x2="18" y2="18" /></svg>
+      </button>
+    </div>
+    <nav class="px-6 py-4 space-y-1">
+      <a href="{{ href_home }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_home %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Home</a>
+      <a href="{{ href_meal }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_meal or current contains href_meal %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Meal Plan</a>
+      <a href="{{ href_about }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_about or current contains href_about %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">About</a>
+      <a href="{{ href_contact }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_contact or current contains href_contact %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Contact</a>
+    </nav>
+  </div>
+</div>
 
 <script>
   (function(){
+    // Dark default
     const root = document.documentElement;
-    const btn  = document.getElementById('theme-toggle');
-    const sun  = document.getElementById('icon-sun');
-    const moon = document.getElementById('icon-moon');
-
-    // Dark is default unless user explicitly chose light
     const saved = localStorage.getItem('theme');
     if (saved === 'light') root.classList.remove('dark'); else root.classList.add('dark');
 
-    function syncIcons(){
-      const isDark = root.classList.contains('dark');
-      sun?.classList.toggle('hidden', isDark);
-      moon?.classList.toggle('hidden', !isDark);
-    }
-    syncIcons();
+    const btnTheme = document.getElementById('theme-toggle');
+    const sun = document.getElementById('icon-sun');
+    const moon = document.getElementById('icon-moon');
+    function sync(){ const d=root.classList.contains('dark'); sun?.classList.toggle('hidden',d); moon?.classList.toggle('hidden',!d); }
+    sync();
+    btnTheme?.addEventListener('click', ()=>{ const d=!root.classList.contains('dark'); root.classList.toggle('dark',d); localStorage.setItem('theme', d?'dark':'light'); sync(); });
 
-    btn?.addEventListener('click', () => {
-      const next = !root.classList.contains('dark');
-      root.classList.toggle('dark', next);
-      localStorage.setItem('theme', next ? 'dark' : 'light');
-      syncIcons();
-    });
-
-    // keep content clear of mobile bottom nav
-    const bar = document.getElementById('mobile-nav');
-    function pad(){
-      if (!bar) return;
-      const h = bar.offsetHeight || 56;
-      document.body.style.paddingBottom = `calc(${h}px + env(safe-area-inset-bottom, 0px))`;
-    }
-    pad();
-    window.addEventListener('resize', pad);
+    // Drawer
+    const btnMenu = document.getElementById('menu-toggle');
+    const drawer = document.getElementById('mobile-menu');
+    if (!btnMenu || !drawer) return;
+    const panel  = drawer.querySelector('[data-panel]');
+    const closes = drawer.querySelectorAll('[data-close]');
+    function openMenu(){ drawer.classList.remove('hidden'); btnMenu.setAttribute('aria-expanded','true'); requestAnimationFrame(()=>panel.classList.remove('translate-x-full')); document.body.style.overflow='hidden'; }
+    function closeMenu(){ panel.classList.add('translate-x-full'); panel.addEventListener('transitionend',()=>drawer.classList.add('hidden'),{once:true}); btnMenu.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    btnMenu.addEventListener('click', openMenu);
+    closes.forEach(el=>el.addEventListener('click', closeMenu));
+    window.addEventListener('keydown', e=>{ if(e.key==='Escape' && !drawer.classList.contains('hidden')) closeMenu(); });
   })();
 </script>

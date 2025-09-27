@@ -4,39 +4,53 @@ no_footer: true
 title: Thank You
 ---
 
-
-
 <section class="h-lvh max-w-screen-2xl mx-auto relative bg-black bg-opacity-50 sm:bg-transparent text-white">
-  <div class="absolute inset-0 flex flex-col items-center justify-center space-y-5">
-      <!-- Logo -->
-      <div class="w-32 sm:w-36 mx-auto">
-          <a href="/index.html" aria-label="Go to the homepage">
-          </a>
+  <div class="absolute inset-0 flex flex-col items-center justify-center space-y-6 px-6">
+
+      <!-- Owner Image -->
+      <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-[#919b4a] animate-fade-in">
+        <img src="{{ '/images/owner.jpg' | relative_url }}" alt="Owner" class="w-full h-full object-cover">
       </div>
 
       <!-- Thank You Message -->
-      <div class="px-5 text-center">
-          <p class="text-center uppercase text-2xl font-semibold pb-6 sm:pb-4 editable text-[#919b4a]">
-              Thank you for reaching out to us through our contact form.
+      <div class="text-center animate-fade-up">
+          <p class="uppercase text-2xl font-bold pb-4 text-[#919b4a]">
+              Thank you for reaching out to us!
           </p>
-          <p class="text-center px-10 editable pb-8 text-white">
-              We'll be in touch with you as soon as possible.
+          <p class="text-lg text-white/90 max-w-xl mx-auto pb-6">
+              We truly appreciate your message. Our team will get back to you as soon as possible.
           </p>
-          <!-- Contact Links -->
-          <nav class="flex justify-center items-center space-x-8">
-              <a href="tel:+6285939549442" target="_blank" aria-label="Call us at +62 859 3954 9442" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
-                  <i class="fa-solid fa-phone"></i>
-              </a>
-              <a href="mailto:info@dejamaresort.com" target="_blank" aria-label="Email us at info@dejamaresort.com" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
-                  <i class="fa-regular fa-envelope"></i>
-              </a>
-              <a href="https://wa.me/6285939549442?text={{whatsapp-message | replace: ' ', '%20'}}" aria-label="Contact us through WhatsApp" target="_blank" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
-                  <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="https://www.instagram.com/dejamaresort/" target="_blank" aria-label="Visit us on Instagram" class="text-white hover:text-[#919b4a] text-xl transition duration-300">
-                  <i class="fa-brands fa-instagram"></i>
-              </a>
-          </nav>
       </div>
+
+      <!-- Contact Links -->
+      <nav class="flex justify-center items-center space-x-8 text-2xl">
+          <a href="tel:+6285939549442" aria-label="Call us" class="hover:text-[#919b4a] transition duration-300">
+              <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="mailto:info@dejamaresort.com" aria-label="Email us" class="hover:text-[#919b4a] transition duration-300">
+              <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/6285939549442?text={{ page.whatsapp_message | uri_escape }}" 
+             aria-label="WhatsApp us" class="hover:text-[#919b4a] transition duration-300">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/dejamaresort/" aria-label="Instagram" class="hover:text-[#919b4a] transition duration-300">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+      </nav>
   </div>
 </section>
+
+<!-- Animations -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+  .animate-fade-up { animation: fadeUp 1.2s ease-out forwards; }
+</style>

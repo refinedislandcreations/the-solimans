@@ -1,9 +1,8 @@
-<section id="hero" class="relative w-full overflow-hidden">
-  <!-- min height = viewport - header (h-16 = 64px) -->
+<section id="hero" class="relative w-full max-w-[1440px] place-self-center overflow-hidden md:mb-24">
   <div class="grid md:grid-cols-2 gap-0 items-stretch min-h-[calc(100vh-64px)]">
 
     <!-- RIGHT: full-bleed image -->
-    <div class="order-1 md:order-2 relative h-[60vh] md:h-full">
+    <div class="order-1 md:order-2 relative h-[46vh] md:h-full">
       <img
         data-reveal-img
         src="{{ page.hero.image | default: '/images/temp-img.png' | relative_url }}"

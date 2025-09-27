@@ -49,14 +49,14 @@ title: Meal Plan Request
 
     <!-- STEP 1 -->
     <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What is your full name?</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Hi! What is your full name?</h2>
       <input type="text" name="name" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
     </div>
 
     <!-- STEP 2 -->
     <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
       <h2 class="text-2xl md:text-3xl font-bold mb-6">What is your email?</h2>
-      <input type="email" name="email" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
+      <input type="email" name="email" class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
     </div>
 
     <!-- STEP 3 -->
@@ -232,15 +232,19 @@ title: Meal Plan Request
   showStep(currentStep);
 
   document.getElementById('mealForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-
-    await fetch("YOUR_GOOGLE_SCRIPT_URL", {
-      method: "POST",
-      body: JSON.stringify(data),
-    });
-
-    window.location.href = "/thankyou.html";
+  e.preventDefault();
+  
+  const formData = new FormData(e.target);  
+  
+  fetch('https://script.google.com/macros/s/AKfycbzbY8z9xVOWjRYL6KFhW-ijFv1KRvYdAjGQJIjiCc_ErjiIQQiOFoP2xxdw_0Q4TsKp/exec', {
+    method: 'POST',
+    body: formData,
+    mode: 'no-cors'
   });
+
+  window.location.href = "/thank-you.html"; 
+});
+
+
+
 </script>

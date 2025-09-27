@@ -239,7 +239,8 @@ title: Meal Plan Request
   fetch('https://script.google.com/macros/s/AKfycbzbY8z9xVOWjRYL6KFhW-ijFv1KRvYdAjGQJIjiCc_ErjiIQQiOFoP2xxdw_0Q4TsKp/exec', {
     method: 'POST',
     body: formData,
-    mode: 'no-cors'
+    mode: 'no-cors',
+    cache: 'no-store'
   });
 
   window.location.href = "/thank-you.html"; 

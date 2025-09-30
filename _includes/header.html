@@ -2,8 +2,9 @@
   {% assign current      = page.url | relative_url %}
   {% assign href_home    = '/' | relative_url %}
   {% assign href_meal    = '/meal-plan.html' | relative_url %}
+  {% assign href_restaurant   = '/restaurant.html' | relative_url %}
   {% assign href_about   = '/about.html' | relative_url %}
-  {% assign href_contact = '/contact.html' | relative_url %}
+  {% assign href_contact = '/#contact' | relative_url %}
 
   <!-- WIDER container + lebih center padding -->
   <div class="w-full max-w-[1440px] mx-auto h-16 px-8 lg:px-16 flex items-center justify-between">
@@ -29,11 +30,19 @@
 
         <a href="{{ href_meal }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
-           {% if current == href_meal or current contains href_meal %}
+           {% if current == href_meal or current == '/meal-plan-request.html' %}
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
            {% endif %}">Meal Plan</a>
+
+        <a href="{{ href_restaurant }}"
+           class="uppercase font-semibold inline-block pb-1 border-b-2
+           {% if current == href_restaurant or current contains href_restaurant %}
+             text-white dark:text-white font-extrabold border-[#919b4a]
+           {% else %}
+             text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
+           {% endif %}">Restaurant</a>
 
         <a href="{{ href_about }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
@@ -43,13 +52,13 @@
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
            {% endif %}">About</a>
 
-        <a href="{{ href_contact }}"
+        <!-- <a href="{{ href_contact }}"
            class="uppercase font-semibold inline-block pb-1 border-b-2
            {% if current == href_contact or current contains href_contact %}
              text-white dark:text-white font-extrabold border-[#919b4a]
            {% else %}
              text-slate-600 dark:text-slate-300 border-transparent hover:text-slate-900 dark:hover:text-white
-           {% endif %}">Contact</a>
+           {% endif %}">Contact</a> -->
       </nav>
 
       <!-- Theme toggle -->

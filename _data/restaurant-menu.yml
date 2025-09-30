@@ -24,7 +24,7 @@ dishes:
       - Mushroom
       - Green pepper
       - Sourdough bread (1 pc)
-    image: "/images/temp-img.png"
+    image: "/images/4.png"
     alt: "The Solimans Omelette"
   - name: "Keto Omelette"
     category: "Breakfast"
@@ -43,7 +43,7 @@ dishes:
       - Mushrooms
       - Beef bacon
       - Avocado
-    image: "/images/temp-img.png"
+    image: "/images/7.png"
     alt: "Keto Omelette"
   - name: "Greek Yoghurt Bowl"
     category: "Breakfast"
@@ -59,7 +59,7 @@ dishes:
       - Blueberry
       - Walnut
       - Maple syrup
-    image: "/images/temp-img.png"
+    image: "/images/5.png"
     alt: "Greek Yoghurt Bowl"
   - name: "Mango Chia Overnight Oats"
     category: "Breakfast"
@@ -78,7 +78,7 @@ dishes:
       - Mango
       - Chia seed
       - Mint
-    image: "/images/temp-img.png"
+    image: "/images/6.png"
     alt: "Mango Chia Overnight Oats"
   - name: "Dark Choco Protein Overnight Oats"
     category: "Breakfast"

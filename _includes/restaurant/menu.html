@@ -1,0 +1,134 @@
+<section id="restaurant-menu" class="bg-neutral-950 text-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="flex flex-col items-center text-center">
+      <h1 data-reveal class="font-display text-5xl md:text-7xl leading-[0.95]">
+        {{ page.retaurant.kicker | default: "Our Menu" }}
+      </h1>
+    </div>
+
+    <!-- Categories Tabs -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10 mt-8" id="menuTabs">
+      {% if site.data.restaurant-menu.categories and
+      site.data.restaurant-menu.categories.size > 0 %} {% for c in
+      site.data.restaurant-menu.categories %} {% assign cname = c.name |
+      downcase %}
+      <button
+        type="button"
+        class="cat-tab px-4 py-2 rounded-full border border-white/20 text-white hover:text-white hover:border-[#919b4a] transition data-[active=true]:bg-[#919b4a] data-[active=true]:font-bold data-[active=true]:text-white"
+        data-cat="{{ cname }}"
+      >
+        {{ c.name }}
+      </button>
+      {% endfor %} {% else %}
+      <p class="text-sm text-white/60 italic">
+        🙏 Sorry, categories are not available at the moment.
+      </p>
+      {% endif %}
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="menuGrid">
+      {% if site.data.restaurant-menu.dishes and
+      site.data.restaurant-menu.dishes.size > 0 %} {% for dish in
+      site.data.restaurant-menu.dishes %} {% assign cname = dish.category |
+      downcase %}
+      <article
+        class="dish-card rounded-xl overflow-hidden border border-white/10 bg-white/5 hidden"
+        data-cat="{{ cname }}"
+        data-reveal
+      >
+        <div class="relative">
+          <img
+            src="{{ dish.image | relative_url }}"
+            alt="{{ dish.alt }}"
+            class="h-48 w-full object-cover"
+          />
+
+          <!-- Harga dengan aksen hijau -->
+          <div
+            class="absolute top-3 left-3 bg-[#919b4a] px-3 py-1 rounded text-sm font-bold text-white flex items-center gap-1 shadow"
+          >
+            <i class="fa-solid fa-rupiah-sign"></i> {{ dish.price }}
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="font-bold text-lg">{{ dish.name }}</h3>
+          <p class="text-sm text-white/70 mb-3">{{ dish.category }}</p>
+
+          <!-- Macros -->
+          <div class="flex flex-wrap gap-2 text-xs text-white/80 mb-3">
+            <span class="px-2 py-1 rounded bg-white/5 border border-white/10"
+              >🔥 {{ dish.calories }} kcal</span
+            >
+            <span class="px-2 py-1 rounded bg-white/5 border border-white/10"
+              >🍗 {{ dish.protein }}</span
+            >
+            <span class="px-2 py-1 rounded bg-white/5 border border-white/10"
+              >🍚 {{ dish.carbs }}</span
+            >
+            <span class="px-2 py-1 rounded bg-white/5 border border-white/10"
+              >🥑 {{ dish.fat }}</span
+            >
+          </div>
+
+          <!-- Ingredients -->
+          {% if dish.ingredients and dish.ingredients.size > 0 %}
+          <details class="rounded-lg border border-white/10 bg-white/5">
+            <summary class="px-3 py-2 cursor-pointer select-none text-sm">
+              Ingredients
+            </summary>
+            <ul
+              class="px-3 pb-3 pt-1 text-sm text-white/80 grid grid-cols-2 gap-x-4 gap-y-1"
+            >
+              {% for ing in dish.ingredients %}
+              <li class="flex items-center gap-2">
+                <svg
+                  class="h-3 w-3 text-[#919b4a]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                <span>{{ ing }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </details>
+          {% else %}
+          <p class="text-sm text-white/60 italic">No ingredients listed.</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %} {% else %}
+      <p class="text-center col-span-full text-white/60 italic">
+        🙏 Sorry, our menu is currently not available. Please check back later.
+      </p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll(".cat-tab");
+    const dishes = document.querySelectorAll(".dish-card");
+    let current = tabs[0]?.dataset.cat;
+
+    function render() {
+      dishes.forEach((d) => {
+        d.classList.toggle("hidden", d.dataset.cat !== current);
+      });
+      tabs.forEach((t) => (t.dataset.active = t.dataset.cat === current));
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        current = tab.dataset.cat;
+        render();
+      });
+    });
+
+    render();
+  })();
+</script>

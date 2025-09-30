@@ -1,0 +1,63 @@
+<section class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+    <div class="flex flex-col items-center text-center">
+        <h1 data-reveal class="font-display text-5xl md:text-7xl leading-[0.95]">
+          {{ page.how.kicker | default: "We Craft Meal Plans" }}
+        </h1>
+        <p data-reveal class="font-display text-3xl md:text-4xl mt-1 text-white/90">
+          {{ page.how.title | default: "HOW IT WORKS" }}
+        </p>
+    </div>
+  
+    <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for step in page.how.steps %}
+        <article
+          data-reveal
+          class="group border-2 border-[#919b4a] bg-white/5 p-6 transition-all duration-500 ease-out
+                 opacity-0 translate-y-6 hover:-translate-y-1 hover:shadow-lg hover:border-[#a4b35a]">
+          <h3 class="flex item-center gap-2 font-bold mb-3">
+            {% if step.button.icon %}
+                <div class="mb-4">
+                {{ step.button.icon | raw }}
+                </div>
+            {% endif %}
+            {{ step.title }}
+          </h3>
+          <p class="text-white/80 whitespace-pre-line text-sm leading-relaxed">{{ step.paragraph }}</p>
+          {% if step.button %}
+            <a href="{{ step.button.url }}" class="inline-block mt-4 px-4 py-2 rounded bg-[#919b4a] text-white text-sm font-semibold hover:opacity-90 transition">
+              {{ step.button.text }}
+            </a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+  
+  <script>
+  (function(){
+    const cards = document.querySelectorAll('[data-reveal]');
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!cards.length) return;
+  
+    if (reduce) {
+      cards.forEach(el => el.classList.remove('opacity-0','translate-y-6'));
+      return;
+    }
+  
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('opacity-0','translate-y-6');
+          e.target.classList.add('opacity-100','translate-y-0');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+  
+    cards.forEach((el, i) => {
+      el.style.transitionDelay = (i * 10) + 'ms'; // animasi stagger
+      io.observe(el);
+    });
+  })();
+  </script>
+  

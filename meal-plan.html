@@ -1,251 +1,46 @@
 ---
 layout: default
-title: Meal Plan Request
+title: Meal Plan
+
+hero:
+  title: Meal Plans
+  subtitle: Designed for You
+  paragraph: At The Solimans, we understand that every individual has unique health goals. That's why we offer personalized meal plans, crafted to suit your lifestyle and dietary preferences. Whether you're looking to balance your nutrition, boost your protein intake, or follow a plant-based diet, we’ve got the perfect meal plan for you. Let us help you stay on track with meals that are delicious, nutritious, and designed for your success.
+  cta_url: "/meal-plan-request.html"
+  cta_text: "START YOUR PLAN"
+  image: "/images/7.jpg"
+  image_alt: "Hero meal"
+
+how:
+  subtitle: "We Craft Meal Plans"
+  title: "HOW IT WORKS"
+  steps:
+    - title: "STEP 1: CHOOSE YOUR PLAN"
+      paragraph: "Every week, we offer a variety of meal plans to suit different goals and preferences, including:\n- Balanced\n- High Protein\n- Vegan\n- Custom\nEach menu features five meal options per day, providing you with a total of 15 meals to choose from."
+    - title: "STEP 2: MIX & MATCH"
+      paragraph: "You can select meals from one menu or mix and match across all the options.\n\nFor example, choose three meals from the Balanced menu, or combine meals from High Protein, Balanced, and Vegan.\n\nThe choice is yours!"
+    - title: "STEP 3: ALIGN WITH YOUR GOALS"
+      paragraph: "Each meal comes with detailed macros, so you can select meals based on your daily calorie and macronutrient goals.\n\nWhether you’re aiming to balance your intake, increase protein, or follow a plant-based diet, we’ve got you covered."
+    - title: "STEP 4: CUSTOM MEAL PLANS"
+      paragraph: "Need something more specific? Our Custom Plans are tailored just for you.\n\nShare your desired macros, or let us help you identify them, and we’ll create a meal plan that fits your needs.\n\nCustom plans can also accommodate medical requirements or food preferences, ensuring you get meals that are both nutritious and suitable for your lifestyle."
+    - title: "DELIVERY"
+      paragraph: "We deliver daily from Monday to Saturday in an hour window that we inform you of in advance, and Sunday is our off day.\n\nIf you like to have meals seven days per week, we can deliver Sunday meals on Saturday."
+      button:
+        text: "SEE DELIVERY SCHEDULE"
+        url: "/delivery-schedule/"
+        icon: '<i class="fa-solid fa-motorcycle text-xl text-[#919b4a]"></i>'
+
+
+banner:
+  title: "Need More Support?"
+  subtitle: "Let Us Help You Figure Out Which Meal Plan is the Perfect Fit For Your Goals!"
+  image: "/images/banner.jpg"
+  button_url: "/meal-plan-request"
+  button_text: "START YOUR JOURNEY"
+
+
 ---
-
-<section id="meal-stepper" class="w-full h-screen bg-neutral-950 text-white flex flex-col">
-  <!-- Progress Bar -->
-  <div class="h-1 bg-neutral-800">
-    <div id="progress-bar" class="h-1 bg-[#919b4a] transition-all duration-300 w-0"></div>
-  </div>
-<!-- IMPORTANT INFO (subtle, collapsible) -->
-<details class="group max-w-xl mx-auto mt-8">
-    <summary class="flex items-center gap-2 select-none cursor-pointer
-                    text-[12px] md:text-sm text-slate-400/90
-                    hover:text-slate-300 transition">
-      <span class="inline-grid place-items-center h-5 w-5 rounded-full
-                   bg-white/5 text-slate-300 border border-white/10
-                   group-hover:bg-white/10">
-        i
-      </span>
-      <span class="uppercase tracking-widest">Important Information</span>
-      <svg class="ml-auto h-4 w-4 text-slate-500 transition-transform duration-200 group-open:rotate-180"
-           viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
-      </svg>
-    </summary>
-  
-    <div class="mt-3 rounded-lg border border-white/10 bg-white/[0.03] p-4 text-[13px] md:text-[13.5px]
-                text-slate-300/90 leading-relaxed">
-      <ul class="space-y-2">
-        <li>We deliver daily from <span class="text-white font-medium">Monday to Saturday</span>. Sunday is off.</li>
-        <li>Delivery fee: <span class="text-white font-medium">Rp 50.000 / week</span> within Canggu. Outside Canggu, please contact us.</li>
-        <li>Delivery window is one hour (e.g., <span class="whitespace-nowrap">1 pm – 2 pm</span>), informed by our customer service.</li>
-        <li>Extra charge applies for more protein per meal or extra ingredients.</li>
-        <li>Questions? Chat our CS via
-          <a class="underline decoration-[#919b4a]/60 hover:text-white"
-             href="{{ site.whatsapp_url | default: 'https://wa.me/6282145390784' }}"
-             target="_blank" rel="noopener">WhatsApp</a>.
-        </li>
-      </ul>
-    </div>
-  </details>
-  
-  <!-- Step Container -->
-  <form id="mealForm" class="flex-1 flex flex-col items-center pt-10 px-6 relative">
-    <!-- Foto Owner -->
-    <img src="/images/owner.jpg" alt="Owner"
-         class="h-24 w-24 rounded-full object-cover mb-6 shadow-lg">
-
-    <!-- STEP 1 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Hi! What is your full name?</h2>
-      <input type="text" name="name" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 2 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What is your email?</h2>
-      <input type="email" name="email" class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 3 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Your WhatsApp number?</h2>
-      <input type="tel" name="whatsapp" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 4 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What’s your gender?</h2>
-      <select name="gender" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option value="">Choose…</option>
-        <option>Male</option>
-        <option>Female</option>
-      </select>
-    </div>
-
-    <!-- STEP 5 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Do you eat meat?</h2>
-      <select name="meat" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>Yes</option>
-        <option>No, Vegetarian</option>
-        <option>No, Vegan</option>
-      </select>
-    </div>
-
-    <!-- STEP 6 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Any food allergies?</h2>
-      <input type="text" name="allergy" placeholder="Type 'None' if no allergy" class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 7 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">How many meals per day?</h2>
-      <select name="meals" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-      </select>
-    </div>
-
-    <!-- STEP 8 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Your weight (kg)?</h2>
-      <input type="number" name="weight" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 9 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Your height (cm)?</h2>
-      <input type="number" name="height" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 10 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Your age?</h2>
-      <input type="number" name="age" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-    </div>
-
-    <!-- STEP 11 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Exercise level?</h2>
-      <select name="exercise" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>Little or No Exercise</option>
-        <option>Light Exercise 1-3 days/week</option>
-        <option>Moderate Exercise 3-5 days/week</option>
-        <option>Hard Daily Exercise / Physical Job</option>
-      </select>
-    </div>
-
-    <!-- STEP 12 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What’s your target?</h2>
-      <select name="target" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>Gain</option>
-        <option>Maintain</option>
-        <option>Loss 1/2 Kg/week</option>
-        <option>Loss 1 Kg/week</option>
-        <option>Loss +1 Kg/week</option>
-      </select>
-    </div>
-
-    <!-- STEP 13 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Do you want to choose your meals?</h2>
-      <select name="choice" required class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>YES, I will choose</option>
-        <option>NO, choose for me</option>
-        <option>NO, I want custom meals</option>
-      </select>
-    </div>
-
-    <!-- STEP 14 -->
-    <div class="step hidden w-full max-w-xl text-center opacity-0 transition-all duration-500 translate-y-4">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">How did you hear about us?</h2>
-      <select name="source" class="input-field w-full px-4 py-3 rounded bg-neutral-900 border border-neutral-700 text-lg text-center">
-        <option>Instagram</option>
-        <option>Facebook</option>
-        <option>Google Search</option>
-        <option>Obsidian Gym</option>
-        <option>Fitness Plus Gym</option>
-        <option>Friend</option>
-        <option>Other</option>
-      </select>
-    </div>
-
-    <!-- Navigation -->
-    <div class="mt-10 flex justify-center gap-4">
-      <button type="button" id="prevBtn" class="hidden px-6 py-3 bg-neutral-700 rounded text-white text-lg transition-all duration-300">Previous</button>
-      <button type="button" id="nextBtn" disabled class="px-6 py-3 rounded text-lg font-bold text-white bg-[#919b4a]/40 cursor-not-allowed transition-all duration-300">Next</button>
-      <button type="submit" id="submitBtn" disabled class="hidden px-6 py-3 rounded text-lg font-bold text-white bg-[#919b4a]/40 cursor-not-allowed transition-all duration-300">Submit</button>
-    </div>
-  </form>
-
-</section>
-
-<script>
-  const steps = document.querySelectorAll('.step');
-  const progressBar = document.getElementById('progress-bar');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const submitBtn = document.getElementById('submitBtn');
-  let currentStep = 0;
-
-  function showStep(n) {
-    steps.forEach((s, i) => {
-      s.classList.toggle('hidden', i !== n);
-      if (i === n) {
-        setTimeout(() => {
-          s.classList.add('opacity-100', 'translate-y-0');
-          s.classList.remove('opacity-0', 'translate-y-4');
-        }, 10);
-      } else {
-        s.classList.remove('opacity-100', 'translate-y-0');
-        s.classList.add('opacity-0', 'translate-y-4');
-      }
-    });
-    prevBtn.classList.toggle('hidden', n === 0);
-    nextBtn.classList.toggle('hidden', n === steps.length - 1);
-    submitBtn.classList.toggle('hidden', n !== steps.length - 1);
-    progressBar.style.width = `${((n + 1) / steps.length) * 100}%`;
-    validateStep();
-  }
-
-  function validateStep() {
-    const currentInput = steps[currentStep].querySelector('.input-field');
-    const isValid = currentInput && currentInput.value.trim() !== '';
-
-    const activeBtn = currentStep === steps.length - 1 ? submitBtn : nextBtn;
-    if (isValid) {
-      activeBtn.disabled = false;
-      activeBtn.classList.remove('bg-[#919b4a]/40', 'cursor-not-allowed');
-      activeBtn.classList.add('bg-[#919b4a]', 'scale-105', 'shadow-lg');
-      setTimeout(() => activeBtn.classList.remove('scale-105'), 200);
-    } else {
-      activeBtn.disabled = true;
-      activeBtn.classList.add('bg-[#919b4a]/40', 'cursor-not-allowed');
-      activeBtn.classList.remove('bg-[#919b4a]', 'shadow-lg');
-    }
-  }
-
-  prevBtn.addEventListener('click', () => { if (currentStep > 0) { currentStep--; showStep(currentStep); } });
-  nextBtn.addEventListener('click', () => { if (currentStep < steps.length - 1) { currentStep++; showStep(currentStep); } });
-
-  document.querySelectorAll('.input-field').forEach(input => {
-    input.addEventListener('input', validateStep);
-    input.addEventListener('change', validateStep);
-  });
-
-  showStep(currentStep);
-
-  document.getElementById('mealForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  
-  const formData = new FormData(e.target);  
-  
-  fetch('https://script.google.com/macros/s/AKfycbzbY8z9xVOWjRYL6KFhW-ijFv1KRvYdAjGQJIjiCc_ErjiIQQiOFoP2xxdw_0Q4TsKp/exec', {
-    method: 'POST',
-    body: formData,
-    mode: 'no-cors',
-    cache: 'no-store'
-  });
-
-  window.location.href = "/thank-you.html"; 
-});
-
-
-
-</script>
+{% include meal/hero.html %}
+{% include meal/how-it-works.html %}
+{% include image-banner.html %}
+{% include meal/menu.html %}

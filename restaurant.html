@@ -1,0 +1,59 @@
+---
+layout: default
+title: Restaurant
+
+hero:
+  title: The Restaurant
+  subtitle: A Space for Everyone
+  paragraph: A health and fitness meal plan business that believes healthy eating doesn’t have to be boring. Dietitian-designed and chef-crafted so you can stay consistent with meals that are delicious, nutritious, and built for your goals.
+  cta_url: "https://wa.me/6282145390784?text="
+  cta_text: "LET’S TALK"
+  whatsapp_message: "Hi! I’m interested in learning more about your meal plans. Can you provide more information?"
+  secondary_url: "/meal-plan-request/"
+  secondary_text: "Start your plan"
+  image: "/images/canggu.jpg"
+  image_alt: "Hero meal"
+
+features:
+  kicker: "Fresh, Flavorful, and"
+  title: "Nourishing"
+  items:
+    - title: A Welcoming Space for All
+      paragraph: Located in the peaceful area of Seseh, The Solimans Restaurant is a place where everyone is welcome. Whether you're enjoying a meal with friends, family, or even dining solo, we’ve created an inviting environment that feels like home.
+    - title: Perfect for Gatherings
+      paragraph: Our restaurant is designed with social dining in mind. It’s the perfect spot to gather with loved ones for a meal, celebrate special moments, or simply enjoy good company over healthy, delicious food.
+    - title: Health Meets Flavor
+      paragraph: In the serene surroundings of Seseh, we serve a menu that’s as nourishing as it is flavorful. From nutrient-packed dishes to special dietary options, we cater to all tastes and preferences, ensuring a dining experience that supports both your wellness and enjoyment.
+  images:
+    - image: "/images/place.png"
+    - image: "/images/place1.png"
+    - image: "/images/place2.png"
+---
+
+{% include hero.html %} {% include features.html %} {% include
+restaurant/menu.html %}
+<section id="map" class="bg-neutral-950 text-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+     <!-- Header -->
+     <div class="flex flex-col items-center text-center">
+        <h1 data-reveal class="font-display text-5xl md:text-7xl leading-[0.95]">
+          Where To Find Us
+        </h1>
+      </div>
+  
+    <div
+      class="mt-8 rounded-xl overflow-hidden border border-slate-200/50 dark:border-white/10"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.6113006406413!2d115.1144192!3d-8.633262199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23959ab39cdb3%3A0x25e30b8410bb85e5!2sThe%20Solimans!5e0!3m2!1sen!2sid!4v1746164418841!5m2!1sen!2sid"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>

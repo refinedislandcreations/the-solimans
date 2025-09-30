@@ -5,8 +5,6 @@ categories:
     description: "Discover our High Protein meals, perfect for building and maintaining muscle."
   - name: vegan
     description: "Our Vegan meal plans are crafted for plant-based lifestyles."
-  - name: carnivore
-    description: "Satisfy your cravings with our protein-packed Carnivore meals."
   - name: custom
     description: "Design your own meal plan with Custom options tailored to you."
 weeks:
@@ -28,7 +26,7 @@ weeks:
               - Falafel
               - Hummus
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/1.png"
             alt: "Arabic Breakfast"
           - name: "Chicken Mozzarella Wrap"
             calories: 817
@@ -44,7 +42,7 @@ weeks:
               - Cassava chips
               - Salsa
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/2.png"
             alt: "Chicken Mozzarella Wrap"
           - name: "Beef Stir Fry"
             calories: 535
@@ -59,7 +57,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/3.png"
             alt: "Beef Stir Fry"
           - name: "Spiral Tuna Pasta"
             calories: 467

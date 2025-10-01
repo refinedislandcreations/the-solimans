@@ -1,29 +1,39 @@
 {
-  "name": "the-solimans",
+  "name": "ioc-jekyll-tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch --content './**/*.{html,liquid,md,markdown}' --content './_data/**/*.{yml,yaml,json}'",
-    "serve": "bundle exec jekyll serve",
-    "start": "npm run dev:css & npm run serve",
-    "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify --content './**/*.{html,liquid,md,markdown}' --content './_data/**/*.{yml,yaml,json}'",
-    "build": "bundle exec jekyll build && npm run build:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jekyll:dev": "bundle exec jekyll serve --watch",
+    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "css:dev": "postcss style.css --output assets/css/output-style.css --watch",
+    "css:build": "NODE_ENV=production postcss style.css --output assets/css/output-style.css",
+    "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
+    "build": "npm run css:build && npm run jekyll:build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garyhtg26/the-solimans.git"
+    "url": "git+https://github.com/PollockCR/ioc-jekyll-tailwind.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/garyhtg26/the-solimans/issues"
+    "url": "https://github.com/PollockCR/ioc-jekyll-tailwind/issues"
   },
-  "homepage": "https://github.com/garyhtg26/the-solimans#readme",
+  "homepage": "https://github.com/PollockCR/ioc-jekyll-tailwind#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.5.0",
+    "cssnano": "^5.1.14",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.4"
+  },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "playground-elements": "^0.17.1",
+    "static-browser-server": "^1.0.5"
   }
 }

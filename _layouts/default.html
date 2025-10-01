@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ site.title | default: "The Solimans" }}</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  
 
-  <!-- Set theme before paint (anti FOUC) -->
+  <!-- Set theme before paint (anti FOUC) 
   <script>
     (function () {
       try {
@@ -24,10 +22,10 @@
   </script>
 
 <script>(function(){if(localStorage.getItem('theme')!=='light'){document.documentElement.classList.add('dark');}})();</script>
+-->
 
 
-  <!-- Tailwind output -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
 </head>
 <body class="font-sans bg-white text-slate-900 dark:bg-neutral-950 dark:text-slate-100 antialiased">
   {% include header.html %}

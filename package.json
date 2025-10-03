@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "jekyll:dev": "bundle exec jekyll serve --watch",
-    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
-    "css:dev": "postcss style.css --output assets/css/output-style.css --watch",
-    "css:build": "NODE_ENV=production postcss style.css --output assets/css/output-style.css",
-    "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
+    "css:build": "postcss ./assets/css/tailwind.css -o ./assets/css/main.css",
+    "jekyll:build": "bundle exec jekyll build",
     "build": "npm run css:build && npm run jekyll:build"
   },
   "repository": {
@@ -25,12 +21,12 @@
   "homepage": "https://github.com/PollockCR/ioc-jekyll-tailwind#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.21",
     "concurrently": "^7.5.0",
     "cssnano": "^5.1.14",
-    "postcss": "^8.4.19",
+    "postcss": "^8.5.6",
     "postcss-cli": "^10.0.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.4.18"
   },
   "dependencies": {
     "playground-elements": "^0.17.1",

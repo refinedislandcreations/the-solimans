@@ -50,7 +50,7 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
 
   cards.forEach((el, i) => {
-    el.style.transitionDelay = (i * 80) + 'ms'; // stagger
+    el.style.transitionDelay = (i * 20) + 'ms'; // stagger
     io.observe(el);
   });
 })();

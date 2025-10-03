@@ -8,14 +8,17 @@
     </div>
 
     <!-- Categories Tabs -->
-    <div class="flex flex-wrap justify-center gap-3 mb-10 mt-8" id="menuTabs">
+    <div
+      class="flex flex-nowrap overflow-x-auto scrollbar-thin scrollbar-thumb-[#919b4a]/50 scrollbar-track-transparent gap-3 mb-10 mt-8 px-1"
+      id="menuTabs"
+    >
       {% if site.data.restaurant-menu.categories and
       site.data.restaurant-menu.categories.size > 0 %} {% for c in
       site.data.restaurant-menu.categories %} {% assign cname = c.name |
       downcase %}
       <button
         type="button"
-        class="cat-tab px-4 py-2 rounded-full border border-white/20 text-white hover:text-white hover:border-[#919b4a] transition data-[active=true]:bg-[#919b4a] data-[active=true]:font-bold data-[active=true]:text-white"
+        class="shrink-0 cursor-pointer cat-tab px-4 py-2 rounded-full border border-white/20 text-white hover:text-white hover:border-[#919b4a] transition data-[active=true]:bg-[#919b4a] data-[active=true]:font-bold data-[active=true]:text-white"
         data-cat="{{ cname }}"
       >
         {{ c.name }}
@@ -49,7 +52,7 @@
           <div
             class="absolute top-3 left-3 bg-[#919b4a] px-3 py-1 rounded text-sm font-bold text-white flex items-center gap-1 shadow"
           >
-            <i class="fa-solid fa-rupiah-sign"></i> {{ dish.price }}
+            Rp {{ dish.price }}
           </div>
         </div>
         <div class="p-5">

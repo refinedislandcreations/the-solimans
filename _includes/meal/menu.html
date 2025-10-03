@@ -2,19 +2,19 @@
 <!-- Sticky controls -->
 <section class="sticky top-16 z-20 bg-neutral-950/95 backdrop-blur supports-[backdrop-filter]:backdrop-blur border-y border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-4">
-        <div class="flex flex-col items-center text-center">
+        <div class="flex flex-col md:items-center md:text-center">
             <h1 data-reveal class="font-display text-5xl md:text-7xl leading-[0.95]">
               {{ page.how.kicker | default: "Let's Get To The Fun Part" }}
             </h1>
         </div>
       <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 mt-8">
         <!-- Categories as tabs -->
-        <div class="flex flex-wrap gap-2" id="catTabs">
+        <div class="flex flex-nowrap overflow-x-auto scrollbar-thin scrollbar-thumb-[#919b4a]/50 scrollbar-track-transparent gap-3 mb-10 mt-8 px-1" id="catTabs">
           {% assign cats = site.data.meal-plans.categories | default: site.data.meal-plans.categories %}
           {% for c in cats %}
             {% assign cname = c.name | downcase %}
             <button type="button"
-                    class="capitalize cat-tab px-4 py-2 rounded-full border border-white/10 text-white hover:text-white hover:border-white/20 transition data-[active=true]:bg-[#919b4a] data-[active=true]:font-bold data-[active=true]:text-white data-[active=true]:border-transparent"
+                    class="shrink-0 cursor-pointer capitalize cat-tab px-4 py-2 rounded-full border border-white/10 text-white hover:text-white hover:border-white/20 transition data-[active=true]:bg-[#919b4a] data-[active=true]:font-bold data-[active=true]:text-white data-[active=true]:border-transparent"
                     data-cat="{{ cname | escape }}">
               {{ c.name }}
             </button>

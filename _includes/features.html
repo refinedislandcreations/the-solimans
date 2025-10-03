@@ -58,7 +58,7 @@
     <!-- RIGHT: text sections with divider -->
     <div class="md:border-l-2 md:border-[#919b4a]">
       {% for it in page.features.items limit:3 %}
-        <article class="px-8 py-8 border-b-2 border-[#919b4a] last:border-b-0">
+        <article class="px-0 md:px-8 py-8 border-b-2 border-[#919b4a] last:border-b-0">
           <h3 class="uppercase text-lg font-extrabold tracking-wide">{{ it.title }}</h3>
           <p class="mt-3 text-gray-300">{{ it.paragraph }}</p>
         </article>

@@ -1,0 +1,10 @@
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(145, 155, 74, 0.5);
+  border-radius: 9999px;
+}

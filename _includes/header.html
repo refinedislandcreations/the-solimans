@@ -7,7 +7,7 @@
   {% assign href_contact = '/#contact' | relative_url %}
 
   <!-- WIDER container + lebih center padding -->
-  <div class="w-full max-w-[1440px] mx-auto h-16 px-8 lg:px-16 flex items-center justify-between">
+  <div class="w-full max-w-[1440px] mx-auto h-16 px-4 lg:px-16 flex items-center justify-between">
     <!-- Brand: logo saja, lebih besar -->
     <a href="{{ href_home }}" class="inline-flex items-center">
       <img
@@ -89,17 +89,38 @@
   <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" data-close></div>
   <div class="absolute top-0 right-0 h-full w-full max-w-sm bg-neutral-950 text-white shadow-xl translate-x-full transition-transform duration-300 ease-out" data-panel>
     <div class="h-16 px-6 flex items-center justify-between">
-      <span class="font-extrabold tracking-tight">Menu</span>
+      <a href="{{ href_home }}" class="inline-flex items-center">
+        <img
+          src="{{ '/images/the-solimans-logo.png' | relative_url }}"
+          alt="The Solimans"
+          class="h-14 w-14 md:h-16 md:w-16 object-cover"
+          onerror="this.style.display='none'">
+      </a>
       <button type="button" class="h-10 w-10 grid place-items-center rounded-full border border-white/10 hover:bg-white/5" data-close aria-label="Close menu">
         <svg class="h-8 w-8 text-white-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="18" y1="6" x2="6" y2="18" />  <line x1="6" y1="6" x2="18" y2="18" /></svg>
       </button>
     </div>
     <nav class="px-6 py-4 space-y-1">
       <a href="{{ href_home }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_home %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Home</a>
-      <a href="{{ href_meal }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_meal or current contains href_meal %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Meal Plan</a>
+      <a href="{{ href_meal }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_meal or current == '/meal-plan-request.html' %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Meal Plan</a>
+      <a href="{{ href_restaurant }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_restaurant or current contains href_restaurant %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Restaurant</a>
       <a href="{{ href_about }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_about or current contains href_about %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">About</a>
-      <a href="{{ href_contact }}" class="block px-3 py-3 rounded-lg hover:bg-white/5 {% if current == href_contact or current contains href_contact %}bg-white/10 font-extrabold text-white{% else %}text-slate-300{% endif %}">Contact</a>
     </nav>
+    <div class="flex flex-col items-center p-4">
+      <a href="https://wa.me/6282145390784?text=Hi!%20I’m%20interested%20in%20learning%20more%20about%20your%20meal%20plans.%20Can%20you%20provide%20more%20information?" 
+        class="block m-auto uppercase text-center px-6 py-3 bg-[#919b4a] text-black font-semibold max-w-xs hover:bg-[#6f7b3a] transition duration-300">
+        Let's Talk
+      </a>
+      <!-- Social Media Links -->
+      <div class="flex gap-3 mt-4">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#919b4a]">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="mailto:info@example.com" class="hover:text-[#919b4a]">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 

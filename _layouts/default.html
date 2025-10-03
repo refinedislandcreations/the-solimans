@@ -1,31 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ site.title | default: "The Solimans" }}</title>
 
   {% include head.html %}
-  
 
-
+  <!-- Init theme -->
   <script>
     (function () {
       try {
         const saved = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const t = saved || (prefersDark ? 'dark' : 'light');
-        if (t === 'dark') document.documentElement.classList.add('dark');
-        document.documentElement.dataset.theme = t;
+        const theme = saved || (prefersDark ? 'dark' : 'light');
+
+        document.documentElement.dataset.theme = theme;
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
       } catch (_) {}
     })();
   </script>
-
-<script>(function(){if(localStorage.getItem('theme')!=='light'){document.documentElement.classList.add('dark');}})();</script>
-
-
-
-
 </head>
 <body class="font-sans bg-white text-slate-900 dark:bg-neutral-950 dark:text-slate-100 antialiased">
   {% include header.html %}
@@ -35,5 +33,35 @@
   </main>
 
   {% include footer.html %}
+
+  <!-- Toggle button (example) -->
+  <button id="theme-toggle" class="fixed bottom-4 right-4 p-3 rounded-full bg-slate-200 dark:bg-slate-800 shadow-md">
+    <span id="theme-toggle-text">🌙</span>
+  </button>
+
+  <script>
+    (function () {
+      const html = document.documentElement;
+      const btn = document.getElementById("theme-toggle");
+      const txt = document.getElementById("theme-toggle-text");
+
+      function applyTheme(theme) {
+        html.dataset.theme = theme;
+        if (theme === "dark") {
+          html.classList.add("dark");
+          txt.textContent = "☀️"; // icon sun
+        } else {
+          html.classList.remove("dark");
+          txt.textContent = "🌙"; // icon moon
+        }
+      }
+
+      btn.addEventListener("click", () => {
+        const current = html.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem("theme", current);
+        applyTheme(current);
+      });
+    })();
+  </script>
 </body>
 </html>

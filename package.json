@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "jekyll:dev": "bundle exec jekyll serve --watch",
-    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
-    "css:dev": "postcss style.css --output assets/css/output-style.css --watch",
-    "css:build": "NODE_ENV=production postcss style.css --output assets/css/output-style.css",
-    "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
+    "css:build": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify",
+    "jekyll:build": "bundle exec jekyll build",
     "build": "npm run css:build && npm run jekyll:build"
   },
   "repository": {

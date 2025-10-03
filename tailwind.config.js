@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    darkMode: ["class", "[data-theme='dark']"], 
     content: [
       './_includes/**/*.{html,js,md}',
       './_layouts/**/*.{html,js,md}',
@@ -30,6 +31,11 @@ module.exports = {
         colors: {
           'featured': 'var(--featured-color)',
           'base': 'var(--base-color)',
+          brand: {
+            400: "#a0ac53",
+            500: "#919b4a",
+            600: "#7f8840",
+          }
         },
         lineHeight: {
           'tight': '.85',

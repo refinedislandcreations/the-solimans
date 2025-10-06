@@ -1,7 +1,7 @@
 <section id="image-banner" class="py-10 sm:py-16 lg:py-24">
   <div id="image-banner-bg"
-       class="relative min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-12 xl:px-20 overflow-hidden"
-       style="background-image: url('{{ page.banner.image | default: `/images/banner.jpg` | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+       class="relative min-h-[70vh] flex items-center px-4 sm:px-6 lg:px-12 xl:px-20 overflow-hidden bg-center bg-cover lg:bg-fixed"
+       style="background-image: url('{{ page.banner.image | default: `/images/banner.jpg` | relative_url }}');">
     <!-- overlay for readability -->
     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/10"></div>
 
@@ -55,20 +55,20 @@
   }
 
   // extra parallax (aman di iOS): geser background-position saat scroll
-  if (!reduce){
-    let ticking = false;
-    function update(){
-      const rect = bg.getBoundingClientRect();
-      const vh = window.innerHeight || document.documentElement.clientHeight;
-      const centerOffset = (rect.top + rect.height/2) - (vh/2);
-      const shift = Math.max(-150, Math.min(150, centerOffset * 0.15));
-      bg.style.backgroundPosition = `center calc(50% + ${shift}px)`;
-      ticking = false;
-    }
-    function onScroll(){ if (!ticking){ requestAnimationFrame(update); ticking = true; } }
-    update();
-    window.addEventListener('scroll', onScroll, { passive:true });
-    window.addEventListener('resize', onScroll);
-  }
+  // if (!reduce){
+  //   let ticking = false;
+  //   function update(){
+  //     const rect = bg.getBoundingClientRect();
+  //     const vh = window.innerHeight || document.documentElement.clientHeight;
+  //     const centerOffset = (rect.top + rect.height/2) - (vh/2);
+  //     const shift = Math.max(-150, Math.min(150, centerOffset * 0.15));
+  //     bg.style.backgroundPosition = `center calc(50% + ${shift}px)`;
+  //     ticking = false;
+  //   }
+  //   function onScroll(){ if (!ticking){ requestAnimationFrame(update); ticking = true; } }
+  //   update();
+  //   window.addEventListener('scroll', onScroll, { passive:true });
+  //   window.addEventListener('resize', onScroll);
+  // }
 })();
 </script>

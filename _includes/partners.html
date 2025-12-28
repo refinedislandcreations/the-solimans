@@ -13,36 +13,52 @@
   {% assign partners = page.partners.items %}
   <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-6">
     {% if partners and partners.size > 0 %}
-      {% for p in partners limit:4 %}
-        <div
-          data-reveal
-          tabindex="0"
-          class="group cursor-pointer border-2 border-slate-200/60 bg-white/70 backdrop-blur p-6 text-center shadow-sm
-                 dark:bg-white/5 dark:border-[#919b4a]
-                 transition-all duration-500 ease-out
-                 opacity-0 translate-y-4
-                 hover:-translate-y-1 hover:shadow-xl hover:border-[#919b4a] focus:-translate-y-1 focus:shadow-xl focus:border-[#919b4a]
-                 focus:outline-none focus:ring-2 focus:ring-[#919b4a]/50">
-          {% if p.logo %}
-            <img src="{{ p.logo | relative_url }}"
-                 class="mx-auto h-12 object-contain transition-transform duration-300 group-hover:scale-105"
-                 alt="{{ p.name | escape }}">
-          {% else %}
-            <div class="mx-auto h-12 w-12 rounded bg-slate-200/60 dark:bg-white/10"></div>
-          {% endif %}
-
-          <h4 class="mt-3 font-bold transition-colors duration-300 group-hover:text-[#919b4a]">
-            {{ p.name | default: "Partner" }}
-          </h4>
-
-          <!-- underline animates on hover/focus -->
-          <span class="mx-auto mt-1 block h-0.5 w-0 bg-[#919b4a] transition-[width] duration-300 group-hover:w-10"></span>
-
-          {% if p.discount %}
-            <p class="text-sm text-[#919b4a] font-black mt-2">{{ p.discount }}</p>
-          {% endif %}
-        </div>
-      {% endfor %}
+    {% for p in partners limit:4 %}
+    {% assign href = p.link | default: "" %}
+    {% assign is_external = href contains '://' %}
+  
+    {% if href != "" %}
+      <a
+        href="{% if is_external %}{{ href }}{% else %}{{ href | relative_url }}{% endif %}"
+        {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}
+        class="block">
+    {% endif %}
+  
+    <div
+      data-reveal
+      tabindex="{% if href != '' %}-1{% else %}0{% endif %}"
+      class="group cursor-pointer border-2 border-slate-200/60 bg-white/70 backdrop-blur p-6 text-center shadow-sm
+             dark:bg-white/5 dark:border-[#919b4a]
+             transition-all duration-500 ease-out
+             opacity-0 translate-y-4
+             hover:-translate-y-1 hover:shadow-xl hover:border-[#919b4a] focus:-translate-y-1 focus:shadow-xl focus:border-[#919b4a]
+             focus:outline-none focus:ring-2 focus:ring-[#919b4a]/50">
+  
+      {% if p.logo %}
+        <img src="{{ p.logo | relative_url }}"
+             class="mx-auto h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+             alt="{{ p.name | escape }}">
+      {% else %}
+        <div class="mx-auto h-12 w-12 rounded bg-slate-200/60 dark:bg-white/10"></div>
+      {% endif %}
+  
+      <h4 class="mt-3 font-bold transition-colors duration-300 group-hover:text-[#919b4a]">
+        {{ p.name | default: "Partner" }}
+      </h4>
+  
+      <span class="mx-auto mt-1 block h-0.5 w-0 bg-[#919b4a] transition-[width] duration-300 group-hover:w-10"></span>
+  
+      {% if p.discount %}
+        <p class="text-sm text-[#919b4a] font-black mt-2">{{ p.discount }}</p>
+      {% endif %}
+  
+    </div>
+  
+    {% if href != "" %}
+      </a>
+    {% endif %}
+  {% endfor %}
+  
     {% else %}
       <p class="text-sm text-slate-500">Partners coming soon.</p>
     {% endif %}

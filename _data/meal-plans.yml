@@ -26,7 +26,7 @@ weeks:
               - Falafel
               - Hummus
               - Olive oil
-            image: "/images/1.png"
+            image: "/images/menu/balanced/Arabic Breakfast.jpeg"
             alt: "Arabic Breakfast"
           - name: "Chicken Mozzarella Wrap"
             calories: 817
@@ -42,7 +42,7 @@ weeks:
               - Cassava chips
               - Salsa
               - Garlic sauce
-            image: "/images/2.png"
+            image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
             alt: "Chicken Mozzarella Wrap"
           - name: "Beef Stir Fry"
             calories: 535
@@ -57,7 +57,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/3.png"
+            image: "/images/menu/balanced/Beef Stir Fry.JPG"
             alt: "Beef Stir Fry"
           - name: "Spiral Tuna Pasta"
             calories: 467
@@ -72,16 +72,16 @@ weeks:
               - Spring onion
               - Olives
               - Paprika powder
-            image: "/images/temp-img.png"
+            image:  "/images/menu/balanced/Spiral Tuna Pasta.jpeg"
             alt: "Spiral Tuna Pasta"
-          - name: "Pumpkin Chicken Mashawi"
+          - name: "Rice Chicken Mashawi"
             calories: 662
             protein: 53g
             carbs: 54g
             fat: 26g
             ingredients:
               - Chicken leg fillet
-              - Pumpkin
+              - Rice
               - Broccoli
               - Green beans
               - Cauliflower
@@ -89,8 +89,8 @@ weeks:
               - Bay leaves
               - Rosemary
               - Paprika powder smoked
-            image: "/images/temp-img.png"
-            alt: "Pumpkin Chicken Mashawi"
+            image: "/images/menu/balanced/Rice Chicken Mashawi.jpeg"
+            alt: "Rice Chicken Mashawi"
       - day: "Tuesday"
         meals:
           - name: "Waffle Apple Cinnamon Breakfast"
@@ -112,7 +112,7 @@ weeks:
               - Apple
               - Cinnamon
               - Strawberries
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/waffle apple cinamon.jpg"
             alt: "Waffle Apple Cinnamon Breakfast"
           - name: "Californian Burrito Wrap"
             calories: 933
@@ -133,7 +133,7 @@ weeks:
               - Guacamole
               - Cassava chips
               - Mozzarella
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Californian Burrito Wrap.jpeg"
             alt: "Californian Burrito Wrap"
           - name: "Rice Chicken Mashawi"
             calories: 647
@@ -148,7 +148,7 @@ weeks:
               - Local spinach
               - Garlic
               - Shallots
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Rice Chicken Mashawi.jpeg"
             alt: "Rice Chicken Mashawi"
           - name: "Pasta Beef Stir Fry"
             calories: 629
@@ -163,7 +163,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/GF Pasta Beef Stir Fry.JPG"
             alt: "Pasta Beef Stir Fry"
           - name: "Solimans Chicken Burger"
             calories: 898
@@ -180,7 +180,7 @@ weeks:
               - Baby romaine lettuce
               - Chicken patty
               - White potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Solimans Chicken Burger.jpeg"
             alt: "Solimans Chicken Burger"
       - day: "Wednesday"
         meals:
@@ -199,7 +199,7 @@ weeks:
               - Papaya
               - Salsa
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Egg Lean Meat Wrap Breakfast.jpg" 
             alt: "Egg Lean Meat Wrap Breakfast"
           - name: "Chicken Shawarma"
             calories: 730
@@ -214,7 +214,7 @@ weeks:
               - Parsley
               - Garlic sauce
               - Tortilla wrap 1 pcs
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
             alt: "Chicken Shawarma"
           - name: "Solimans Chicken Satay"
             calories: 689
@@ -229,7 +229,7 @@ weeks:
               - Long beans
               - Local spinach
               - Lime
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/soliman satay.jpg"
             alt: "Solimans Chicken Satay"
           - name: "Salmon Zoodle Pasta"
             calories: 605
@@ -244,7 +244,7 @@ weeks:
               - Olive oil
               - Oregano
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Salmon Zoodle Pasta.jpg"
             alt: "Salmon Zoodle Pasta"
           - name: "Quinoa Honey Chicken"
             calories: 546
@@ -259,7 +259,7 @@ weeks:
               - Pepper green
               - Honey
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Quinoa Honey Chicken.webp"
             alt: "Quinoa Honey Chicken"
       - day: "Thursday"
         meals:
@@ -281,7 +281,7 @@ weeks:
               - Hazelnut
               - Strawberries
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Pancake Non Nutella Breakfast.jpg"
             alt: "Pancake Non Nutella Breakfast"
           - name: "Tuna Light Mayo Wrap"
             calories: 761
@@ -299,7 +299,7 @@ weeks:
               - LF mayonnaise
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Tuna Light Mayo Wrap.jpg"
             alt: "Tuna Light Mayo Wrap"
           - name: "Arabic Beef Kofta"
             calories: 1013
@@ -319,7 +319,7 @@ weeks:
               - Garlic
               - Sauce
               - Hummus
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Beef Kofta Arabic Rice.jpeg"
             alt: "Arabic Beef Kofta"
           - name: "Pad Thai Chicken"
             calories: 899
@@ -337,7 +337,7 @@ weeks:
               - Tamarind
               - Egg
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/chicken-pad-thai-4.jpg"
             alt: "Pad Thai Chicken"
           - name: "Stuffed Chicken Creamy Corn Sauce"
             calories: 660
@@ -354,7 +354,7 @@ weeks:
               - Creamy corn sauce
               - Garlic
               - Onions
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Stuffed Chicken Creamy Corn Sauce.jpg"
             alt: "Stuffed Chicken Creamy Corn Sauce"
       - day: "Friday"
         meals:
@@ -372,7 +372,7 @@ weeks:
               - Tomato cherry
               - Hollandaise
               - Cabbage red
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Pulled Beef Benny Breakfast.jpg"
             alt: "Pulled Beef Benny Breakfast"
           - name: "Chicken Cheddar Wrap"
             calories: 829
@@ -389,7 +389,7 @@ weeks:
               - Onions
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Chicken Cheddar Wrap.webp"
             alt: "Chicken Cheddar Wrap"
           - name: "Salmon Teriyaki"
             calories: 611
@@ -402,7 +402,7 @@ weeks:
               - Avocado
               - Edamame
               - Salmon
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Salmon Teriyaki"
           - name: "Mie Goreng Chicken"
             calories: 846
@@ -422,7 +422,7 @@ weeks:
               - Baby romaine lettuce
               - Tomato
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Mie Goreng Chicken.jpeg"
             alt: "Mie Goreng Chicken"
           - name: "Black Pepper Beef Steak"
             calories: 613
@@ -435,7 +435,7 @@ weeks:
               - Asparagus
               - Tomato cherry
               - Demi glace sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Black Pepper Beef Steak.jpg"
             alt: "Black Pepper Beef Steak"
       - day: "Saturday"
         meals:    
@@ -452,7 +452,7 @@ weeks:
               - Chia seed
               - Coconut flakes
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Solimans Pudding Breakfast.jpg"
             alt: "Solimans Pudding Breakfast"
           - name: "Beef Shawarma Wrap"
             calories: 700
@@ -467,7 +467,7 @@ weeks:
               - Parsley
               - Tahini dressing
               - Tortilla wrap 1 pcs
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
             alt: "Beef Shawarma Wrap"
           - name: "Mexican Chicken Bowl"
             calories: 661
@@ -487,7 +487,7 @@ weeks:
               - Guacamole
               - Jalapeno
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Mexican Chicken Bowl.webp"
             alt: "Mexican Chicken Bowl"
           - name: "Pasta Pesto Chicken Broccoli"
             calories: 668
@@ -501,7 +501,7 @@ weeks:
               - Broccoli
               - Tomato cherry
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Pasta Pesto Chicken Broccoli.jpg"
             alt: "Pasta Pesto Chicken Broccoli"
           - name: "Grill Snapper Garlic Butter Sauce"
             calories: 558
@@ -516,7 +516,7 @@ weeks:
               - Kale
               - Quinoa
               - Lime
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Grill Snapper Garlic Butter Sauce.jpg"
             alt: "Grill Snapper Garlic Butter Sauce"
   - week: 2
     category: "balanced"
@@ -537,7 +537,7 @@ weeks:
               - Tomato cherry
               - Multigrain bread GF 1 pcs
               - Tomato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Spanish Omelette Breakfast"
           - name: "Chicken Mozzarella Wrap"
             calories: 817
@@ -554,7 +554,7 @@ weeks:
               - Cassava chips
               - Salsa
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
             alt: "Chicken Mozzarella Wrap"
           - name: "Chicken Stir Fry"
             calories: 626
@@ -569,7 +569,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Chicken Stir Fry Veggies.JPG"
             alt: "Chicken Stir Fry"
           - name: "Spiral Tuna Pasta"
             calories: 467
@@ -586,7 +586,7 @@ weeks:
               - Paprika powder smoke
               - Gluten-free pasta
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/balanced/Spiral Tuna Pasta.jpeg"
             alt: "Spiral Tuna Pasta"
           - name: "Potato Beef Mashawi"
             calories: 561
@@ -597,7 +597,7 @@ weeks:
               - Beef tenderloin Indian
               - Baked white potato
               - Broccoli
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Potato Beef Mashawi"
       - day: "Tuesday"
         meals:
@@ -621,7 +621,7 @@ weeks:
               - Almonds
               - Strawberries
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Waffle Peanut Butter Breakfast"
           - name: "Californian Burrito Wrap"
             calories: 933
@@ -643,7 +643,7 @@ weeks:
               - Guacamole
               - Cassava chips
               - Mozzarella
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Californian Burrito Wrap"
           - name: "Poke Bowl Tuna Mango"
             calories: 574
@@ -662,7 +662,7 @@ weeks:
               - Mango
               - Tuna
               - Cocktail
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Poke Bowl Tuna Mango"
           - name: "Pasta Beef Stir Fry"
             calories: 629
@@ -677,7 +677,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Beef Stir Fry"
           - name: "Chicken Ratatouille"
             calories: 647
@@ -694,7 +694,7 @@ weeks:
               - Tomato
               - Tomato marinara sauce
               - Sunflower seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Ratatouille"
       - day: "Wednesday"
         meals:
@@ -715,7 +715,7 @@ weeks:
               - Multigrain bread GF 1 pcs
               - Olives
               - Strawberry jam
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mediterranean Breakfast"
           - name: "Chicken Shawarma"
             calories: 730
@@ -730,7 +730,7 @@ weeks:
               - Parsley
               - Garlic sauce
               - Tortilla wrap 1 pcs
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Shawarma"
           - name: "Solimans Chicken Kebab"
             calories: 855
@@ -749,7 +749,7 @@ weeks:
               - Cashew nut
               - Cocktail
               - Pineapple
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Chicken Kebab"
           - name: "Salmon Zoodle Pasta"
             calories: 605
@@ -764,7 +764,7 @@ weeks:
               - Olive oil
               - Oregano
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Salmon Zoodle Pasta"
           - name: "Solimans Beef Burger"
             calories: 929
@@ -781,7 +781,7 @@ weeks:
               - Baby romaine lettuce
               - Beef patty
               - Baked baby potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Beef Burger"
       - day: "Thursday"
         meals:
@@ -802,7 +802,7 @@ weeks:
               - Blueberry jam
               - Granola
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pancake Cream Cheese Breakfast"
           - name: "Tuna Light Mayo Wrap"
             calories: 761
@@ -820,7 +820,7 @@ weeks:
               - LF mayonnaise
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tuna Light Mayo Wrap"
           - name: "Chicken Cashew"
             calories: 712
@@ -834,7 +834,7 @@ weeks:
               - Red rice
               - Broccoli
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cashew"
           - name: "Pad Thai Chicken"
             calories: 899
@@ -852,7 +852,7 @@ weeks:
               - Tamarind
               - Egg
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pad Thai Chicken"
           - name: "Grill Salmon Creamy Pesto"
             calories: 547
@@ -868,7 +868,7 @@ weeks:
               - Milk
               - Bay leaves
               - Creamy pesto sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Salmon Creamy Pesto"
       - day: "Friday"
         meals:
@@ -884,7 +884,7 @@ weeks:
               - Mozzarella
               - Tomato cherry
               - Mix lettuce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "GF Croissant Cheese Bacon Egg Sandwich"
           - name: "Chicken Cheddar Wrap"
             calories: 829
@@ -901,7 +901,7 @@ weeks:
               - Onions
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cheddar Wrap"
           - name: "Arabic Chicken Kofta"
             calories: 957
@@ -920,7 +920,7 @@ weeks:
               - Parsley
               - Garlic sauce
               - Hummus
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Chicken Kofta"
           - name: "Mie Goreng Chicken"
             calories: 846
@@ -940,7 +940,7 @@ weeks:
               - Baby romaine lettuce
               - Tomato
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mie Goreng Chicken"
           - name: "Baked Sweet Potato Barramundi"
             calories: 471
@@ -952,7 +952,7 @@ weeks:
               - Tomato cherry
               - Baked sweet potato
               - Bok choy
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Baked Sweet Potato Barramundi"
       - day: "Saturday"
         meals:
@@ -972,7 +972,7 @@ weeks:
               - Watermelon
               - Pineapple
               - Papaya
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Breakfast Burrito"
           - name: "Beef Shawarma Wrap"
             calories: 700
@@ -987,7 +987,7 @@ weeks:
               - Parsley
               - Tahini dressing
               - Tortilla wrap 1 pcs
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Beef Shawarma Wrap"
           - name: "Solimans Platter"
             calories: 798
@@ -1010,7 +1010,7 @@ weeks:
               - Chicken breast
               - Beef tenderloin Indian
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Platter"
           - name: "Pasta Pesto Chicken Broccoli"
             calories: 668
@@ -1024,7 +1024,7 @@ weeks:
               - Broccoli
               - Tomato cherry
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Pesto Chicken Broccoli"
           - name: "Grill Butterfish Salsa"
             calories: 522
@@ -1040,7 +1040,7 @@ weeks:
               - Cooking cream
               - Bay leaves
               - Milk
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Butterfish Salsa"
   - week: 1
     category: "high protein"
@@ -1061,7 +1061,7 @@ weeks:
               - Mozzarella
               - Milk
               - Keto bread 1 slices
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "American Omelette"
           - name: "American Salad"
             calories: 660
@@ -1078,7 +1078,7 @@ weeks:
               - Egg
               - Chicken breast
               - Lemon dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "American Salad"
           - name: "Shirataki Beef Stir Fry"
             calories: 401
@@ -1093,7 +1093,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Shirataki Beef Stir Fry"
           - name: "Tuna Avo Mixed"
             calories: 581
@@ -1110,7 +1110,7 @@ weeks:
               - Olive oil
               - Tomato cherry
               - Spring onion
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tuna Avo Mixed"
           - name: "Chicken Tawook and Fattoush"
             calories: 684
@@ -1132,7 +1132,7 @@ weeks:
               - Olive oil
               - Sumac powder
               - Pita bread 1 pcs
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Tawook and Fattoush"
       - day: "Tuesday"
         meals:
@@ -1149,7 +1149,7 @@ weeks:
               - Olive oil
               - Tomato cherry
               - Lemon
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Scrambled Eggs Salmon"
           - name: "Crunchy Salad"
             calories: 652
@@ -1166,7 +1166,7 @@ weeks:
               - Chicken breast
               - Egg
               - Peanut dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Crunchy Salad"
           - name: "Chicken Mashawi Fried Cauliflower Rice"
             calories: 664
@@ -1185,7 +1185,7 @@ weeks:
               - Carrot
               - Onions
               - Peas green
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Mashawi Fried Cauliflower Rice"
           - name: "Shirataki Beef Stir Fry"
             calories: 401
@@ -1200,7 +1200,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Shirataki Beef Stir Fry"
           - name: "Lettuce Chicken Burger"
             calories: 732
@@ -1219,7 +1219,7 @@ weeks:
               - Green beans
               - Carrot
               - Mozzarella
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Lettuce Chicken Burger"
       - day: "Wednesday"
         meals:
@@ -1235,7 +1235,7 @@ weeks:
               - Olive oil
               - Tomato cherry
               - Pineapple
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Scrambled Eggs Lean Meat"
           - name: "Italian Salad"
             calories: 720
@@ -1254,7 +1254,7 @@ weeks:
               - Egg
               - Beef tenderloin Indian
               - Balsamic dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Italian Salad"
           - name: "Cauli Rices Chicken Satay"
             calories: 683
@@ -1273,7 +1273,7 @@ weeks:
               - Carrot
               - Onions
               - Peas green
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Cauli Rices Chicken Satay"
           - name: "Salmon Zoodle"
             calories: 483
@@ -1288,7 +1288,7 @@ weeks:
               - Olive oil
               - Tomato cherry
               - Egg
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Salmon Zoodle"
           - name: "Chicken Tawook and Tabbouleh"
             calories: 600
@@ -1305,7 +1305,7 @@ weeks:
               - Lemon
               - Pomegranate jus
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Tawook and Tabbouleh"
       - day: "Thursday"
         meals:
@@ -1321,7 +1321,7 @@ weeks:
               - Tomato
               - Keto wrap
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Sydney Bacon Scrambled"
           - name: "Hawaiian Salad"
             calories: 694
@@ -1339,7 +1339,7 @@ weeks:
               - Egg
               - Tuna
               - Cocktail
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Hawaiian Salad"
           - name: "Beef Kofta Platter"
             calories: 915
@@ -1358,7 +1358,7 @@ weeks:
               - Hummus
               - Garlic sauce
               - Keto wrap
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Beef Kofta Platter"
           - name: "Pad Thai Chicken Shirataki"
             calories: 654
@@ -1376,7 +1376,7 @@ weeks:
               - Tamarind
               - Egg
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pad Thai Chicken Shirataki"
           - name: "Stuffed Chicken w/ Baked Sweet Potato"
             calories: 785
@@ -1393,7 +1393,7 @@ weeks:
               - Garlic
               - Onions
               - Baked sweet potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Stuffed Chicken w/ Baked Sweet Potato"
       - day: "Friday"
         meals:
@@ -1408,7 +1408,7 @@ weeks:
               - Strawberries
               - Arugula
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Egg Sunny & Beef"
           - name: "Rainbow Salmon Salad"
             calories: 557
@@ -1425,7 +1425,7 @@ weeks:
               - Tomato cherry
               - Salmon
               - Avocado creamy dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Rainbow Salmon Salad"
           - name: "Grill Salmon Teriyaki"
             calories: 466
@@ -1438,7 +1438,7 @@ weeks:
               - Avocado
               - Edamame
               - Salmon
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Salmon Teriyaki"
           - name: "Mie Goreng Shirataki"
             calories: 640
@@ -1458,7 +1458,7 @@ weeks:
               - Baby romaine lettuce
               - Tomato
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mie Goreng Shirataki"
           - name: "Chicken Tawook and Baladi"
             calories: 841
@@ -1476,7 +1476,7 @@ weeks:
               - Coriander / Cilantro
               - Tahini dressing
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Tawook and Baladi"
       - day: "Saturday"
         meals:
@@ -1495,7 +1495,7 @@ weeks:
               - Mozzarella
               - Avocado
               - Keto bread 1 slices
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mexican Omelette"
           - name: "Arabic Salad"
             calories: 826
@@ -1513,7 +1513,7 @@ weeks:
               - Chicken breast
               - Pita bread 1 pcs
               - Tahini dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Salad"
           - name: "Beef Shawarma Platter"
             calories: 672
@@ -1531,7 +1531,7 @@ weeks:
               - Coriander / Cilantro
               - Tahini dressing
               - Garlic sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Beef Shawarma Platter"
           - name: "Pesto Chicken Shirataki"
             calories: 466
@@ -1545,7 +1545,7 @@ weeks:
               - Broccoli
               - Tomato cherry
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pesto Chicken Shirataki"
           - name: "Grill Snapper Garlic Butter"
             calories: 558
@@ -1560,7 +1560,7 @@ weeks:
               - Kale
               - Quinoa
               - Lime
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Snapper Garlic Butter" 
   - week: 2
     category: "high protein"
@@ -1580,7 +1580,7 @@ weeks:
               - Salt
               - Black pepper
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Texas Breakfast (HP)"
           - name: "Multivitamin Salad (HP)"
             calories: 682
@@ -1597,7 +1597,7 @@ weeks:
               - Walnut
               - Chicken breast
               - Balsamic dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Multivitamin Salad (HP)"
           - name: "Shirataki Chicken Stir Fry (HP)"
             calories: 518
@@ -1618,7 +1618,7 @@ weeks:
               - Garlic
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Shirataki Chicken Stir Fry (HP)"
           - name: "Chicken Tawook and Fattoush (HP)"
             calories: 684
@@ -1642,7 +1642,7 @@ weeks:
               - Pita bread 1pcs
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Tawook and Fattoush (HP)"
           - name: "Beef Mashawi w/ Baked Sweet Potato (HP)"
             calories: 549
@@ -1656,7 +1656,7 @@ weeks:
               - Broccoli
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Beef Mashawi with Baked Sweet Potato (HP)"
       - day: "Tuesday"
         meals:
@@ -1675,7 +1675,7 @@ weeks:
               - Olive oil
               - Tomato cherry
               - Lemon
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Scrambled Eggs Salmon (HP)"
           - name: "Endurance Salad (HP)"
             calories: 755
@@ -1693,7 +1693,7 @@ weeks:
               - Dates
               - Chicken breast
               - Creamy garlic dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Endurance Salad (HP)"
           - name: "HPLC Poke Bowl Tuna Mango (HP)"
             calories: 482
@@ -1714,7 +1714,7 @@ weeks:
               - Cocktail
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "HPLC Poke Bowl Tuna Mango (HP)"
           - name: "Shirataki Beef Stir Fry (HP)"
             calories: 401
@@ -1735,7 +1735,7 @@ weeks:
               - Garlic
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Shirataki Beef Stir Fry (HP)"
           - name: "Chicken Spinach, Mushroom, Baked Sweet Potato (HP)"
             calories: 701
@@ -1749,7 +1749,7 @@ weeks:
               - Sweet potato
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Spinach, Mushroom, Baked Sweet Potato (HP)"
       - day: "Wednesday"
         meals:
@@ -1767,7 +1767,7 @@ weeks:
               - Salt
               - Black pepper
               - Pineapple
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Scrambled Eggs Lean Meat (HP)"
           - name: "Solimans Salad (HP)"
             calories: 791
@@ -1787,7 +1787,7 @@ weeks:
               - Chicken breast
               - Beef tenderloin Indian
               - Lemon dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Salad (HP)"
           - name: "Chicken Kebab w/ Baladi (HP)"
             calories: 593
@@ -1809,7 +1809,7 @@ weeks:
               - Pineapple
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Kebab with Baladi (HP)"
           - name: "Salmon Zoodle (HP)"
             calories: 483
@@ -1825,7 +1825,7 @@ weeks:
               - Salt
               - Black pepper
               - Chicken Knorr
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Salmon Zoodle (HP)"
           - name: "Lettuce Beef Burger (HP)"
             calories: 725
@@ -1846,7 +1846,7 @@ weeks:
               - Mozzarella
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Lettuce Beef Burger (HP)"
       - day: "Thursday"
         meals:
@@ -1863,7 +1863,7 @@ weeks:
               - Olive oil
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Egg Sunny & Beef (HP)"
           - name: "Recovery Salad (HP)"
             calories: 828
@@ -1883,7 +1883,7 @@ weeks:
               - Halloumi cheese
               - Chicken breast
               - Peanut dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Recovery Salad (HP)"
           - name: "Chicken Cashew w/ Fried Cauli Rice (HP)"
             calories: 613
@@ -1903,7 +1903,7 @@ weeks:
               - Carrot
               - Onions
               - Peas green
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cashew with Fried Cauli Rice (HP)"
           - name: "Pad Thai Chicken Shirataki (HP)"
             calories: 654
@@ -1925,7 +1925,7 @@ weeks:
               - Garlic
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pad Thai Chicken Shirataki (HP)"
           - name: "Grilled Salmon Creamy Pesto (HP)"
             calories: 413
@@ -1943,7 +1943,7 @@ weeks:
               - Creamy pesto sauce
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grilled Salmon Creamy Pesto (HP)"
       - day: "Friday"
         meals:
@@ -1961,7 +1961,7 @@ weeks:
               - Salt
               - Black pepper
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Sydney Bacon Scrambled (HP)"
           - name: "Omega Salad (HP)"
             calories: 496
@@ -1978,7 +1978,7 @@ weeks:
               - Salmon
               - Avocado
               - Creamy dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Omega Salad (HP)"
           - name: "Chicken Kofta Platter (HP)"
             calories: 859
@@ -1999,7 +1999,7 @@ weeks:
               - Salt
               - Black pepper
               - Keto wrap
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Kofta Platter (HP)"
           - name: "Mie Goreng Shirataki (HP)"
             calories: 640
@@ -2024,7 +2024,7 @@ weeks:
               - Cucumber
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mie Goreng Shirataki (HP)"
           - name: "Grill Barramundi w/ Tabbouleh (HP)"
             calories: 398
@@ -2043,7 +2043,7 @@ weeks:
               - Olive oil
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Barramundi with Tabbouleh (HP)"
       - day: "Saturday"
         meals:
@@ -2062,7 +2062,7 @@ weeks:
               - Salt
               - Black pepper
               - Spring onion
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Egg Chicken Frittata (HP)"
           - name: "Stamina Salad (HP)"
             calories: 834
@@ -2081,7 +2081,7 @@ weeks:
               - Feta
               - Chicken breast
               - Tahini dressing
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Stamina Salad (HP)"
           - name: "HPLC Solimans Platter (HP)"
             calories: 638
@@ -2106,7 +2106,7 @@ weeks:
               - Garlic sauce
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "HPLC Solimans Platter (HP)"
           - name: "Chicken Tawook and Tabbouleh (HP)"
             calories: 600
@@ -2125,7 +2125,7 @@ weeks:
               - Olive oil
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Tawook and Tabbouleh (HP)"
           - name: "Grill Butter Fish Salsa (HP)"
             calories: 426
@@ -2140,7 +2140,7 @@ weeks:
               - Salsa
               - Salt
               - Black pepper
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Butter Fish Salsa (HP)"
   - week: 1
     category: "vegan"
@@ -2161,7 +2161,7 @@ weeks:
               - Hummus
               - Olive oil
               - Vegan feta
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Breakfast"
           - name: "Chicken Mozzarella Wrap"
             calories: 709
@@ -2177,7 +2177,7 @@ weeks:
               - Vegan mozzarella
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Mozzarella Wrap"
           - name: "Tempeh Stir Fry"
             calories: 709
@@ -2192,7 +2192,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Stir Fry"
           - name: "Spiral GF Chicken Pasta"
             calories: 512
@@ -2208,7 +2208,7 @@ weeks:
               - Olives
               - Paprika powder smoke
               - Gluten-free pasta
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Spiral GF Chicken Pasta"
           - name: "Pumpkin Chicken Mashawi"
             calories: 725
@@ -2225,7 +2225,7 @@ weeks:
               - Bay leaves
               - Rosemary
               - Paprika powder smoke
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pumpkin Chicken Mashawi"
       - day: "Tuesday"
         meals:
@@ -2246,7 +2246,7 @@ weeks:
               - Apple
               - Cinnamon
               - Strawberries
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Waffle Apple Cinnamon Breakfast"
           - name: "Californian Burrito Wrap"
             calories: 808
@@ -2266,7 +2266,7 @@ weeks:
               - Salsa
               - Guacamole
               - Cassava chips
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Californian Burrito Wrap"
           - name: "Rice Chicken Mashawi"
             calories: 599
@@ -2281,7 +2281,7 @@ weeks:
               - Lokal spinach
               - Garlic
               - Shallots
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Rice Chicken Mashawi"
           - name: "Pasta Tofu Stir Fry"
             calories: 728
@@ -2296,7 +2296,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Tofu Stir Fry"
           - name: "Chicken Burger"
             calories: 985
@@ -2313,7 +2313,7 @@ weeks:
               - Baby romaine lettuce
               - Vegan chicken
               - White potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Burger"
       - day: "Wednesday"
         meals:
@@ -2331,7 +2331,7 @@ weeks:
               - Pineapple
               - Papaya
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tofu Lean Meat Wrap Breakfast"
           - name: "Falafel Shawarma"
             calories: 1003
@@ -2348,7 +2348,7 @@ weeks:
               - Parsley
               - Salsa
               - Cassava chips
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Falafel Shawarma"
           - name: "Solimans Chicken Sate"
             calories: 669
@@ -2363,7 +2363,7 @@ weeks:
               - Long beans
               - Lokal spinach
               - Lime
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Chicken Sate"
           - name: "Chicken Zoodle Pasta"
             calories: 622
@@ -2378,7 +2378,7 @@ weeks:
               - Olive oil
               - Oregano
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Zoodle Pasta"
           - name: "Sweet Quinoa Chicken"
             calories: 556
@@ -2392,7 +2392,7 @@ weeks:
               - Pepper red
               - Pepper green
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Sweet Quinoa Chicken"
       - day: "Thursday"
         meals:
@@ -2414,7 +2414,7 @@ weeks:
               - Scoop
               - Strawberries
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pancake Non Nutella Breakfast"
           - name: "Tempeh Caramelized Wrap"
             calories: 919
@@ -2430,7 +2430,7 @@ weeks:
               - Cucumber
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Caramelized Wrap"
           - name: "Arabic Kofta"
             calories: 1010
@@ -2450,7 +2450,7 @@ weeks:
               - Parsley
               - Garlic sauce
               - Hummus
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Kofta"
           - name: "Tempeh Pad Thai"
             calories: 836
@@ -2467,7 +2467,7 @@ weeks:
               - Peanut
               - Tamarind
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Pad Thai"
           - name: "Chicken Creamy Corn Sauce"
             calories: 589
@@ -2484,7 +2484,7 @@ weeks:
               - Corn
               - Soy milk
               - Onions
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Creamy Corn Sauce"
       - day: "Friday"
         meals:
@@ -2502,7 +2502,7 @@ weeks:
               - Mix lettuce
               - Guacamole
               - Olive oil
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Caramelized Toast Breakfast"
           - name: "Chicken Cheddar Wrap"
             calories: 679
@@ -2518,7 +2518,7 @@ weeks:
               - Onions
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cheddar Wrap"
           - name: "Tempeh Teriyaki"
             calories: 731
@@ -2531,7 +2531,7 @@ weeks:
               - Avocado
               - Edamame
               - Tempeh
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Teriyaki"
           - name: "Mie Goreng Chicken"
             calories: 680
@@ -2550,7 +2550,7 @@ weeks:
               - Baby romaine lettuce
               - Tomato
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mie Goreng Chicken"
           - name: "Black Pepper Beef Steak"
             calories: 702
@@ -2563,7 +2563,7 @@ weeks:
               - Asparagus
               - Tomato cherry
               - Demi glace sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Black Pepper Beef Steak"
       - day: "Saturday"
         meals:
@@ -2583,7 +2583,7 @@ weeks:
               - Raisin
               - Pumpkin seeds
               - Peanut butter
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Protein Peanut Butter Banana Oats"
           - name: "Chicken Shawarma Wrap"
             calories: 651
@@ -2599,7 +2599,7 @@ weeks:
               - Tortilla wrap 1 pcs
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Shawarma Wrap"
           - name: "Mexican Chicken Bowl"
             calories: 598
@@ -2618,7 +2618,7 @@ weeks:
               - Guacamole
               - Jalapeno
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mexican Chicken Bowl"
           - name: "Pasta Pesto Chicken"
             calories: 759
@@ -2632,7 +2632,7 @@ weeks:
               - Broccoli
               - Tomato cherry
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Pesto Chicken"
           - name: "Grill Tofu Caramelized"
             calories: 543
@@ -2647,7 +2647,7 @@ weeks:
               - Kale
               - Quinoa
               - Lime
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Tofu Caramelized"
   - week: 2
     category: "vegan"
@@ -2668,7 +2668,7 @@ weeks:
               - Hummus
               - Olive oil
               - Vegan feta
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Breakfast"
           - name: "Chicken Mozzarella Wrap"
             calories: 709
@@ -2684,7 +2684,7 @@ weeks:
               - Vegan mozzarella
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Mozzarella Wrap"
           - name: "Chicken Stir Fry"
             calories: 606
@@ -2699,7 +2699,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Stir Fry"
           - name: "Spiral GF Chicken Pasta"
             calories: 512
@@ -2715,7 +2715,7 @@ weeks:
               - Olives
               - Paprika powder smoke
               - Gluten-free pasta
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Spiral GF Chicken Pasta"
           - name: "Potato Beef Mashawi"
             calories: 650
@@ -2726,7 +2726,7 @@ weeks:
               - Vegan beef
               - Baked white potato
               - Broccoli
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Potato Beef Mashawi"
       - day: "Tuesday"
         meals:
@@ -2748,7 +2748,7 @@ weeks:
               - Almonds
               - Strawberries
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Waffle Peanut Butter Breakfast"
           - name: "Californian Burrito Wrap"
             calories: 808
@@ -2768,7 +2768,7 @@ weeks:
               - Salsa
               - Guacamole
               - Cassava chips
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Californian Burrito Wrap"
           - name: "Poke Bowl Tofu Mango"
             calories: 666
@@ -2786,7 +2786,7 @@ weeks:
               - Red radish
               - Mango
               - Tofu
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Poke Bowl Tofu Mango"
           - name: "Pasta Tofu Stir Fry"
             calories: 728
@@ -2801,7 +2801,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Tofu Stir Fry"
           - name: "Chicken Ratatouille"
             calories: 627
@@ -2818,7 +2818,7 @@ weeks:
               - Tomato cherry
               - Tomato marinara sauce
               - Sunflower seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Ratatouille"
       - day: "Wednesday"
         meals:
@@ -2838,7 +2838,7 @@ weeks:
               - Multigrain bread GF 1 pcs
               - Olives
               - Strawberry jam
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mediterranean Breakfast"
           - name: "Falafel Shawarma"
             calories: 1003
@@ -2855,7 +2855,7 @@ weeks:
               - Parsley
               - Salsa
               - Cassava chips
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Falafel Shawarma"
           - name: "Solimans Chicken Kebab"
             calories: 810
@@ -2874,7 +2874,7 @@ weeks:
               - Turmeric powder
               - Mix lettuce
               - White rice
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Chicken Kebab"
           - name: "Chicken Zoodle Pasta"
             calories: 622
@@ -2889,7 +2889,7 @@ weeks:
               - Olive oil
               - Oregano
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Zoodle Pasta"
           - name: "Solimans Beef Burger"
             calories: 930
@@ -2906,7 +2906,7 @@ weeks:
               - Baby romaine lettuce
               - Vegan beef
               - Baked baby potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Beef Burger"
       - day: "Thursday"
         meals:
@@ -2927,7 +2927,7 @@ weeks:
               - Soy protein / scoop
               - Strawberries
               - Pumpkin seeds
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Choco Pancake Breakfast"
           - name: "Tempeh Caramelized Wrap"
             calories: 919
@@ -2943,7 +2943,7 @@ weeks:
               - Cucumber
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Caramelized Wrap"
           - name: "Chicken Cashew"
             calories: 692
@@ -2957,7 +2957,7 @@ weeks:
               - Red rice
               - Broccoli
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cashew"
           - name: "Tempeh Pad Thai"
             calories: 836
@@ -2974,7 +2974,7 @@ weeks:
               - Peanut
               - Tamarind
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Tempeh Pad Thai"
           - name: "Grill Tofu Creamy Pesto"
             calories: 583
@@ -2990,7 +2990,7 @@ weeks:
               - Milk
               - Bay leaves
               - Creamy pesto sauce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Tofu Creamy Pesto"
       - day: "Friday"
         meals:
@@ -3006,7 +3006,7 @@ weeks:
               - Guacamole
               - Tomato cherry
               - Mix lettuce
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Croissant Tempeh Sandwich"
           - name: "Chicken Cheddar Wrap"
             calories: 679
@@ -3022,7 +3022,7 @@ weeks:
               - Onions
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Cheddar Wrap"
           - name: "Arabic Kofta"
             calories: 1010
@@ -3042,7 +3042,7 @@ weeks:
               - Parsley
               - Garlic sauce
               - Hummus
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Arabic Kofta"
           - name: "Mie Goreng Chicken"
             calories: 680
@@ -3061,7 +3061,7 @@ weeks:
               - Baby romaine lettuce
               - Tomato
               - Cucumber
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Mie Goreng Chicken"
           - name: "Sweet Potato Chicken Mashawi"
             calories: 616
@@ -3072,7 +3072,7 @@ weeks:
               - Vegan chicken
               - Baked sweet potato
               - Bok choy
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Sweet Potato Chicken Mashawi"
       - day: "Saturday"
         meals:
@@ -3090,7 +3090,7 @@ weeks:
               - Watermelon
               - Pineapple
               - Papaya
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Breakfast Burrito"
           - name: "Chicken Shawarma Wrap"
             calories: 651
@@ -3106,7 +3106,7 @@ weeks:
               - Tortilla wrap 1 pcs
               - Cassava chips
               - Salsa
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Chicken Shawarma Wrap"
           - name: "Solimans Platter"
             calories: 1020
@@ -3129,7 +3129,7 @@ weeks:
               - Tempeh
               - Tofu
               - Tahini
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Solimans Platter"
           - name: "Pasta Pesto Chicken"
             calories: 759
@@ -3143,7 +3143,7 @@ weeks:
               - Broccoli
               - Tomato cherry
               - Garlic
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Pasta Pesto Chicken"
           - name: "Grill Tempeh Salsa"
             calories: 738
@@ -3156,5 +3156,5 @@ weeks:
               - Kale
               - Green beans
               - Baked white potato
-            image: "/images/temp-img.png"
+            image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
             alt: "Grill Tempeh Salsa"

@@ -59,7 +59,7 @@ dishes:
       - Blueberry
       - Walnut
       - Maple syrup
-    image: "/images/5.png"
+    image: "/images/menu/drinks/apple ginger juice.jpeg"
     alt: "Greek Yoghurt Bowl"
   - name: "Mango Chia Overnight Oats"
     category: "Breakfast"
@@ -78,7 +78,7 @@ dishes:
       - Mango
       - Chia seed
       - Mint
-    image: "/images/6.png"
+    image: "/images/menu/drinks/Orange juice.jpeg"
     alt: "Mango Chia Overnight Oats"
   - name: "Dark Choco Protein Overnight Oats"
     category: "Breakfast"
@@ -99,7 +99,7 @@ dishes:
       - Blueberry
       - Dark chocolate
       - Mint
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/drinks/jamu.jpeg"
     alt: "Dark Choco Protein Overnight Oats"
   - name: "Chicken Mozzarella Wrap"
     category: "Wraps & Sandwiches"
@@ -118,7 +118,7 @@ dishes:
       - Cassava chips
       - Salsa
       - Garlic sauce
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
     alt: "Chicken Mozzarella Wrap"
   - name: "Chicken Shawarma"
     category: "Wraps & Sandwiches"
@@ -137,7 +137,7 @@ dishes:
       - Salsa
       - Cassava chips
       - Garlic sauce
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
     alt: "Chicken Shawarma"
   - name: "Chicken Cheddar Wrap"
     category: "Wraps & Sandwiches"
@@ -155,7 +155,7 @@ dishes:
       - Onions
       - Cassava chips
       - Salsa
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
     alt: "Chicken Cheddar Wrap"
   - name: "Californian Burrito"
     category: "Wraps & Sandwiches"
@@ -178,7 +178,7 @@ dishes:
       - Salsa
       - Guacamole
       - Cassava chips
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Californian Burrito Wrap.jpeg"
     alt: "Californian Burrito"
   - name: "Avo Chicken Pesto Baguette"
     category: "Wraps & Sandwiches"
@@ -194,7 +194,7 @@ dishes:
       - Pesto sauce
       - Mozzarella
       - Arugula
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Chicken Shawarma Wrap.JPG"
     alt: "Avo Chicken Pesto Baguette"
   - name: "Salmon Zoodle Pasta"
     category: "Pasta & Rice"
@@ -210,7 +210,7 @@ dishes:
       - Tomato cherry
       - Olive oil
       - Oregano
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Salmon Zoodle Pasta.jpg"
     alt: "Salmon Zoodle Pasta"
   - name: "Salmon Teriyaki"
     category: "Pasta & Rice"
@@ -225,7 +225,7 @@ dishes:
       - Teriyaki sauce
       - Avocado
       - Edamame
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/protein/Grill Salmon Teriyaki.jpeg"
     alt: "Salmon Teriyaki"
   - name: "Chicken Cashew"
     category: "Pasta & Rice"
@@ -275,7 +275,7 @@ dishes:
       - Carrot
       - Onions
       - Broccoli
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Beef Stir Fry.jpg"
     alt: "Beef Stir Fry"
   - name: "Pasta Pesto Vegan Chicken"
     category: "Vegan Meals"
@@ -290,7 +290,7 @@ dishes:
       - Broccoli
       - Tomato cherry
       - Pesto sauce
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Pasta Pesto Chicken Broccoli.jpg"
     alt: "Pasta Pesto Vegan Chicken"
   - name: "Tempeh Stir Fry Rice"
     category: "Vegan Meals"
@@ -305,7 +305,7 @@ dishes:
       - Carrot
       - Onions
       - Broccoli
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Pasta Pesto Chicken Broccoli.jpg"
     alt: "Tempeh Stir Fry Rice"
   - name: "Tempeh Caramelized Wrap"
     category: "Vegan Meals"
@@ -378,7 +378,7 @@ dishes:
       - Tomato cherry
       - Spring onion
       - Olive oil
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Tuna Mixed Avo.jpeg"
     alt: "Tuna Avo Mixed"
   - name: "Grilled Barramundi with Tabbouleh"
     category: "High Protein Low Carbs"
@@ -438,7 +438,7 @@ dishes:
       - Baby romaine lettuce
       - Tomato
       - Cucumber
-    image: "/images/menu/balanced/The Solimans Omelette.jpg"
+    image: "/images/menu/balanced/Mie Goreng Shirataki.jpeg"
     alt: "Mie Goreng Shirataki"
   - name: "Chicken Cashew with Cauli Rice"
     category: "High Protein Low Carbs"

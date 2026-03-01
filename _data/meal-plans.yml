@@ -884,7 +884,7 @@ weeks:
               - Mozzarella
               - Tomato cherry
               - Mix lettuce
-            image: ""
+            image: "/assets/images/menu/balanced/croissant-cheese-bacon-egg-sandwich.webp"
             alt: "GF Croissant Cheese Bacon Egg Sandwich"
           - name: "Chicken Cheddar Wrap"
             calories: 829
@@ -1338,7 +1338,7 @@ weeks:
               - Egg
               - Tuna
               - Cocktail
-            image: ""
+            image: "/assets/images/menu/high-protein/hawaiian-salad.webp"
             alt: "Hawaiian Salad"
           - name: "Beef Kofta Platter"
             calories: 915
@@ -1512,7 +1512,7 @@ weeks:
               - Chicken breast
               - Pita bread 1 pcs
               - Tahini dressing
-            image: ""
+            image: "/assets/images/menu/high-protein/arabic-salad.webp"
             alt: "Arabic Salad"
           - name: "Beef Shawarma Platter"
             calories: 672
@@ -1596,7 +1596,7 @@ weeks:
               - Walnut
               - Chicken breast
               - Balsamic dressing
-            image: ""
+            image: "/assets/images/menu/high-protein/multivitamin-salad.webp"
             alt: "Multivitamin Salad (HP)"
           - name: "Shirataki Chicken Stir Fry (HP)"
             calories: 518
@@ -1713,7 +1713,7 @@ weeks:
               - Cocktail
               - Salt
               - Black pepper
-            image: "/"
+            image: "/assets/images/menu/balanced/poke-bowl-tuna-mango.webp"
             alt: "HPLC Poke Bowl Tuna Mango (HP)"
           - name: "Shirataki Beef Stir Fry (HP)"
             calories: 401
@@ -1748,7 +1748,7 @@ weeks:
               - Sweet potato
               - Salt
               - Black pepper
-            image: "/"
+            image: "/assets/images/menu/high-protein/chicken-spinach-mushroom-baked-sweet-potato.webp"
             alt: "Chicken Spinach, Mushroom, Baked Sweet Potato (HP)"
       - day: "Wednesday"
         meals:
@@ -1786,7 +1786,7 @@ weeks:
               - Chicken breast
               - Beef tenderloin Indian
               - Lemon dressing
-            image: "/"
+            image: "/assets/images/menu/high-protein/solimans-salad.webp"
             alt: "Solimans Salad (HP)"
           - name: "Chicken Kebab w/ Baladi (HP)"
             calories: 593
@@ -1882,7 +1882,7 @@ weeks:
               - Halloumi cheese
               - Chicken breast
               - Peanut dressing
-            image: "/"
+            image: "/assets/images/menu/high-protein/recovery-salad.webp"
             alt: "Recovery Salad (HP)"
           - name: "Chicken Cashew w/ Fried Cauli Rice (HP)"
             calories: 613
@@ -1942,7 +1942,7 @@ weeks:
               - Creamy pesto sauce
               - Salt
               - Black pepper
-            image: "/assets/images/menu/high-protein/grill-salmon-creamy-pesto.jpg"
+            image: "/assets/images/menu/high-protein/grilled-salmon-creamy-pesto.webp"
             alt: "Grilled Salmon Creamy Pesto (HP)"
       - day: "Friday"
         meals:
@@ -2466,7 +2466,7 @@ weeks:
               - Peanut
               - Tamarind
               - Garlic
-            image: "/"
+            image: "/assets/images/menu/vegan/tempeh-pad-thai.webp"
             alt: "Tempeh Pad Thai"
           - name: "Chicken Creamy Corn Sauce"
             calories: 589
@@ -2973,7 +2973,7 @@ weeks:
               - Peanut
               - Tamarind
               - Garlic
-            image: "/"
+            image: "/assets/images/menu/vegan/tempeh-pad-thai.webp"
             alt: "Tempeh Pad Thai"
           - name: "Grill Tofu Creamy Pesto"
             calories: 583

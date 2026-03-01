@@ -305,7 +305,7 @@ dishes:
       - Carrot
       - Onions
       - Broccoli
-    image: "/"
+    image: "/assets/images/menu/vegan/tempeh-stir-fry-rice.webp"
     alt: "Tempeh Stir Fry Rice"
   - name: "Tempeh Caramelized Wrap"
     category: "Vegan Meals"

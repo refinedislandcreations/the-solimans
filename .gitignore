@@ -5,3 +5,6 @@ _site
 vendor
 node_modules/
 .bundle/
+
+# Local Netlify folder
+.netlify

@@ -4,54 +4,85 @@
     {{ c.title | default: 'CONTACT US' }}
   </h2>
 
-  <form id="contact-form"
-        action="{{ c.action | default: 'https://formsubmit.co/' | append: (c.to_email | default: 'garyhtg26@gmail.com') }}"
-        method="POST"
-        class="mt-8 grid gap-6">
-
-    <!-- FormSubmit controls -->
-    <input type="hidden" name="_subject"  value="{{ c.subject  | default: 'New website inquiry - The Solimans' }}">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha"  value="{{ c.captcha | default: 'false' }}">
-    {%- if c.next -%}<input type="hidden" name="_next" value="{{ c.next }}">{%- endif -%}
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+  <form
+    id="contact-form"
+    name="{{ c.form_name | default: 'contact' }}"
+    action="{{ c.redirect | default: c.next | default: '/thank-you/' }}"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="{{ c.honeypot | default: 'bot-field' }}"
+    class="mt-8 grid gap-6"
+  >
+    <input
+      type="hidden"
+      name="form-name"
+      value="{{ c.form_name | default: 'contact' }}"
+    />
+    <input
+      type="text"
+      name="{{ c.honeypot | default: 'bot-field' }}"
+      style="display: none"
+      tabindex="-1"
+      autocomplete="off"
+    />
 
     <!-- 2-column layout -->
     <div class="grid md:grid-cols-2 gap-6">
       <!-- LEFT -->
       <div class="space-y-4">
-        <input name="name" required autocomplete="name"
-               class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
-               placeholder="{{ c.fields.name | default: 'Name' }}">
+        <input
+          name="name"
+          required
+          autocomplete="name"
+          class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
+          placeholder="{{ c.fields.name | default: 'Name' }}"
+        />
 
-        <input type="email" name="email" required autocomplete="email"
-               class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
-               placeholder="{{ c.fields.email | default: 'Email' }}">
+        <input
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
+          placeholder="{{ c.fields.email | default: 'Email' }}"
+        />
 
         <!-- Phone with intl-tel-input -->
-        <input id="phone" type="tel" inputmode="tel" autocomplete="tel"
-               class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
-               placeholder="{{ c.fields.whatsapp | default: 'WhatsApp number' }}">
-        <input type="hidden" name="whatsapp" id="whatsappFull">
+        <input
+          id="phone"
+          type="tel"
+          inputmode="tel"
+          autocomplete="tel"
+          class="w-full rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3"
+          placeholder="{{ c.fields.whatsapp | default: 'WhatsApp number' }}"
+        />
+        <input type="hidden" name="whatsapp" id="whatsappFull" />
       </div>
 
       <!-- RIGHT (message) -->
       <div>
-        <textarea name="message" required
+        <textarea
+          name="message"
+          required
           class="w-full h-[190px] resize-none rounded-xl border border-slate-300/60 bg-white/80 dark:bg-white/5 dark:border-white/10 px-4 py-3 leading-normal"
           rows="1"
-          placeholder="{{ c.fields.message | default: 'Message' }}"></textarea>
+          placeholder="{{ c.fields.message | default: 'Message' }}"
+        ></textarea>
       </div>
     </div>
 
     <div>
-      <button type="submit"
-        class="inline-flex items-center gap-2 px-6 py-3
-               bg-[#a4b35a] font-semibold shadow-md
-               hover:bg-[#bccb6a] hover:shadow-lg
-               focus:outline-none focus:ring-4 focus:ring-[#a4b35a]/40
-               transition w-auto">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <button
+        type="submit"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-[#a4b35a] font-semibold shadow-md hover:bg-[#bccb6a] hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#a4b35a]/40 transition w-auto"
+      >
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
           <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"></path>
         </svg>
         {{ c.submit_text | default: 'SUBMIT' }}
@@ -60,43 +91,56 @@
   </form>
 
   {% if c.map_src %}
-  <div class="mt-6 rounded-md overflow-hidden border border-slate-200/50 dark:border-white/10">
+  <div
+    class="mt-6 rounded-md overflow-hidden border border-slate-200/50 dark:border-white/10"
+  >
     <iframe
       src="{{ c.map_src }}"
       width="100%"
       height="{{ c.map_height | default: 400 }}"
-      style="border:0;"
+      style="border: 0"
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      referrerpolicy="no-referrer-when-downgrade"
+    >
     </iframe>
   </div>
   {% endif %}
 
   <!-- intl-tel-input assets -->
-  <link data-iti rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-  <script data-iti src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-  <script data-iti src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"></script>
+  <link
+    data-iti
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+  />
+  <script
+    data-iti
+    src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+  ></script>
+  <script
+    data-iti
+    src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+  ></script>
 
   <script>
-  (function(){
-    const form = document.getElementById('contact-form');
-    const input = document.getElementById('phone');
-    const out   = document.getElementById('whatsappFull');
-    if (!form || !input || !out) return;
+    (function () {
+      const form = document.getElementById("contact-form");
+      const input = document.getElementById("phone");
+      const out = document.getElementById("whatsappFull");
+      if (!form || !input || !out) return;
 
-    const initial = "{{ c.initial_country | default: 'id' | downcase }}";
-    const iti = window.intlTelInput(input, {
-      initialCountry: initial,
-      nationalMode: false,
-      separateDialCode: true,
-      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
-    });
+      const initial = "{{ c.initial_country | default: 'id' | downcase }}";
+      const iti = window.intlTelInput(input, {
+        initialCountry: initial,
+        nationalMode: false,
+        separateDialCode: true,
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      });
 
-    form.addEventListener('submit', function(){
-      out.value = iti.getNumber(); 
-    });
-  })();
+      form.addEventListener("submit", function () {
+        out.value = iti.getNumber();
+      });
+    })();
   </script>
 </section>

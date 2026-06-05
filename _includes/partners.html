@@ -36,6 +36,7 @@
   
       {% if p.logo %}
         <img src="{{ p.logo | relative_url }}"
+             loading="lazy"
              class="mx-auto h-12 object-contain transition-transform duration-300 group-hover:scale-105"
              alt="{{ p.name | escape }}">
       {% else %}

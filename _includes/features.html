@@ -16,10 +16,12 @@
               <img data-slide
                    src="{{ im.image | default: im | relative_url }}"
                    alt="{{ im.image_alt | default: 'Slide ' | append: forloop.index }}"
+                   loading="lazy"
                    class="absolute inset-0 h-full w-full object-cover">
             {% endfor %}
           {% else %}
             <img data-slide src="{{ '/images/temp-img.png' | relative_url }}" alt="Slide"
+                 loading="lazy"
                  class="absolute inset-0 h-full w-full object-cover">
           {% endif %}
         </div>

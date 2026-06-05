@@ -43,3 +43,11 @@ _options:
     strike: true
     image: true
 
+title: "The Solimans"
+description: "A health and fitness meal plan business that believes healthy eating doesn’t have to be boring."
+url: "https://thesolimans.co"
+baseurl: ""
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed

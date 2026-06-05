@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css:build": "postcss ./assets/css/tailwind.css -o ./assets/css/main.css",
-    "jekyll:build": "bundle exec jekyll build",
+    "css:build": "NODE_ENV=production postcss ./assets/css/tailwind.css -o ./assets/css/main.css",
+    "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
     "build": "npm run css:build && npm run jekyll:build"
   },
   "repository": {

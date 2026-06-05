@@ -7,8 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
 <!------------ SEO Metadata  --------------------------------->
-<title> {{page.seo.title }} </title> 
-<meta name="description" content="{{page.seo.description }}">
+<title> {{ page.seo.title | default: page.title | default: site.data.site-settings.seo.title }} </title> 
+<meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 <meta name="keywords" content="{{page.seo.keywords }}">
 
 {% if page.seo.hide-from-google == true %}

@@ -1977,7 +1977,7 @@ weeks:
               - Salmon
               - Avocado
               - Creamy dressing
-            image: "/"
+            image: "/assets/images/menu/update/omega-salad.webp"
             alt: "Omega Salad (HP)"
           - name: "Chicken Kofta Platter (HP)"
             calories: 859
@@ -2295,7 +2295,7 @@ weeks:
               - Broccoli
               - Raja rasa sauce
               - Garlic
-            image: "/"
+            image: "/assets/images/menu/vegan/pasta-tofu-stir-fry.webp"
             alt: "Pasta Tofu Stir Fry"
           - name: "Chicken Burger"
             calories: 985
@@ -2429,7 +2429,7 @@ weeks:
               - Cucumber
               - Cassava chips
               - Salsa
-            image: "/"
+            image: "/assets/images/menu/update/Tempeh Caramelized Wrap.webp"
             alt: "Tempeh Caramelized Wrap"
           - name: "Arabic Kofta"
             calories: 1010
@@ -2501,7 +2501,7 @@ weeks:
               - Mix lettuce
               - Guacamole
               - Olive oil
-            image: "/"
+            image: "/assets/images/menu/update/Tempeh Caramelized Toast (Breakfast).webp"
             alt: "Tempeh Caramelized Toast Breakfast"
           - name: "Chicken Cheddar Wrap"
             calories: 679
@@ -2530,7 +2530,7 @@ weeks:
               - Avocado
               - Edamame
               - Tempeh
-            image: "/"
+            image: "/assets/images/menu/update/Tempeh Teriyaki.webp"
             alt: "Tempeh Teriyaki"
           - name: "Mie Goreng Chicken"
             calories: 680
@@ -2646,7 +2646,7 @@ weeks:
               - Kale
               - Quinoa
               - Lime
-            image: "/"
+            image: "/assets/images/menu/update/Grill Tofu Caramelized.webp"
             alt: "Grill Tofu Caramelized"
   - week: 2
     category: "vegan"
@@ -2785,7 +2785,7 @@ weeks:
               - Red radish
               - Mango
               - Tofu
-            image: "/"
+            image: "/assets/images/menu/update/Poke Bowl Tofu Mango.webp"
             alt: "Poke Bowl Tofu Mango"
           - name: "Pasta Tofu Stir Fry"
             calories: 728
@@ -2942,7 +2942,7 @@ weeks:
               - Cucumber
               - Cassava chips
               - Salsa
-            image: "/"
+            image: "/assets/images/menu/update/Tempeh Caramelized Wrap.webp"
             alt: "Tempeh Caramelized Wrap"
           - name: "Chicken Cashew"
             calories: 692
@@ -2989,7 +2989,7 @@ weeks:
               - Milk
               - Bay leaves
               - Creamy pesto sauce
-            image: "/"
+            image: "/assets/images/menu/update/Grill Tofu Creamy Pesto.webp"
             alt: "Grill Tofu Creamy Pesto"
       - day: "Friday"
         meals:
@@ -3005,7 +3005,7 @@ weeks:
               - Guacamole
               - Tomato cherry
               - Mix lettuce
-            image: "/"
+            image: "/assets/images/menu/update/Croissant Tempeh Sandwich.webp"
             alt: "Croissant Tempeh Sandwich"
           - name: "Chicken Cheddar Wrap"
             calories: 679
@@ -3155,5 +3155,5 @@ weeks:
               - Kale
               - Green beans
               - Baked white potato
-            image: "/"
+            image: "/assets/images/menu/update/Grill Tempeh Salsa.webp"
             alt: "Grill Tempeh Salsa"

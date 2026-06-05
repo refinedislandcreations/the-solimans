@@ -260,7 +260,7 @@ dishes:
       - Baby romaine lettuce
       - Tomato
       - Cucumber
-    image: "/"
+    image: "/assets/images/menu/update/Fit Nasi Goreng.webp"
     alt: "Fit Nasi Goreng"
   - name: "Beef Stir Fry"
     category: "Pasta & Rice"
@@ -323,7 +323,7 @@ dishes:
       - Cucumber
       - Salsa
       - Cassava chips
-    image: "/"
+    image: "/assets/images/menu/update/Tempeh Caramelized Wrap.webp"
     alt: "Tempeh Caramelized Wrap"
   - name: "Vegan Solimans Salad"
     category: "Vegan Meals"
@@ -344,7 +344,7 @@ dishes:
       - Red & green pepper
       - Walnut
       - Lemon dressing
-    image: "/"
+    image: "/assets/images/menu/update/Vegan Solimans Salad.webp"
     alt: "Vegan Solimans Salad"
   - name: "Vegan Chicken Cashew"
     category: "Vegan Meals"

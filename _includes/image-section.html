@@ -1,9 +1,37 @@
 <section class="max-w-screen-2xl mx-auto">
     <!-- Image Section -->
-    <div class="grid grid-cols-3 sm:grid-cols-4 gap-0">
-      <img src="/images/menu/newmenu/Avocado Egg Crunch.jpeg" alt="Avocado Egg Crunch Meal" loading="lazy" class="w-full h-auto aspect-square object-cover">
-      <img src="/images/menu/newmenu/Bolognese Pasta GF.jpeg" alt="Bolognese Pasta Meal" loading="lazy" class="w-full h-auto aspect-square object-cover">
-      <img src="/images/menu/newmenu/Chicken Yam Yam.jpeg" alt="Chicken Yam Yam Meal" loading="lazy" class="w-full h-auto aspect-square object-cover">
-      <img src="/images/menu/newmenu/Lean Beef Tacos.jpeg" alt="Lean Beef Tacos Meal" loading="lazy" class="w-full h-auto aspect-square object-cover hidden sm:block">
+    <div class="grid grid-cols-3 sm:grid-cols-4 gap-0" id="random-image-container">
+      <!-- Random images injected via JS -->
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Collect all WebP images from the assets/food directory
+        const allImages = [
+          {% assign food_images = site.static_files | where_exp: "file", "file.path contains '/assets/food/'" | where_exp: "file", "file.extname == '.webp'" %}
+          {% for img in food_images %}
+            "{{ img.path | relative_url }}"{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ];
+        
+        // Fisher-Yates shuffle to pick 4 random images
+        for (let i = allImages.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allImages[i], allImages[j]] = [allImages[j], allImages[i]];
+        }
+        
+        const selectedImages = allImages.slice(0, 4);
+        const container = document.getElementById("random-image-container");
+        
+        selectedImages.forEach((src, index) => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "Solimans Food Image";
+          img.loading = "lazy";
+          // The 4th image is hidden on small screens, mirroring the original layout
+          img.className = "w-full h-auto aspect-square object-cover" + (index === 3 ? " hidden sm:block" : "");
+          container.appendChild(img);
+        });
+      });
+    </script>
 </section>

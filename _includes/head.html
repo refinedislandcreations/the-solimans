@@ -27,6 +27,9 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="{{ page.seo.twitter_card | default: site.data.site-settings.seo.twitter_card }}">
+<meta name="twitter:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
+<meta name="twitter:description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="twitter:image" content="{{ page.seo.social_image | default: site.data.site-settings.seo.social_image }}">
 <meta name="og:site_name" content="{{ site.data.site-settings.seo.site_name }}">
 <link rel="icon" type="image/png" href="{{ site.data.site-settings.seo.favicon_image }}">
 

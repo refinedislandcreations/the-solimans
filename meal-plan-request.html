@@ -542,7 +542,8 @@ title: Meal Plan Request
       });
       window.location.href = "/thank-you.html";
     } catch (error) {
-      alert("There was an issue submitting your form. Please check your connection or contact us via WhatsApp.");
+      console.error("Form submission failed:", error);
+      alert(`There was an issue submitting your form (${error.message}). Please check your connection or contact us via WhatsApp.`);
       submitBtn.disabled = false;
       submitBtn.innerText = "Submit";
     }
